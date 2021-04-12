@@ -1,0 +1,307 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<androidx.cardview.widget.CardView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/dialog_layout"
+    android:layout_width="match_parent"
+    android:layout_height="450dp"
+    android:gravity="center_horizontal"
+    android:orientation="vertical"
+    app:cardCornerRadius="10dp"
+    app:qmui_backgroundColor="@color/white">
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="450dp">
+
+        <Button
+            android:id="@+id/cancel"
+            android:background="@null"
+            android:layout_alignParentRight="true"
+            android:layout_width="45dp"
+            android:layout_height="45dp"/>
+
+        <TextView
+
+            android:layout_marginTop="12dp"
+            android:layout_marginRight="15dp"
+            android:layout_alignParentRight="true"
+            android:textColor="@color/title_red"
+            android:textSize="15dp"
+            android:text="完成"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+
+
+
+
+
+<!--        <ImageView-->
+<!--            android:layout_marginTop="10dp"-->
+<!--            android:layout_marginRight="10dp"-->
+<!--            android:layout_alignParentRight="true"-->
+<!--            android:src="@drawable/ic_close"-->
+<!--            app:tint="@color/text_gray1"-->
+<!--            android:layout_width="22dp"-->
+<!--            android:layout_height="22dp"/>-->
+
+
+
+
+        <TextView
+            android:id="@+id/persondialog_top"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="10dp"
+            android:text="选择衣着"
+            android:textColor="@color/black"
+            android:textSize="@dimen/title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+
+        <ImageView
+            android:id="@+id/persondialog_person"
+            android:layout_marginTop="30dp"
+            android:layout_centerHorizontal="true"
+            android:src="@mipmap/person_img"
+            android:layout_below="@id/persondialog_top"
+            android:layout_marginEnd="15dp"
+            android:layout_width="wrap_content"
+            android:layout_height="160dp"/>
+
+        <ImageView
+            android:id="@+id/persondialog_hatimg"
+            android:layout_marginTop="23dp"
+            android:layout_centerHorizontal="true"
+            android:layout_below="@id/persondialog_top"
+            android:layout_marginEnd="15dp"
+            android:layout_width="33dp"
+            android:layout_height="wrap_content"/>
+
+        <ImageView
+            android:id="@+id/persondialog_shoesimg"
+            android:layout_alignLeft="@id/persondialog_person"
+            android:layout_marginLeft="16dp"
+            android:layout_below="@id/persondialog_top"
+            android:layout_marginTop="183dp"
+            android:layout_width="23dp"
+            android:layout_height="wrap_content"/>
+
+        <ImageView
+            android:id="@+id/persondialog_trousersimg"
+            android:layout_alignLeft="@id/persondialog_person"
+            android:layout_marginLeft="14dp"
+            android:layout_below="@id/persondialog_top"
+            android:layout_marginTop="95dp"
+            android:layout_marginRight="2dp"
+            android:layout_width="26dp"
+            android:layout_height="wrap_content"/>
+
+
+        <ImageView
+            android:id="@+id/persondialog_clothimg"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="72dp"
+            android:layout_below="@id/persondialog_top"
+            android:layout_width="wrap_content"
+            android:layout_height="45dp"/>
+
+        <com.qmuiteam.qmui.widget.roundwidget.QMUIRoundButton
+            android:id="@+id/persondialog_hatcolor"
+            app:qmui_borderWidth="0dp"
+            app:qmui_radius="15dp"
+            android:layout_marginRight="20dp"
+            android:layout_marginLeft="20dp"
+            app:qmui_backgroundColor="@color/black"
+            android:layout_alignTop="@id/persondialog_hat"
+            android:layout_width="match_parent"
+            android:layout_height="30dp"/>
+
+        <com.qmuiteam.qmui.widget.roundwidget.QMUIRoundButton
+            android:id="@+id/persondialog_clothcolor"
+            app:qmui_borderWidth="0dp"
+            app:qmui_radius="15dp"
+            android:layout_marginRight="20dp"
+            android:layout_marginLeft="20dp"
+            app:qmui_backgroundColor="@color/black"
+            android:layout_alignTop="@id/persondialog_cloth"
+            android:layout_width="match_parent"
+            android:layout_height="30dp"/>
+
+        <com.qmuiteam.qmui.widget.roundwidget.QMUIRoundButton
+            android:id="@+id/persondialog_trouserscolor"
+            app:qmui_borderWidth="0dp"
+            app:qmui_radius="15dp"
+            android:layout_marginRight="20dp"
+            android:layout_marginLeft="20dp"
+            app:qmui_backgroundColor="@color/black"
+            android:layout_alignTop="@id/persondialog_trousers"
+            android:layout_width="match_parent"
+            android:layout_height="30dp"/>
+
+        <com.qmuiteam.qmui.widget.roundwidget.QMUIRoundButton
+            android:id="@+id/persondialog_shoecolor"
+            app:qmui_borderWidth="0dp"
+            app:qmui_radius="15dp"
+            android:layout_marginRight="20dp"
+            android:layout_marginLeft="20dp"
+            app:qmui_backgroundColor="@color/black"
+            android:layout_alignTop="@id/persondialog_shoe"
+            android:layout_width="match_parent"
+            android:layout_height="30dp"/>
+
+
+        <androidx.cardview.widget.CardView
+            android:id="@+id/persondialog_hat"
+            android:layout_marginTop="35dp"
+            app:cardCornerRadius="15dp"
+            android:layout_marginBottom="1dp"
+            android:layout_below="@id/persondialog_person"
+            android:layout_marginRight="60dp"
+            android:layout_marginLeft="20dp"
+            android:layout_width="match_parent"
+            android:layout_height="30dp">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+                <TextView
+                    android:layout_marginLeft="15dp"
+                    android:layout_centerVertical="true"
+                    android:textColor="@color/black"
+                    android:textSize="16dp"
+                    android:text="帽子"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"/>
+
+                <TextView
+                    android:id="@+id/persondialog_hat_select"
+                    android:layout_marginRight="15dp"
+                    android:layout_centerVertical="true"
+                    android:layout_alignParentRight="true"
+                    android:textColor="@color/text_gray1"
+                    android:textSize="14dp"
+                    android:text="无"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"/>
+            </RelativeLayout>
+
+
+        </androidx.cardview.widget.CardView>
+        <androidx.cardview.widget.CardView
+            android:id="@+id/persondialog_cloth"
+            android:layout_marginTop="15dp"
+            app:cardCornerRadius="15dp"
+            android:layout_marginBottom="1dp"
+            android:layout_below="@id/persondialog_hat"
+            android:layout_marginRight="60dp"
+            android:layout_marginLeft="20dp"
+            android:layout_width="match_parent"
+            android:layout_height="30dp">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+                <TextView
+                    android:layout_marginLeft="15dp"
+                    android:layout_centerVertical="true"
+                    android:textColor="@color/black"
+                    android:textSize="16dp"
+                    android:text="衣服"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"/>
+
+                <TextView
+                    android:id="@+id/persondialog_cloth_select"
+                    android:layout_marginRight="15dp"
+                    android:layout_centerVertical="true"
+                    android:layout_alignParentRight="true"
+                    android:textColor="@color/text_gray1"
+                    android:textSize="14dp"
+                    android:text="无"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"/>
+            </RelativeLayout>
+
+
+        </androidx.cardview.widget.CardView>
+        <androidx.cardview.widget.CardView
+            android:id="@+id/persondialog_trousers"
+            android:layout_marginTop="15dp"
+            app:cardCornerRadius="15dp"
+            android:layout_marginBottom="1dp"
+            android:layout_below="@id/persondialog_cloth"
+            android:layout_marginRight="60dp"
+            android:layout_marginLeft="20dp"
+            android:layout_width="match_parent"
+            android:layout_height="30dp">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+                <TextView
+                    android:layout_marginLeft="15dp"
+                    android:layout_centerVertical="true"
+                    android:textColor="@color/black"
+                    android:textSize="16dp"
+                    android:text="裤子"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"/>
+
+                <TextView
+                    android:id="@+id/persondialog_trousers_select"
+                    android:layout_marginRight="15dp"
+                    android:layout_centerVertical="true"
+                    android:layout_alignParentRight="true"
+                    android:textColor="@color/text_gray1"
+                    android:textSize="14dp"
+                    android:text="无"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"/>
+            </RelativeLayout>
+
+
+        </androidx.cardview.widget.CardView>
+
+        <androidx.cardview.widget.CardView
+            android:id="@+id/persondialog_shoe"
+            android:layout_marginTop="15dp"
+            app:cardCornerRadius="15dp"
+            android:layout_marginBottom="1dp"
+            android:layout_below="@id/persondialog_trousers"
+            android:layout_marginRight="60dp"
+            android:layout_marginLeft="20dp"
+            android:layout_width="match_parent"
+            android:layout_height="30dp">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+                <TextView
+                    android:layout_marginLeft="15dp"
+                    android:layout_centerVertical="true"
+                    android:textColor="@color/black"
+                    android:textSize="16dp"
+                    android:text="鞋子"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"/>
+
+                <TextView
+                    android:id="@+id/persondialog_shoe_select"
+                    android:layout_marginRight="15dp"
+                    android:layout_centerVertical="true"
+                    android:layout_alignParentRight="true"
+                    android:textColor="@color/text_gray1"
+                    android:textSize="14dp"
+                    android:text="无"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"/>
+            </RelativeLayout>
+
+
+        </androidx.cardview.widget.CardView>
+
+
+    </RelativeLayout>
+
+</androidx.cardview.widget.CardView>

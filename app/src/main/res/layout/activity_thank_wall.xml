@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ui.volunteer.mine.ThankWallActivity"
+    android:background="@color/title_blue"
+    android:fitsSystemWindows="true"
+    android:orientation="vertical"
+    >
+
+    <LinearLayout
+        android:id="@+id/top"
+        android:background="@color/title_blue"
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="45dp">
+
+        <RelativeLayout
+            android:layout_marginTop="10dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+            <Button
+                android:id="@+id/finish"
+                android:background="@null"
+                android:layout_width="40dp"
+                android:layout_height="wrap_content"/>
+
+
+            <ImageView
+                android:layout_marginTop="5dp"
+                android:layout_marginLeft="12dp"
+                android:src="@mipmap/finish"
+                android:layout_width="18dp"
+                android:layout_height="18dp"/>
+
+        </RelativeLayout>
+
+        <TextView
+            android:layout_weight="1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+
+        <TextView
+            android:layout_marginTop="14dp"
+            android:layout_marginRight="15dp"
+            android:textStyle="bold"
+            android:text="谢语墙"
+            android:textSize="@dimen/title"
+            android:textColor="@color/white"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"/>
+
+        <TextView
+            android:layout_weight="1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+
+        <ImageView
+            android:visibility="invisible"
+            android:layout_marginTop="5dp"
+            android:layout_marginRight="10dp"
+            android:src="@mipmap/share3"
+            android:layout_width="22dp"
+            android:layout_height="wrap_content"/>
+
+    </LinearLayout>
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/mine_thankwall_recycle"
+        android:background="@color/backgroud2"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"/>
+
+</LinearLayout>

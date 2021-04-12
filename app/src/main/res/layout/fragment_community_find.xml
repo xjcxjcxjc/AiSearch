@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#f6f7f8">
+
+
+    <RadioGroup
+        android:id="@+id/community_rg"
+        android:orientation="horizontal"
+        android:background="@color/white"
+        android:layout_width="match_parent"
+        android:layout_height="36dp"
+        android:gravity="center">
+
+        <RadioButton
+            android:id="@+id/community_rb1"
+            android:button="@null"
+            android:text="推荐"
+            android:textSize="12dp"
+            android:textAlignment="center"
+            android:textColor="@color/black"
+            android:layout_width="40dp"
+            android:layout_height="25dp"/>
+
+        <RadioButton
+            android:id="@+id/community_rb2"
+            android:layout_marginLeft="15dp"
+            android:button="@null"
+            android:text="经历"
+            android:textSize="12dp"
+            android:textAlignment="center"
+            android:textColor="@color/black"
+            android:layout_width="40dp"
+            android:layout_height="25dp"/>
+        <RadioButton
+            android:id="@+id/community_rb3"
+            android:layout_marginLeft="15dp"
+            android:button="@null"
+            android:text="故事"
+            android:textSize="12dp"
+            android:textAlignment="center"
+            android:textColor="@color/black"
+            android:layout_width="40dp"
+            android:layout_height="25dp"/>
+        <RadioButton
+            android:id="@+id/community_rb4"
+            android:layout_marginLeft="15dp"
+            android:button="@null"
+            android:text="经验"
+            android:textSize="12dp"
+            android:textAlignment="center"
+            android:textColor="@color/black"
+            android:layout_width="40dp"
+            android:layout_height="25dp"/>
+        <RadioButton
+            android:id="@+id/community_rb5"
+            android:layout_marginLeft="15dp"
+            android:button="@null"
+            android:text="好物"
+            android:textSize="12dp"
+            android:textAlignment="center"
+            android:textColor="@color/black"
+            android:layout_width="40dp"
+            android:layout_height="25dp"/>
+        <RadioButton
+            android:id="@+id/community_rb6"
+            android:layout_marginLeft="15dp"
+            android:button="@null"
+            android:text="培训"
+            android:textSize="12dp"
+            android:textAlignment="center"
+            android:textColor="@color/black"
+            android:layout_width="40dp"
+            android:layout_height="25dp"/>
+
+<!--        android:background="@drawable/community_radio_btn"-->
+
+    </RadioGroup>
+
+
+    <FrameLayout
+        android:id="@+id/community_fragment"
+        android:background="#f6f7f8"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"/>
+
+</LinearLayout>

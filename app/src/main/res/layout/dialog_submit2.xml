@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.qmuiteam.qmui.widget.roundwidget.QMUIRoundLinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="200dp"
+    app:qmui_backgroundColor="@color/white"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <com.qmuiteam.qmui.widget.roundwidget.QMUIRoundRelativeLayout
+        app:qmui_borderWidth="0dp"
+        android:layout_width="match_parent"
+        android:layout_height="200dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="45dp"
+            android:background="@color/title_blue"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="7dp"
+            android:textStyle="bold"
+            android:text="反馈"
+            android:textSize="@dimen/title"
+            android:textColor="@color/white"
+            android:layout_centerHorizontal="true"
+            android:id="@+id/tv_title"/>
+        <EditText
+            android:background="@null"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:hint="填写你的反馈消息"
+            android:textSize="@dimen/chatSize"
+            android:layout_below="@+id/tv_title"
+            android:text="经核查暂无发现疑似老人"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="10dp"/>
+
+
+        <androidx.cardview.widget.CardView
+            android:id="@+id/join_submit"
+            app:cardCornerRadius="25dp"
+            android:layout_marginTop="-50dp"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            app:cardBackgroundColor="@color/title_blue"
+            android:layout_marginLeft="15dp"
+            android:layout_marginRight="15dp"
+            android:layout_alignParentBottom="true"
+            android:layout_marginBottom="15dp">
+
+            <LinearLayout
+                android:id="@+id/submit"
+                android:gravity="center"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <TextView
+                    android:text="提交反馈"
+                    android:textSize="@dimen/buttonSize"
+                    android:id="@+id/tv_submit2"
+                    android:textColor="@color/white"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"/>
+
+            </LinearLayout>
+
+        </androidx.cardview.widget.CardView>
+    </com.qmuiteam.qmui.widget.roundwidget.QMUIRoundRelativeLayout>
+</com.qmuiteam.qmui.widget.roundwidget.QMUIRoundLinearLayout>

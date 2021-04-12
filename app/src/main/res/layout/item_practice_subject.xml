@@ -1,0 +1,138 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_marginBottom="10dp">
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/practice_subject_nubcard"
+        android:layout_marginLeft="30dp"
+        android:layout_marginTop="41dp"
+        app:cardBackgroundColor="@color/title_blue"
+        app:cardCornerRadius="20dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+        <TextView
+            android:id="@+id/practice_subject_nub"
+            android:layout_marginRight="5dp"
+            android:layout_marginLeft="5dp"
+            android:textSize="12dp"
+            android:textColor="@color/white"
+            android:text="4"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+
+    </androidx.cardview.widget.CardView>
+
+    <TextView
+        android:id="@+id/practice_subject_multiplechoice"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="40dp"
+        android:layout_toRightOf="@id/practice_subject_nubcard"
+        android:text="[多选]"
+        android:visibility="gone"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>
+
+    <TextView
+        android:id="@+id/practice_subject_title"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="40dp"
+        android:layout_toRightOf="@id/practice_subject_multiplechoice"
+        android:text="关于水上求生哪些说法正确（  ）"
+        android:textSize="14dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>
+
+    <RadioGroup
+        android:id="@+id/practice_subject_rg"
+        android:layout_below="@id/practice_subject_nubcard"
+        android:layout_marginLeft="32dp"
+        android:orientation="vertical"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+
+        <RadioButton
+
+            android:id="@+id/practice_subject_rb1"
+            android:layout_marginTop="15dp"
+            android:button="@null"
+            android:background="@drawable/radiobtn_subject"
+            android:layout_width="15dp"
+            android:layout_height="15dp"/>
+
+        <RadioButton
+
+            android:id="@+id/practice_subject_rb2"
+            android:layout_marginTop="15dp"
+            android:button="@null"
+            android:background="@drawable/radiobtn_subject"
+            android:layout_width="15dp"
+            android:layout_height="15dp"/>
+
+        <RadioButton
+
+            android:id="@+id/practice_subject_rb3"
+            android:layout_marginTop="15dp"
+            android:button="@null"
+            android:background="@drawable/radiobtn_subject"
+            android:layout_width="15dp"
+            android:layout_height="15dp"/>
+
+        <RadioButton
+
+            android:id="@+id/practice_subject_rb4"
+            android:layout_marginTop="15dp"
+            android:button="@null"
+            android:background="@drawable/radiobtn_subject"
+            android:layout_width="15dp"
+            android:layout_height="15dp"/>
+    </RadioGroup>
+
+    <LinearLayout
+        android:layout_below="@id/practice_subject_nubcard"
+        android:layout_toRightOf="@id/practice_subject_rg"
+        android:layout_marginLeft="15dp"
+        android:orientation="vertical"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+
+        <TextView
+
+            android:id="@+id/practice_subject_A"
+            android:layout_marginTop="12dp"
+            android:text="A.在冷水中为了防止体温降低，应该持续的运动"
+            android:textSize="14dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+        <TextView
+
+            android:id="@+id/practice_subject_B"
+            android:layout_marginTop="12dp"
+            android:text="B.成人在10摄氏度水温中可以生存4小时"
+            android:textSize="14dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+        <TextView
+
+            android:id="@+id/practice_subject_C"
+            android:layout_marginTop="12dp"
+            android:text="C.缺乏淡水资源"
+            android:textSize="14dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+
+        <TextView
+
+            android:id="@+id/practice_subject_D"
+            android:layout_marginTop="12dp"
+            android:text="D.海上缺乏参照物"
+            android:textSize="14dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+    </LinearLayout>
+
+
+</RelativeLayout>

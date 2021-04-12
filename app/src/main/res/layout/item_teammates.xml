@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="60dp"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+
+    <TextView
+        android:background="@color/backgroud_white2"
+        android:layout_toRightOf="@id/teammate_headimgcard"
+        android:layout_marginLeft="15dp"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"/>
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/teammate_headimgcard"
+        android:layout_centerVertical="true"
+        android:layout_marginLeft="15dp"
+        app:cardCornerRadius="5dp"
+        android:layout_width="40dp"
+        android:layout_height="40dp">
+
+        <ImageView
+            android:id="@+id/teammate_headimg"
+            android:layout_gravity="center_vertical"
+            android:src="@mipmap/clipboard"
+            android:scaleType="centerCrop"
+            android:layout_width="40dp"
+            android:layout_height="40dp"/>
+
+    </androidx.cardview.widget.CardView>
+
+    <TextView
+        android:id="@+id/teammate_name"
+        android:layout_toRightOf="@id/teammate_headimgcard"
+        android:layout_centerVertical="true"
+        android:layout_marginLeft="15dp"
+        android:text="XXX"
+        android:textSize="15dp"
+        android:textColor="@color/black"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/teammate_captain"
+        android:visibility="invisible"
+        android:layout_centerVertical="true"
+        android:layout_toRightOf="@id/teammate_name"
+        android:layout_marginLeft="5dp"
+        app:cardCornerRadius="10dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:layout_marginLeft="3dp"
+            android:layout_marginRight="3dp"
+            android:textColor="@color/title_blue"
+            android:text="队长"
+            android:textSize="11dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+
+    </androidx.cardview.widget.CardView>
+
+    <Button
+        android:id="@+id/teammate_callbtn"
+        android:background="@null"
+        android:layout_alignParentRight="true"
+        android:layout_width="70dp"
+        android:layout_height="match_parent"/>
+
+    <ImageView
+        android:layout_marginRight="20dp"
+        android:layout_alignParentRight="true"
+        android:layout_centerVertical="true"
+        android:src="@mipmap/phone"
+        android:layout_width="20dp"
+        android:layout_height="20dp"/>
+
+
+
+</RelativeLayout>

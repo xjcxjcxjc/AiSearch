@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<com.qmuiteam.qmui.widget.roundwidget.QMUIRoundLinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/dialog_layout"
+    android:layout_width="match_parent"
+    android:layout_height="150dp"
+    android:gravity="center_horizontal"
+    android:orientation="vertical"
+    app:qmui_radius="10dp"
+    app:qmui_borderWidth="0dp"
+    android:layout_marginBottom="10dp"
+    app:qmui_backgroundColor="@color/white">
+
+
+    <com.qmuiteam.qmui.widget.roundwidget.QMUIRoundRelativeLayout
+        app:qmui_borderWidth="0dp"
+        android:layout_width="match_parent"
+        android:layout_height="150dp">
+
+        <TextView
+            android:id="@+id/lockdialog_content"
+            android:layout_marginTop="40dp"
+            android:layout_centerHorizontal="true"
+            android:text="救生衣，牛尾绳，抛绳包，救援头盔，救援靴，救援手套"
+            android:textSize="14dp"
+            android:layout_width="200dp"
+            android:layout_height="wrap_content"/>
+
+        <com.qmuiteam.qmui.widget.roundwidget.QMUIRoundButton
+            android:id="@+id/lockdialog_dismiss"
+            android:layout_centerHorizontal="true"
+            android:layout_below="@id/lockdialog_content"
+            app:qmui_backgroundColor="@color/title_blue"
+            app:qmui_borderWidth="0dp"
+            app:qmui_radius="10dp"
+            android:layout_marginTop="30dp"
+            android:layout_marginBottom="15dp"
+            android:text="确定"
+            android:textAlignment="center"
+            android:textStyle="bold"
+            android:textSize="14dp"
+            android:textColor="@color/white"
+            android:layout_width="100dp"
+            android:layout_height="30dp"/>
+
+    </com.qmuiteam.qmui.widget.roundwidget.QMUIRoundRelativeLayout>
+
+
+</com.qmuiteam.qmui.widget.roundwidget.QMUIRoundLinearLayout>
+
+

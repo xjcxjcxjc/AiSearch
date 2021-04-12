@@ -1,0 +1,123 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ui.volunteer.action.index.SearchActivity"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:fitsSystemWindows="true"
+    android:id="@+id/background"
+    android:background="@color/title_blue">
+
+    <LinearLayout
+        android:id="@+id/search_top"
+        android:layout_marginTop="10dp"
+        android:fitsSystemWindows="true"
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="35dp">
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+            <Button
+                android:id="@+id/search_top_back"
+                android:background="@null"
+                android:layout_width="40dp"
+                android:layout_height="wrap_content"/>
+
+
+            <ImageView
+                android:layout_marginTop="4dp"
+                android:layout_marginLeft="10dp"
+                android:src="@mipmap/finish"
+                android:layout_width="17dp"
+                android:layout_height="17dp"/>
+
+        </RelativeLayout>
+
+        <com.qmuiteam.qmui.widget.roundwidget.QMUIRoundLinearLayout
+            app:qmui_backgroundColor="@color/white"
+            android:layout_width="match_parent"
+            app:qmui_borderWidth="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="7dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            app:qmui_radius="15dp">
+
+            <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <ImageView
+                    android:id="@+id/search_top_img"
+                    android:layout_marginTop="3dp"
+                    android:layout_marginLeft="60dp"
+                    android:layout_marginRight="10dp"
+                    android:src="@mipmap/search_32"
+                    android:layout_width="18dp"
+                    android:layout_height="wrap_content"/>
+
+
+
+                <EditText
+                    android:layout_gravity="center"
+                    android:id="@+id/search_top_input"
+                    android:layout_marginLeft="17dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="45dp"
+                    android:textCursorDrawable="@drawable/color_cursor"
+                    android:hint="搜索关键词"
+                    android:textColor="@color/text_gray1"
+                    android:textSize="12dp"
+                    android:background="@null"
+                    />
+
+            </LinearLayout>
+        </com.qmuiteam.qmui.widget.roundwidget.QMUIRoundLinearLayout>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:background="@color/white"
+        android:id="@+id/search_record"
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+        <TextView
+            android:text="历史记录"
+            android:textSize="16dp"
+            android:layout_marginLeft="15dp"
+            android:textColor="@color/text_gray1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+        
+        <com.qmuiteam.qmui.alpha.QMUIAlphaButton
+            android:id="@+id/search_record_clear"
+            android:layout_marginLeft="230dp"
+            android:background="@null"
+            android:text="清除"
+            android:textSize="14dp"
+            android:layout_width="wrap_content"
+            android:layout_height="40dp"/>
+        </LinearLayout>
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/search_record_recycle"
+            android:layout_marginLeft="15dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+    </LinearLayout>
+
+
+</LinearLayout>

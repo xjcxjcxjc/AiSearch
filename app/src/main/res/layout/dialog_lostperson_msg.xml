@@ -1,0 +1,204 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/content"
+        app:cardBackgroundColor="@color/qmui_config_color_transparent"
+        app:cardCornerRadius="10dp"
+        android:layout_marginTop="60dp"
+        android:layout_marginLeft="15dp"
+        android:layout_width="320dp"
+        android:layout_height="wrap_content">
+
+
+        <!-- 走失人信息 -->
+        <LinearLayout
+            android:gravity="center_vertical"
+            android:orientation="horizontal"
+            android:background="@color/title_blue"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <androidx.cardview.widget.CardView
+                android:layout_marginLeft="10dp"
+                app:cardCornerRadius="5dp"
+                android:layout_width="90dp"
+                android:layout_height="116dp">
+
+                <RelativeLayout
+                    android:gravity="center"
+                    android:layout_width="90dp"
+                    android:layout_height="116dp">
+
+                    <ImageView
+                        android:id="@+id/details2_headimg"
+                        android:layout_width="90dp"
+                        android:layout_height="116dp"
+                        android:scaleType="centerCrop"
+                        android:src="@mipmap/clipboard"
+                        android:background="@color/black"/>
+
+                    <TextView
+                        android:id="@+id/actioncenter_actionnub"
+                        android:background="@color/half_transparent"
+                        android:gravity="center"
+                        android:layout_marginTop="-20dp"
+                        android:layout_below="@id/details2_headimg"
+                        android:layout_width="match_parent"
+                        android:layout_height="40dp"
+                        android:text="25人行动中"
+                        android:textAlignment="center"
+                        android:textColor="@color/white"
+                        android:textSize="@dimen/pictureSize"/>
+
+                </RelativeLayout>
+            </androidx.cardview.widget.CardView>
+
+            <LinearLayout
+                android:layout_marginTop="5dp"
+                android:layout_marginLeft="15dp"
+                android:orientation="vertical"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <LinearLayout
+                    android:layout_marginTop="4dp"
+                    android:orientation="horizontal"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <TextView
+                        android:id="@+id/pd_name"
+                        android:text="梁广军"
+                        android:textSize="@dimen/chatSizeL"
+                        android:textColor="@color/white"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"/>
+
+                    <TextView
+                        android:layout_marginLeft="10dp"
+                        android:text="男"
+                        android:textSize="@dimen/chatSizeL"
+                        android:textColor="@color/white"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"/>
+
+                    <TextView
+                        android:layout_marginLeft="5dp"
+                        android:text="/"
+                        android:textSize="@dimen/chatSizeL"
+                        android:textColor="@color/white"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"/>
+
+                    <TextView
+                        android:id="@+id/pd_age"
+                        android:layout_marginLeft="3dp"
+                        android:text="68岁"
+                        android:textSize="@dimen/chatSizeL"
+                        android:textColor="@color/white"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"/>
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_marginTop="7dp"
+                    android:orientation="horizontal"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+                    <TextView
+                        android:text="走失时间:"
+                        android:textSize="@dimen/chatSizeS"
+                        android:textColor="@color/white"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"/>
+
+                    <TextView
+                        android:id="@+id/detail_lost_time_detailed"
+                        android:layout_marginLeft="5dp"
+                        android:text="2020年12月20日 12:12"
+                        android:textSize="@dimen/chatSizeS"
+                        android:textColor="@color/white"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"/>
+
+                </LinearLayout>
+                <LinearLayout
+                    android:layout_marginTop="7dp"
+                    android:orientation="horizontal"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+                    <TextView
+                        android:text="走失地点:"
+                        android:textSize="@dimen/chatSizeS"
+                        android:textColor="@color/white"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"/>
+
+                    <TextView
+                        android:id="@+id/pd_lostplace"
+                        android:layout_marginLeft="5dp"
+                        android:text="浙江省宁波市海曙区高桥镇"
+                        android:textSize="@dimen/chatSizeS"
+                        android:textColor="@color/white"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"/>
+
+                </LinearLayout>
+                <LinearLayout
+                    android:layout_marginTop="7dp"
+                    android:orientation="horizontal"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+                    <TextView
+                        android:text="体貌特征:"
+                        android:textSize="@dimen/chatSizeS"
+                        android:textColor="@color/white"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"/>
+
+                    <TextView
+                        android:id="@+id/pd_feature"
+                        android:layout_marginLeft="5dp"
+                        android:text="秃头 左手有颗痣"
+                        android:textSize="@dimen/chatSizeS"
+                        android:textColor="@color/white"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"/>
+
+                </LinearLayout>
+                <LinearLayout
+                    android:layout_marginTop="7dp"
+                    android:orientation="horizontal"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+                    <TextView
+                        android:text="走失衣着:"
+                        android:textSize="@dimen/chatSizeS"
+                        android:textColor="@color/white"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"/>
+
+                    <TextView
+                        android:id="@+id/pd_clothes"
+                        android:layout_marginLeft="5dp"
+                        android:text="红色夹克 黑色牛仔裤"
+                        android:textSize="@dimen/chatSizeS"
+                        android:textColor="@color/white"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"/>
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+
+
+        </LinearLayout>
+
+    </androidx.cardview.widget.CardView>
+</RelativeLayout>

@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="30dp" android:layout_height="wrap_content"
+    android:background="@drawable/shape_icon_down">
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="#f2f2f2"
+        android:id="@+id/view1"
+        android:layout_marginTop="5dp" />
+
+
+    <ImageView
+        android:id="@+id/iv_gather"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/view1"
+        android:layout_marginLeft="5dp"
+        android:layout_marginTop="10dp"
+        android:scaleType="center"
+        android:src="@mipmap/icon_gather" />
+
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="#f2f2f2"
+        android:layout_below="@id/iv_gather"
+        android:layout_marginTop="5dp"
+        android:id="@+id/view2"/>
+
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@mipmap/icon_navigation"
+        android:scaleType="center"
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="5dp"
+        android:id="@+id/iv_navigation"
+        android:layout_below="@id/view2"/>
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="#f2f2f2"
+        android:layout_below="@id/iv_navigation"
+        android:layout_marginTop="5dp"
+        android:id="@+id/view3"/>
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@mipmap/icon_signin"
+        android:scaleType="center"
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="5dp"
+        android:id="@+id/iv_signin"
+        android:layout_below="@id/view3"/>
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="#f2f2f2"
+        android:layout_below="@id/iv_signin"
+        android:layout_marginTop="5dp"
+        android:id="@+id/view4"/>
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@mipmap/icon_up"
+        android:scaleType="center"
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="8dp"
+        android:id="@+id/iv_up"
+        android:layout_below="@id/view4" />
+
+
+</RelativeLayout>

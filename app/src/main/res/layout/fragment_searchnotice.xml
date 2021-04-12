@@ -1,0 +1,185 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="#f9f8f8"
+    android:orientation="vertical"
+    >
+
+    <com.example.aisearch.ui.volunteer.action.index.fragments.RecyclerScrollView
+        android:id="@+id/my_scrollview"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <RelativeLayout
+                android:id="@+id/searchnotice_map"
+                android:layout_marginLeft="15dp"
+                android:layout_marginRight="15dp"
+                android:layout_marginBottom="5dp"
+                android:layout_marginTop="10dp"
+                android:background="@mipmap/background4"
+                android:layout_width="match_parent"
+                android:layout_height="290dp">
+
+                <com.qmuiteam.qmui.widget.roundwidget.QMUIRoundRelativeLayout
+                    android:id="@+id/searchnotice_map_map"
+                    app:qmui_borderWidth="0dp"
+                    app:qmui_radius="10dp"
+                    app:qmui_backgroundColor="@color/text_gray1"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                    <com.baidu.mapapi.map.MapView
+                        android:id="@+id/bmapView"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"/>
+                </com.qmuiteam.qmui.widget.roundwidget.QMUIRoundRelativeLayout>
+
+
+                <LinearLayout
+                    android:background="@mipmap/background5"
+                    android:orientation="horizontal"
+                    android:layout_width="165dp"
+                    android:layout_height="35dp">
+
+                    <ImageView
+                        android:layout_marginTop="3dp"
+                        android:layout_marginLeft="5dp"
+                        android:src="@mipmap/sun"
+                        android:layout_width="15dp"
+                        android:layout_height="wrap_content"/>
+
+
+                    <TextView
+                        android:id="@+id/searchnotice_map_weather"
+                        android:layout_gravity="center"
+                        android:layout_marginLeft="5dp"
+                        android:textColor="@color/white"
+                        android:textSize="13dp"
+                        android:text="晴"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"/>
+
+                    <TextView
+                        android:id="@+id/searchnotice_map_temperature"
+                        android:layout_gravity="center"
+                        android:layout_marginLeft="5dp"
+                        android:textColor="@color/white"
+                        android:textSize="13dp"
+                        android:text="26°"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"/>
+
+                    <ImageView
+                        android:layout_marginTop="3dp"
+                        android:layout_marginLeft="5dp"
+                        android:src="@mipmap/plane2"
+                        android:layout_width="15dp"
+                        android:layout_height="wrap_content"/>
+                    <TextView
+                        android:id="@+id/searchnotice_map_wind"
+                        android:layout_gravity="center"
+                        android:layout_marginLeft="5dp"
+                        android:textColor="@color/white"
+                        android:textSize="13dp"
+                        android:text="西南风"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"/>
+                    <TextView
+                        android:id="@+id/searchnotice_map_windgrade"
+                        android:layout_gravity="center"
+                        android:layout_marginLeft="5dp"
+                        android:textColor="@color/white"
+                        android:textSize="13dp"
+                        android:text="4级"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"/>
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:orientation="vertical"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                    <TextView
+                        android:layout_weight="1"
+                        android:layout_width="wrap_content"
+                        android:layout_height="0dp"/>
+
+                    <!-- 右下角布局 -->
+                    <LinearLayout
+                        android:layout_marginBottom="5dp"
+                        android:orientation="horizontal"
+                        android:layout_width="match_parent"
+                        android:layout_height="35dp">
+                        <TextView
+                            android:layout_weight="1"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"/>
+
+                        <com.qmuiteam.qmui.widget.roundwidget.QMUIRoundLinearLayout
+                            android:gravity="center"
+                            app:qmui_radiusBottomLeft="13dp"
+                            app:qmui_radiusTopLeft="13dp"
+                            app:qmui_backgroundColor="@color/white"
+                            android:orientation="horizontal"
+                            android:layout_width="100dp"
+                            android:layout_height="wrap_content">
+
+                            <androidx.cardview.widget.CardView
+                                app:cardCornerRadius="20dp"
+                                android:layout_width="27dp"
+                                android:layout_height="27dp"
+                                app:cardBackgroundColor="@color/title_blue">
+
+                                <ImageView
+                                    android:layout_marginTop="-2dp"
+                                    android:layout_gravity="center"
+                                    android:src="@mipmap/person"
+                                    android:layout_width="16dp"
+                                    android:layout_height="wrap_content"/>
+                            </androidx.cardview.widget.CardView>
+
+                            <TextView
+                                android:layout_weight="1"
+                                android:layout_width="1dp"
+                                android:layout_height="wrap_content"/>
+
+                            <TextView
+                                android:id="@+id/searchnotice_map_personnub"
+                                android:layout_marginLeft="3dp"
+                                android:text="13"
+                                android:textSize="13dp"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"/>
+
+                            <TextView
+                                android:text="人走失"
+                                android:textSize="13dp"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"/>
+
+
+                        </com.qmuiteam.qmui.widget.roundwidget.QMUIRoundLinearLayout>
+
+                    </LinearLayout>
+
+                </LinearLayout>
+            </RelativeLayout>
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/searchnotice_recycleview"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"/>
+
+        </LinearLayout>
+    </com.example.aisearch.ui.volunteer.action.index.fragments.RecyclerScrollView>
+
+</LinearLayout>

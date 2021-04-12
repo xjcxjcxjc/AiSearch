@@ -1,0 +1,700 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:background="@color/title_red"
+    android:fitsSystemWindows="true"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <TextView
+        android:background="@color/backgroud_white"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"/>
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:id="@+id/hand_topbar"
+        android:background="@color/title_red"
+        android:layout_width="match_parent"
+        android:layout_height="40dp">
+
+        <RelativeLayout
+            android:gravity="center_vertical"
+            android:layout_width="60dp"
+            android:layout_height="match_parent">
+
+            <Button
+                android:id="@+id/hand_topbar_locationbtn"
+                android:background="@null"
+                android:layout_width="60dp"
+                android:layout_height="match_parent"/>
+
+            <TextView
+                android:id="@+id/hand_topbar_city"
+                android:text="宁波"
+                android:textColor="@color/white"
+                android:textSize="13dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginLeft="10dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"/>
+
+            <ImageView
+                android:layout_marginTop="14dp"
+                android:layout_marginLeft="40dp"
+                android:src="@mipmap/backdown"
+                android:layout_width="10dp"
+                android:layout_height="10dp"/>
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_weight="1"
+            android:layout_width="0dp"
+            android:layout_height="match_parent">
+
+            <com.qmuiteam.qmui.widget.roundwidget.QMUIRoundButton
+                android:id="@+id/hand_topbar_searchbtn"
+                app:qmui_radius="15dp"
+                app:qmui_borderWidth="0dp"
+                android:layout_marginTop="5dp"
+                android:layout_marginBottom="5dp"
+                app:qmui_backgroundColor="@color/white"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"/>
+
+            <LinearLayout
+                android:layout_centerHorizontal="true"
+                android:orientation="horizontal"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent">
+
+                <ImageView
+                    android:layout_marginTop="12dp"
+                    android:src="@mipmap/search"
+                    android:layout_height="17dp"
+                    android:layout_width="17dp"/>
+
+                <TextView
+                    android:layout_marginLeft="15dp"
+                    android:layout_marginTop="11dp"
+                    android:textSize="13dp"
+                    android:textColor="@color/text_gray1"
+                    android:text="海曙区老人走失"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"/>
+            </LinearLayout>
+
+            <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <TextView
+                    android:layout_weight="1"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"/>
+
+            </LinearLayout>
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:gravity="center_vertical"
+            android:layout_width="60dp"
+            android:layout_height="match_parent">
+
+            <Button
+                android:id="@+id/hand_topbar_talkbtn"
+                android:background="@null"
+                android:layout_width="60dp"
+                android:layout_height="match_parent"/>
+
+            <ImageView
+                android:layout_marginLeft="20dp"
+                android:layout_marginTop="9dp"
+                android:src="@mipmap/talk"
+                android:layout_height="22dp"
+                android:layout_width="22dp"/>
+
+        </RelativeLayout>
+
+    </LinearLayout>
+
+    <LinearLayout
+
+        android:id="@+id/hand_tools"
+        android:orientation="horizontal"
+        android:layout_below="@id/hand_topbar"
+        android:layout_width="match_parent"
+        android:layout_height="70dp">
+
+
+
+        <ImageView
+            android:id="@+id/hand_faceidetify"
+            android:src="@mipmap/background42"
+            android:layout_width="1dp"
+            android:layout_weight="1"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_height="match_parent"/>
+
+
+        <ImageView
+            android:id="@+id/hand_help2"
+            android:src="@mipmap/background43"
+            android:layout_width="1dp"
+            android:layout_weight="1"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_height="match_parent"/>
+
+        <ImageView
+            android:id="@+id/hand_help"
+            android:src="@mipmap/background44"
+            android:layout_width="1dp"
+            android:layout_weight="1"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_height="match_parent"/>
+
+    </LinearLayout>
+
+
+
+<!--    <LinearLayout-->
+<!--        android:id="@+id/hand_tools"-->
+<!--        android:layout_below="@id/hand_topbar"-->
+<!--        android:background="@color/title_red"-->
+<!--        android:layout_width="match_parent"-->
+<!--        android:layout_height="80dp">-->
+
+<!--        <RelativeLayout-->
+<!--            android:layout_weight="1"-->
+<!--            android:layout_width="1dp"-->
+<!--            android:layout_height="wrap_content">-->
+<!--            <ImageView-->
+<!--                android:layout_centerHorizontal="true"-->
+<!--                android:id="@+id/hand_faceidetify"-->
+<!--                android:layout_marginTop="10dp"-->
+<!--                android:layout_marginLeft="30dp"-->
+<!--                android:src="@mipmap/family_hand_img1"-->
+<!--                android:layout_width="35dp"-->
+<!--                android:layout_height="35dp"/>-->
+<!--            <TextView-->
+<!--                android:layout_centerHorizontal="true"-->
+<!--                android:layout_alignParentBottom="true"-->
+<!--                android:layout_marginLeft="21dp"-->
+<!--                android:layout_marginBottom="8dp"-->
+<!--                android:textColor="@color/white"-->
+<!--                android:textSize="13dp"-->
+<!--                android:text="人脸比对"-->
+<!--                android:layout_width="wrap_content"-->
+<!--                android:layout_height="wrap_content"/>-->
+<!--        </RelativeLayout>-->
+
+<!--        <RelativeLayout-->
+<!--            android:layout_weight="1"-->
+<!--            android:layout_width="1dp"-->
+<!--            android:layout_height="wrap_content">-->
+<!--            <ImageView-->
+<!--                android:layout_centerHorizontal="true"-->
+<!--                android:id="@+id/hand_help"-->
+<!--                android:layout_marginRight="30dp"-->
+<!--                android:layout_marginTop="10dp"-->
+<!--                android:src="@mipmap/family_hand_img3"-->
+<!--                android:layout_width="35dp"-->
+<!--                android:layout_height="35dp"/>-->
+<!--            <TextView-->
+<!--                android:layout_marginBottom="8dp"-->
+<!--                android:layout_marginRight="20dp"-->
+<!--                android:layout_centerHorizontal="true"-->
+<!--                android:layout_alignParentBottom="true"-->
+<!--                android:textColor="@color/white"-->
+<!--                android:textSize="13dp"-->
+<!--                android:text="求助申请"-->
+<!--                android:layout_width="wrap_content"-->
+<!--                android:layout_height="wrap_content"/>-->
+
+<!--        </RelativeLayout>-->
+<!--    </LinearLayout>-->
+
+
+<!--    <com.qmuiteam.qmui.widget.roundwidget.QMUIRoundRelativeLayout-->
+
+<!--        android:layout_below="@id/hand_tools"-->
+<!--        android:id="@+id/check"-->
+<!--        app:qmui_radiusBottomRight="5dp"-->
+<!--        app:qmui_radiusBottomLeft="5dp"-->
+<!--        app:qmui_borderWidth="0dp"-->
+<!--        app:qmui_backgroundColor="@color/white"-->
+<!--        android:layout_width="match_parent"-->
+<!--        android:layout_height="40dp">-->
+
+<!--        <RadioGroup-->
+<!--            android:id="@+id/index_topbar_rg"-->
+<!--            android:background="@mipmap/background3"-->
+<!--            android:orientation="horizontal"-->
+<!--            android:layout_width="match_parent"-->
+<!--            android:layout_height="match_parent">-->
+
+<!--            <RadioButton-->
+<!--                android:id="@+id/index_topbar_rb1"-->
+<!--                android:button="@null"-->
+<!--                android:background="@null"-->
+<!--                android:textAlignment="center"-->
+<!--                android:textSize="16dp"-->
+<!--                android:textColor="@color/title_red"-->
+<!--                android:layout_weight="1"-->
+<!--                android:layout_width="0dp"-->
+<!--                android:layout_height="match_parent"/>-->
+
+<!--            <RadioButton-->
+<!--                android:id="@+id/index_topbar_rb2"-->
+<!--                android:button="@null"-->
+<!--                android:background="@null"-->
+<!--                android:textAlignment="center"-->
+<!--                android:textColor="@color/text_gray1"-->
+<!--                android:text="寻人启事"-->
+<!--                android:textSize="16dp"-->
+<!--                android:layout_weight="1"-->
+<!--                android:layout_width="0dp"-->
+<!--                android:layout_height="match_parent"/>-->
+
+<!--        </RadioGroup>-->
+
+<!--        <LinearLayout-->
+<!--            android:orientation="horizontal"-->
+<!--            android:layout_width="match_parent"-->
+<!--            android:layout_height="match_parent"-->
+<!--            android:gravity="center">-->
+
+<!--            <TextView-->
+<!--                android:id="@+id/index_topbar_rb1bg"-->
+<!--                android:layout_marginBottom="-7dp"-->
+<!--                android:layout_gravity="bottom"-->
+<!--                android:background="@color/title_red"-->
+<!--                android:layout_width="27dp"-->
+<!--                android:layout_height="2.5dp"/>-->
+
+<!--            <TextView-->
+<!--                android:layout_width="155dp"-->
+<!--                android:layout_height="0dp"/>-->
+
+<!--            <TextView-->
+<!--                android:id="@+id/index_topbar_rb2bg"-->
+<!--                android:layout_marginBottom="-7dp"-->
+<!--                android:layout_gravity="bottom"-->
+<!--                android:background="@color/qmui_config_color_transparent"-->
+<!--                android:layout_width="27dp"-->
+<!--                android:layout_height="2.5dp"/>-->
+
+<!--        </LinearLayout>-->
+
+<!--    </com.qmuiteam.qmui.widget.roundwidget.QMUIRoundRelativeLayout>-->
+
+
+
+<!--    <FrameLayout-->
+<!--        android:id="@+id/actiondetails_fl"-->
+<!--        android:layout_below="@id/check"-->
+<!--        android:layout_width="match_parent"-->
+<!--        android:layout_height="match_parent"/>-->
+
+<!--    <RelativeLayout-->
+<!--        android:id="@+id/hand_tools"-->
+<!--        android:layout_below="@id/hand_topbar"-->
+<!--        android:background="@color/title_red"-->
+<!--        android:layout_width="match_parent"-->
+<!--        android:layout_height="80dp">-->
+
+<!--        <ImageView-->
+<!--            android:id="@+id/hand_faceidetify"-->
+<!--            android:layout_marginTop="10dp"-->
+<!--            android:layout_marginLeft="30dp"-->
+<!--            android:src="@mipmap/family_hand_img1"-->
+<!--            android:layout_width="35dp"-->
+<!--            android:layout_height="35dp"/>-->
+<!--        <ImageView-->
+<!--            android:id="@+id/hand_add"-->
+<!--            android:layout_centerHorizontal="true"-->
+<!--            android:layout_marginTop="10dp"-->
+<!--            android:src="@mipmap/family_hand_img2"-->
+<!--            android:layout_width="35dp"-->
+<!--            android:layout_height="35dp"/>-->
+<!--        <ImageView-->
+<!--            android:id="@+id/hand_help"-->
+<!--            android:layout_marginRight="30dp"-->
+<!--            android:layout_alignParentRight="true"-->
+<!--            android:layout_marginTop="10dp"-->
+<!--            android:src="@mipmap/family_hand_img3"-->
+<!--            android:layout_width="35dp"-->
+<!--            android:layout_height="35dp"/>-->
+
+<!--        <TextView-->
+<!--            android:layout_alignParentBottom="true"-->
+<!--            android:layout_marginLeft="21dp"-->
+<!--            android:layout_marginBottom="8dp"-->
+<!--            android:textColor="@color/white"-->
+<!--            android:textSize="13dp"-->
+<!--            android:text="人脸比对"-->
+<!--            android:layout_width="wrap_content"-->
+<!--            android:layout_height="wrap_content"/>-->
+
+<!--        <TextView-->
+<!--            android:layout_marginBottom="8dp"-->
+<!--            android:layout_alignParentBottom="true"-->
+<!--            android:layout_centerHorizontal="true"-->
+<!--            android:textColor="@color/white"-->
+<!--            android:textSize="13dp"-->
+<!--            android:text="寻人启事"-->
+<!--            android:layout_width="wrap_content"-->
+<!--            android:layout_height="wrap_content"/>-->
+<!--        <TextView-->
+<!--            android:layout_marginBottom="8dp"-->
+<!--            android:layout_marginRight="20dp"-->
+<!--            android:layout_alignParentRight="true"-->
+<!--            android:layout_alignParentBottom="true"-->
+<!--            android:textColor="@color/white"-->
+<!--            android:textSize="13dp"-->
+<!--            android:text="求助申请"-->
+<!--            android:layout_width="wrap_content"-->
+<!--            android:layout_height="wrap_content"/>-->
+<!--    </RelativeLayout>-->
+
+    <LinearLayout
+        android:id="@+id/card_category"
+        android:layout_below="@+id/hand_tools"
+        android:layout_width="match_parent"
+        android:layout_height="30dp">
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <RelativeLayout
+                android:gravity="center"
+                android:layout_weight="1"
+                android:layout_width="0dp"
+                android:layout_height="match_parent">
+
+
+                <TextView
+                    android:textStyle="bold"
+                    android:textColor="@color/text_gray1"
+                    android:textSize="13dp"
+                    android:text="综合排序"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"/>
+            </RelativeLayout>
+            <RelativeLayout
+                android:gravity="center"
+                android:layout_weight="1"
+                android:layout_width="0dp"
+                android:layout_height="match_parent">
+
+                <TextView
+                    android:layout_marginTop="5dp"
+                    android:id="@+id/actionlist_tv2"
+                    android:textColor="@color/text_gray1"
+                    android:textSize="13dp"
+                    android:text="发布时间"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"/>
+
+                <ImageView
+                    android:layout_marginLeft="3dp"
+                    android:layout_toRightOf="@id/actionlist_tv2"
+                    android:src="@mipmap/sort1"
+                    android:layout_width="11dp"
+                    android:layout_height="wrap_content"/>
+
+
+            </RelativeLayout>
+            <RelativeLayout
+                android:gravity="center"
+                android:layout_weight="1"
+                android:layout_width="0dp"
+                android:layout_height="match_parent">
+
+                <TextView
+                    android:layout_marginTop="5dp"
+                    android:id="@+id/actionlist_tv3"
+                    android:textColor="@color/text_gray1"
+                    android:textSize="13dp"
+                    android:text="距离"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"/>
+
+                <ImageView
+                    android:layout_marginLeft="3dp"
+                    android:layout_toRightOf="@id/actionlist_tv3"
+                    android:src="@mipmap/sort1"
+                    android:layout_width="11dp"
+                    android:layout_height="wrap_content"/>
+
+
+            </RelativeLayout>
+<!--            <RelativeLayout-->
+<!--                android:gravity="center"-->
+<!--                android:layout_weight="1"-->
+<!--                android:layout_width="0dp"-->
+<!--                android:layout_height="match_parent">-->
+
+<!--                <TextView-->
+<!--                    android:layout_marginTop="3dp"-->
+<!--                    android:id="@+id/actionlist_tv4"-->
+<!--                    android:textColor="@color/text_gray1"-->
+<!--                    android:textSize="13dp"-->
+<!--                    android:text="筛选"-->
+<!--                    android:layout_width="wrap_content"-->
+<!--                    android:layout_height="wrap_content"/>-->
+
+<!--                <ImageView-->
+<!--                    android:layout_marginLeft="3dp"-->
+<!--                    android:layout_toRightOf="@id/actionlist_tv4"-->
+<!--                    android:src="@mipmap/screen"-->
+<!--                    android:layout_width="11dp"-->
+<!--                    android:layout_height="wrap_content"/>-->
+
+
+<!--            </RelativeLayout>-->
+        </LinearLayout>
+    </LinearLayout>
+
+
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/hand_recycleview"
+        android:layout_below="@id/card_category"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"/>
+
+
+    <!--    <com.example.aisearch.ui.volunteer.action.index.fragments.RecyclerScrollView-->
+<!--        android:layout_below="@id/card_category"-->
+<!--        android:id="@+id/my_scrollview"-->
+<!--        android:layout_width="match_parent"-->
+<!--        android:layout_height="match_parent">-->
+
+<!--        <RelativeLayout-->
+<!--            android:layout_width="match_parent"-->
+<!--            android:layout_height="match_parent">-->
+
+
+<!--            &lt;!&ndash;            <RelativeLayout&ndash;&gt;-->
+<!--            &lt;!&ndash;                android:id="@+id/hand_map"&ndash;&gt;-->
+<!--            &lt;!&ndash;                android:layout_marginLeft="15dp"&ndash;&gt;-->
+<!--            &lt;!&ndash;                android:layout_marginRight="15dp"&ndash;&gt;-->
+<!--            &lt;!&ndash;                android:layout_marginBottom="5dp"&ndash;&gt;-->
+<!--            &lt;!&ndash;                android:layout_marginTop="10dp"&ndash;&gt;-->
+<!--            &lt;!&ndash;                android:background="@mipmap/background4"&ndash;&gt;-->
+<!--            &lt;!&ndash;                android:layout_width="match_parent"&ndash;&gt;-->
+<!--            &lt;!&ndash;                android:layout_height="290dp">&ndash;&gt;-->
+
+<!--            &lt;!&ndash;                <com.qmuiteam.qmui.widget.roundwidget.QMUIRoundRelativeLayout&ndash;&gt;-->
+<!--            &lt;!&ndash;                    android:id="@+id/hand_map_map"&ndash;&gt;-->
+<!--            &lt;!&ndash;                    app:qmui_borderWidth="0dp"&ndash;&gt;-->
+<!--            &lt;!&ndash;                    app:qmui_radius="10dp"&ndash;&gt;-->
+<!--            &lt;!&ndash;                    app:qmui_backgroundColor="@color/text_gray1"&ndash;&gt;-->
+<!--            &lt;!&ndash;                    android:layout_width="match_parent"&ndash;&gt;-->
+<!--            &lt;!&ndash;                    android:layout_height="match_parent">&ndash;&gt;-->
+
+<!--            &lt;!&ndash;                    <com.baidu.mapapi.map.MapView&ndash;&gt;-->
+<!--            &lt;!&ndash;                        android:id="@+id/bmapView"&ndash;&gt;-->
+<!--            &lt;!&ndash;                        android:layout_width="match_parent"&ndash;&gt;-->
+<!--            &lt;!&ndash;                        android:layout_height="match_parent"/>&ndash;&gt;-->
+
+
+<!--            &lt;!&ndash;                </com.qmuiteam.qmui.widget.roundwidget.QMUIRoundRelativeLayout>&ndash;&gt;-->
+
+
+<!--            &lt;!&ndash;                <LinearLayout&ndash;&gt;-->
+<!--            &lt;!&ndash;                    android:background="@mipmap/background30"&ndash;&gt;-->
+<!--            &lt;!&ndash;                    android:orientation="horizontal"&ndash;&gt;-->
+<!--            &lt;!&ndash;                    android:layout_width="165dp"&ndash;&gt;-->
+<!--            &lt;!&ndash;                    android:layout_height="35dp">&ndash;&gt;-->
+
+<!--            &lt;!&ndash;                    <ImageView&ndash;&gt;-->
+<!--            &lt;!&ndash;                        android:layout_marginTop="3dp"&ndash;&gt;-->
+<!--            &lt;!&ndash;                        android:layout_marginLeft="5dp"&ndash;&gt;-->
+<!--            &lt;!&ndash;                        android:src="@mipmap/sun"&ndash;&gt;-->
+<!--            &lt;!&ndash;                        android:layout_width="15dp"&ndash;&gt;-->
+<!--            &lt;!&ndash;                        android:layout_height="wrap_content"/>&ndash;&gt;-->
+
+<!--            &lt;!&ndash;                    <TextView&ndash;&gt;-->
+<!--            &lt;!&ndash;                        android:id="@+id/hand_map_weather"&ndash;&gt;-->
+<!--            &lt;!&ndash;                        android:layout_gravity="center"&ndash;&gt;-->
+<!--            &lt;!&ndash;                        android:layout_marginLeft="5dp"&ndash;&gt;-->
+<!--            &lt;!&ndash;                        android:textColor="@color/white"&ndash;&gt;-->
+<!--            &lt;!&ndash;                        android:textSize="13dp"&ndash;&gt;-->
+<!--            &lt;!&ndash;                        android:text="晴"&ndash;&gt;-->
+<!--            &lt;!&ndash;                        android:layout_width="wrap_content"&ndash;&gt;-->
+<!--            &lt;!&ndash;                        android:layout_height="wrap_content"/>&ndash;&gt;-->
+
+<!--            &lt;!&ndash;                    <TextView&ndash;&gt;-->
+<!--            &lt;!&ndash;                        android:id="@+id/hand_map_temperature"&ndash;&gt;-->
+<!--            &lt;!&ndash;                        android:layout_gravity="center"&ndash;&gt;-->
+<!--            &lt;!&ndash;                        android:layout_marginLeft="5dp"&ndash;&gt;-->
+<!--            &lt;!&ndash;                        android:textColor="@color/white"&ndash;&gt;-->
+<!--            &lt;!&ndash;                        android:textSize="13dp"&ndash;&gt;-->
+<!--            &lt;!&ndash;                        android:text="26°"&ndash;&gt;-->
+<!--            &lt;!&ndash;                        android:layout_width="wrap_content"&ndash;&gt;-->
+<!--            &lt;!&ndash;                        android:layout_height="wrap_content"/>&ndash;&gt;-->
+
+<!--            &lt;!&ndash;                    <ImageView&ndash;&gt;-->
+<!--            &lt;!&ndash;                        android:layout_marginTop="3dp"&ndash;&gt;-->
+<!--            &lt;!&ndash;                        android:layout_marginLeft="5dp"&ndash;&gt;-->
+<!--            &lt;!&ndash;                        android:src="@mipmap/plane2"&ndash;&gt;-->
+<!--            &lt;!&ndash;                        android:layout_width="15dp"&ndash;&gt;-->
+<!--            &lt;!&ndash;                        android:layout_height="wrap_content"/>&ndash;&gt;-->
+<!--            &lt;!&ndash;                    <TextView&ndash;&gt;-->
+<!--            &lt;!&ndash;                        android:id="@+id/hand_map_wind"&ndash;&gt;-->
+<!--            &lt;!&ndash;                        android:layout_gravity="center"&ndash;&gt;-->
+<!--            &lt;!&ndash;                        android:layout_marginLeft="5dp"&ndash;&gt;-->
+<!--            &lt;!&ndash;                        android:textColor="@color/white"&ndash;&gt;-->
+<!--            &lt;!&ndash;                        android:textSize="13dp"&ndash;&gt;-->
+<!--            &lt;!&ndash;                        android:text="西南风"&ndash;&gt;-->
+<!--            &lt;!&ndash;                        android:layout_width="wrap_content"&ndash;&gt;-->
+<!--            &lt;!&ndash;                        android:layout_height="wrap_content"/>&ndash;&gt;-->
+<!--            &lt;!&ndash;                    <TextView&ndash;&gt;-->
+<!--            &lt;!&ndash;                        android:id="@+id/hand_map_windgrade"&ndash;&gt;-->
+<!--            &lt;!&ndash;                        android:layout_gravity="center"&ndash;&gt;-->
+<!--            &lt;!&ndash;                        android:layout_marginLeft="5dp"&ndash;&gt;-->
+<!--            &lt;!&ndash;                        android:textColor="@color/white"&ndash;&gt;-->
+<!--            &lt;!&ndash;                        android:textSize="13dp"&ndash;&gt;-->
+<!--            &lt;!&ndash;                        android:text="4级"&ndash;&gt;-->
+<!--            &lt;!&ndash;                        android:layout_width="wrap_content"&ndash;&gt;-->
+<!--            &lt;!&ndash;                        android:layout_height="wrap_content"/>&ndash;&gt;-->
+
+<!--            &lt;!&ndash;                </LinearLayout>&ndash;&gt;-->
+
+<!--            &lt;!&ndash;                <LinearLayout&ndash;&gt;-->
+<!--            &lt;!&ndash;                    android:orientation="vertical"&ndash;&gt;-->
+<!--            &lt;!&ndash;                    android:layout_width="match_parent"&ndash;&gt;-->
+<!--            &lt;!&ndash;                    android:layout_height="match_parent">&ndash;&gt;-->
+
+<!--            &lt;!&ndash;                    <TextView&ndash;&gt;-->
+<!--            &lt;!&ndash;                        android:layout_weight="1"&ndash;&gt;-->
+<!--            &lt;!&ndash;                        android:layout_width="wrap_content"&ndash;&gt;-->
+<!--            &lt;!&ndash;                        android:layout_height="0dp"/>&ndash;&gt;-->
+
+<!--            &lt;!&ndash;                    &lt;!&ndash; 右下角布局 &ndash;&gt;&ndash;&gt;-->
+<!--            &lt;!&ndash;                    <LinearLayout&ndash;&gt;-->
+<!--            &lt;!&ndash;                        android:layout_marginBottom="5dp"&ndash;&gt;-->
+<!--            &lt;!&ndash;                        android:orientation="horizontal"&ndash;&gt;-->
+<!--            &lt;!&ndash;                        android:layout_width="match_parent"&ndash;&gt;-->
+<!--            &lt;!&ndash;                        android:layout_height="35dp">&ndash;&gt;-->
+<!--            &lt;!&ndash;                        <TextView&ndash;&gt;-->
+<!--            &lt;!&ndash;                            android:layout_weight="1"&ndash;&gt;-->
+<!--            &lt;!&ndash;                            android:layout_width="0dp"&ndash;&gt;-->
+<!--            &lt;!&ndash;                            android:layout_height="wrap_content"/>&ndash;&gt;-->
+
+
+<!--            &lt;!&ndash;                        <com.qmuiteam.qmui.widget.roundwidget.QMUIRoundLinearLayout&ndash;&gt;-->
+<!--            &lt;!&ndash;                            android:gravity="center"&ndash;&gt;-->
+<!--            &lt;!&ndash;                            app:qmui_radiusBottomLeft="13dp"&ndash;&gt;-->
+<!--            &lt;!&ndash;                            app:qmui_radiusTopLeft="13dp"&ndash;&gt;-->
+<!--            &lt;!&ndash;                            app:qmui_backgroundColor="@color/white"&ndash;&gt;-->
+<!--            &lt;!&ndash;                            android:orientation="horizontal"&ndash;&gt;-->
+<!--            &lt;!&ndash;                            android:layout_width="100dp"&ndash;&gt;-->
+<!--            &lt;!&ndash;                            android:layout_height="wrap_content">&ndash;&gt;-->
+
+<!--            &lt;!&ndash;                            <androidx.cardview.widget.CardView&ndash;&gt;-->
+<!--            &lt;!&ndash;                                app:cardCornerRadius="20dp"&ndash;&gt;-->
+<!--            &lt;!&ndash;                                android:layout_width="27dp"&ndash;&gt;-->
+<!--            &lt;!&ndash;                                android:layout_height="27dp"&ndash;&gt;-->
+<!--            &lt;!&ndash;                                app:cardBackgroundColor="@color/title_red">&ndash;&gt;-->
+
+<!--            &lt;!&ndash;                                <ImageView&ndash;&gt;-->
+<!--            &lt;!&ndash;                                    android:layout_marginTop="-2dp"&ndash;&gt;-->
+<!--            &lt;!&ndash;                                    android:layout_gravity="center"&ndash;&gt;-->
+<!--            &lt;!&ndash;                                    android:src="@mipmap/person"&ndash;&gt;-->
+<!--            &lt;!&ndash;                                    android:layout_width="16dp"&ndash;&gt;-->
+<!--            &lt;!&ndash;                                    android:layout_height="wrap_content"/>&ndash;&gt;-->
+<!--            &lt;!&ndash;                            </androidx.cardview.widget.CardView>&ndash;&gt;-->
+
+<!--            &lt;!&ndash;                            <TextView&ndash;&gt;-->
+<!--            &lt;!&ndash;                                android:id="@+id/hand_map_personnub"&ndash;&gt;-->
+<!--            &lt;!&ndash;                                android:layout_marginLeft="3dp"&ndash;&gt;-->
+<!--            &lt;!&ndash;                                android:text="5"&ndash;&gt;-->
+<!--            &lt;!&ndash;                                android:textSize="13dp"&ndash;&gt;-->
+<!--            &lt;!&ndash;                                android:layout_width="0dp"&ndash;&gt;-->
+<!--            &lt;!&ndash;                                android:layout_weight="1"&ndash;&gt;-->
+<!--            &lt;!&ndash;                                android:layout_height="wrap_content"/>&ndash;&gt;-->
+<!--            &lt;!&ndash;                            <TextView&ndash;&gt;-->
+<!--            &lt;!&ndash;                                android:text="人走失中"&ndash;&gt;-->
+<!--            &lt;!&ndash;                                android:textSize="13dp"&ndash;&gt;-->
+<!--            &lt;!&ndash;                                android:layout_width="wrap_content"&ndash;&gt;-->
+<!--            &lt;!&ndash;                                android:layout_height="wrap_content"/>&ndash;&gt;-->
+
+<!--            &lt;!&ndash;                        </com.qmuiteam.qmui.widget.roundwidget.QMUIRoundLinearLayout>&ndash;&gt;-->
+
+<!--            &lt;!&ndash;                    </LinearLayout>&ndash;&gt;-->
+<!--            &lt;!&ndash;                    <LinearLayout&ndash;&gt;-->
+<!--            &lt;!&ndash;                        android:layout_marginBottom="5dp"&ndash;&gt;-->
+<!--            &lt;!&ndash;                        android:orientation="horizontal"&ndash;&gt;-->
+<!--            &lt;!&ndash;                        android:layout_width="match_parent"&ndash;&gt;-->
+<!--            &lt;!&ndash;                        android:layout_height="35dp">&ndash;&gt;-->
+<!--            &lt;!&ndash;                        <TextView&ndash;&gt;-->
+<!--            &lt;!&ndash;                            android:layout_weight="1"&ndash;&gt;-->
+<!--            &lt;!&ndash;                            android:layout_width="0dp"&ndash;&gt;-->
+<!--            &lt;!&ndash;                            android:layout_height="wrap_content"/>&ndash;&gt;-->
+
+
+<!--            &lt;!&ndash;                        <com.qmuiteam.qmui.widget.roundwidget.QMUIRoundLinearLayout&ndash;&gt;-->
+
+<!--            &lt;!&ndash;                            android:gravity="center"&ndash;&gt;-->
+<!--            &lt;!&ndash;                            app:qmui_radiusBottomLeft="13dp"&ndash;&gt;-->
+<!--            &lt;!&ndash;                            app:qmui_radiusTopLeft="13dp"&ndash;&gt;-->
+<!--            &lt;!&ndash;                            app:qmui_backgroundColor="@color/white"&ndash;&gt;-->
+<!--            &lt;!&ndash;                            android:orientation="horizontal"&ndash;&gt;-->
+<!--            &lt;!&ndash;                            android:layout_width="100dp"&ndash;&gt;-->
+<!--            &lt;!&ndash;                            android:layout_height="wrap_content">&ndash;&gt;-->
+
+<!--            &lt;!&ndash;                            <androidx.cardview.widget.CardView&ndash;&gt;-->
+<!--            &lt;!&ndash;                                app:cardCornerRadius="20dp"&ndash;&gt;-->
+<!--            &lt;!&ndash;                                android:layout_width="27dp"&ndash;&gt;-->
+<!--            &lt;!&ndash;                                android:layout_height="27dp"&ndash;&gt;-->
+<!--            &lt;!&ndash;                                app:cardBackgroundColor="@color/title_red">&ndash;&gt;-->
+
+<!--            &lt;!&ndash;                                <ImageView&ndash;&gt;-->
+<!--            &lt;!&ndash;                                    android:layout_gravity="center"&ndash;&gt;-->
+<!--            &lt;!&ndash;                                    android:src="@mipmap/flag"&ndash;&gt;-->
+<!--            &lt;!&ndash;                                    android:layout_width="16dp"&ndash;&gt;-->
+<!--            &lt;!&ndash;                                    android:layout_height="wrap_content"/>&ndash;&gt;-->
+
+<!--            &lt;!&ndash;                            </androidx.cardview.widget.CardView>&ndash;&gt;-->
+
+<!--            &lt;!&ndash;                            <TextView&ndash;&gt;-->
+<!--            &lt;!&ndash;                                android:id="@+id/hand_map_teamnub"&ndash;&gt;-->
+<!--            &lt;!&ndash;                                android:layout_marginLeft="3dp"&ndash;&gt;-->
+<!--            &lt;!&ndash;                                android:text="5"&ndash;&gt;-->
+<!--            &lt;!&ndash;                                android:textSize="13dp"&ndash;&gt;-->
+<!--            &lt;!&ndash;                                android:layout_width="0dp"&ndash;&gt;-->
+<!--            &lt;!&ndash;                                android:layout_weight="1"&ndash;&gt;-->
+<!--            &lt;!&ndash;                                android:layout_height="wrap_content"/>&ndash;&gt;-->
+<!--            &lt;!&ndash;                            <TextView&ndash;&gt;-->
+<!--            &lt;!&ndash;                                android:text="队行动中"&ndash;&gt;-->
+<!--            &lt;!&ndash;                                android:textSize="13dp"&ndash;&gt;-->
+<!--            &lt;!&ndash;                                android:layout_width="wrap_content"&ndash;&gt;-->
+<!--            &lt;!&ndash;                                android:layout_height="wrap_content"/>&ndash;&gt;-->
+<!--            &lt;!&ndash;                        </com.qmuiteam.qmui.widget.roundwidget.QMUIRoundLinearLayout>&ndash;&gt;-->
+
+<!--            &lt;!&ndash;                    </LinearLayout>&ndash;&gt;-->
+<!--            &lt;!&ndash;                </LinearLayout>&ndash;&gt;-->
+<!--            &lt;!&ndash;            </RelativeLayout>&ndash;&gt;-->
+
+<!--            <androidx.recyclerview.widget.RecyclerView-->
+<!--                android:id="@+id/hand_recycleview"-->
+<!--                android:layout_width="match_parent"-->
+<!--                android:layout_height="wrap_content"/>-->
+
+<!--        </RelativeLayout>-->
+
+<!--    </com.example.aisearch.ui.volunteer.action.index.fragments.RecyclerScrollView>-->
+
+
+</RelativeLayout>

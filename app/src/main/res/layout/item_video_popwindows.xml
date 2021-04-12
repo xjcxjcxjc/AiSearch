@@ -1,0 +1,292 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/half_transparent">
+
+    <ImageView
+        android:id="@+id/video_popwindows_titleimg1"
+        android:layout_marginLeft="15dp"
+        android:layout_marginTop="40dp"
+        android:src="@mipmap/arrow6"
+        android:layout_width="15dp"
+        android:layout_height="15dp"/>
+
+    <TextView
+        android:id="@+id/video_popwindows_title1"
+        android:layout_toRightOf="@id/video_popwindows_titleimg1"
+        android:layout_marginLeft="15dp"
+        android:layout_marginTop="37dp"
+        android:text="第3节 - 水中拖救姿势"
+        android:textSize="13dp"
+        android:textColor="@color/white"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>
+
+    <ImageView
+        android:id="@+id/video_popwindows_ctntimg1"
+        android:layout_below="@id/video_popwindows_titleimg1"
+        android:layout_marginLeft="17dp"
+        android:layout_marginTop="10dp"
+        android:src="@mipmap/arrow7"
+        android:layout_width="10dp"
+        android:layout_height="10dp"/>
+
+    <TextView
+        android:id="@+id/video_popwindows_item1"
+        android:layout_toRightOf="@id/video_popwindows_ctntimg1"
+        android:layout_below="@id/video_popwindows_title1"
+        android:layout_marginLeft="18dp"
+        android:layout_marginTop="7dp"
+        android:text="水中拖救的重要性"
+        android:textSize="11dp"
+        android:textColor="@color/white"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>
+
+    <TextView
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="10dp"
+        android:layout_below="@id/video_popwindows_title1"
+        android:layout_marginLeft="18dp"
+        android:layout_marginTop="6dp"
+        android:text="100%"
+        android:textSize="11dp"
+        android:textColor="@color/white"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>
+
+
+    <ImageView
+        android:id="@+id/video_popwindows_ctntimg2"
+        android:layout_below="@id/video_popwindows_ctntimg1"
+        android:layout_marginLeft="17dp"
+        android:layout_marginTop="10dp"
+        android:src="@mipmap/arrow7"
+        android:layout_width="10dp"
+        android:layout_height="10dp"/>
+
+    <TextView
+        android:id="@+id/video_popwindows_item2"
+        android:layout_toRightOf="@id/video_popwindows_ctntimg2"
+        android:layout_below="@id/video_popwindows_item1"
+        android:layout_marginLeft="18dp"
+        android:layout_marginTop="6dp"
+        android:text="习题"
+        android:textSize="11dp"
+        android:textColor="@color/white"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>
+    <TextView
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="10dp"
+        android:layout_below="@id/video_popwindows_item1"
+        android:layout_marginLeft="18dp"
+        android:layout_marginTop="6dp"
+        android:text="100%"
+        android:textSize="11dp"
+        android:textColor="@color/white"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>
+
+    <ImageView
+        android:id="@+id/video_popwindows_ctntimg3"
+        android:layout_below="@id/video_popwindows_ctntimg2"
+        android:layout_marginLeft="17dp"
+        android:layout_marginTop="10dp"
+        android:src="@mipmap/arrow8"
+        android:layout_width="10dp"
+        android:layout_height="10dp"/>
+
+    <TextView
+        android:id="@+id/video_popwindows_item3"
+        android:layout_toRightOf="@id/video_popwindows_ctntimg3"
+        android:layout_below="@id/video_popwindows_item2"
+        android:layout_marginLeft="18dp"
+        android:layout_marginTop="6dp"
+        android:text="动作的优点"
+        android:textSize="11dp"
+        android:textColor="#679cf8"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>
+    <TextView
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="10dp"
+        android:layout_below="@id/video_popwindows_item2"
+        android:layout_marginLeft="18dp"
+        android:layout_marginTop="6dp"
+        android:text="34%"
+        android:textSize="11dp"
+        android:textColor="#679cf8"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>
+    <ImageView
+        android:id="@+id/video_popwindows_ctntimg4"
+        android:layout_below="@id/video_popwindows_ctntimg3"
+        android:layout_marginLeft="17dp"
+        android:layout_marginTop="10dp"
+        android:src="@mipmap/arrow7"
+        android:layout_width="11dp"
+        android:layout_height="10dp"/>
+
+    <TextView
+        android:id="@+id/video_popwindows_item4"
+        android:layout_toRightOf="@id/video_popwindows_ctntimg3"
+        android:layout_below="@id/video_popwindows_item3"
+        android:layout_marginLeft="18dp"
+        android:layout_marginTop="6dp"
+        android:text="习题"
+        android:textSize="11dp"
+        android:textColor="@color/white"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>
+    <TextView
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="10dp"
+        android:layout_below="@id/video_popwindows_item3"
+        android:layout_marginLeft="18dp"
+        android:layout_marginTop="6dp"
+        android:text="0%"
+        android:textSize="11dp"
+        android:textColor="@color/white"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>
+
+    <ImageView
+        android:id="@+id/video_popwindows_ctntimg5"
+        android:layout_below="@id/video_popwindows_ctntimg4"
+        android:layout_marginLeft="17dp"
+        android:layout_marginTop="10dp"
+        android:src="@mipmap/arrow7"
+        android:layout_width="11dp"
+        android:layout_height="10dp"/>
+
+    <TextView
+        android:id="@+id/video_popwindows_item5"
+        android:layout_toRightOf="@id/video_popwindows_ctntimg4"
+        android:layout_below="@id/video_popwindows_item4"
+        android:layout_marginLeft="18dp"
+        android:layout_marginTop="6dp"
+        android:text="动作的细节"
+        android:textSize="11dp"
+        android:textColor="@color/white"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>
+    <TextView
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="10dp"
+        android:layout_below="@id/video_popwindows_item4"
+        android:layout_marginLeft="18dp"
+        android:layout_marginTop="6dp"
+        android:text="0%"
+        android:textSize="11dp"
+        android:textColor="@color/white"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>
+
+    <ImageView
+        android:id="@+id/video_popwindows_ctntimg6"
+        android:layout_below="@id/video_popwindows_ctntimg5"
+        android:layout_marginLeft="17dp"
+        android:layout_marginTop="10dp"
+        android:src="@mipmap/arrow7"
+        android:layout_width="11dp"
+        android:layout_height="10dp"/>
+
+    <TextView
+        android:id="@+id/video_popwindows_item6"
+        android:layout_toRightOf="@id/video_popwindows_ctntimg5"
+        android:layout_below="@id/video_popwindows_item5"
+        android:layout_marginLeft="18dp"
+        android:layout_marginTop="6dp"
+        android:text="习题"
+        android:textSize="11dp"
+        android:textColor="@color/white"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>
+    <TextView
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="10dp"
+        android:layout_below="@id/video_popwindows_item5"
+        android:layout_marginLeft="18dp"
+        android:layout_marginTop="6dp"
+        android:text="0%"
+        android:textSize="11dp"
+        android:textColor="@color/white"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>
+
+    <ImageView
+        android:id="@+id/video_popwindows_ctntimg7"
+        android:layout_below="@id/video_popwindows_ctntimg6"
+        android:layout_marginLeft="17dp"
+        android:layout_marginTop="11dp"
+        android:src="@mipmap/arrow7"
+        android:layout_width="10dp"
+        android:layout_height="10dp"/>
+
+    <TextView
+        android:id="@+id/video_popwindows_item7"
+        android:layout_toRightOf="@id/video_popwindows_ctntimg6"
+        android:layout_below="@id/video_popwindows_item6"
+        android:layout_marginLeft="18dp"
+        android:layout_marginTop="6dp"
+        android:text="总结动作的要点"
+        android:textSize="11dp"
+        android:textColor="@color/white"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>
+    <TextView
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="10dp"
+        android:layout_below="@id/video_popwindows_item6"
+        android:layout_marginLeft="18dp"
+        android:layout_marginTop="6dp"
+        android:text="0%"
+        android:textSize="11dp"
+        android:textColor="@color/white"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>
+
+    <ImageView
+        android:id="@+id/video_popwindows_titleimg2"
+        android:layout_below="@id/video_popwindows_item7"
+        android:layout_marginLeft="15dp"
+        android:layout_marginTop="7dp"
+        android:src="@mipmap/arrow5"
+        android:layout_width="15dp"
+        android:layout_height="15dp"/>
+
+    <TextView
+        android:id="@+id/video_popwindows_title2"
+        android:layout_toRightOf="@id/video_popwindows_titleimg1"
+        android:layout_below="@id/video_popwindows_item7"
+        android:layout_marginTop="5dp"
+        android:layout_marginLeft="15dp"
+        android:text="第4节 - 上岸后急救方法1"
+        android:textSize="13dp"
+        android:textColor="@color/white"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>
+
+    <ImageView
+        android:id="@+id/video_popwindows_titleimg3"
+        android:layout_below="@id/video_popwindows_titleimg2"
+        android:layout_marginLeft="15dp"
+        android:layout_marginTop="7dp"
+        android:src="@mipmap/arrow5"
+        android:layout_width="15dp"
+        android:layout_height="15dp"/>
+
+    <TextView
+        android:id="@+id/video_popwindows_title3"
+        android:layout_toRightOf="@id/video_popwindows_titleimg1"
+        android:layout_below="@id/video_popwindows_titleimg2"
+        android:layout_marginTop="5dp"
+        android:layout_marginLeft="15dp"
+        android:text="第5节 - 上岸后急救方法2"
+        android:textSize="13dp"
+        android:textColor="@color/white"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>
+</RelativeLayout>

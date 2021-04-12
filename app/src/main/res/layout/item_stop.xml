@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<com.qmuiteam.qmui.widget.roundwidget.QMUIRoundLinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/dialog_layout"
+    android:layout_width="250dp"
+    android:layout_height="250dp"
+    android:gravity="center_horizontal"
+    android:orientation="vertical"
+    app:qmui_radius="10dp"
+    android:layout_marginBottom="10dp"
+    app:qmui_backgroundColor="@color/white">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:layout_weight="1"/>
+
+        <RelativeLayout
+            android:layout_width="40dp"
+            android:layout_height="40dp">
+
+            <Button
+                android:id="@+id/stopdialog_cancel"
+                android:background="@null"
+                android:layout_width="40dp"
+                android:layout_height="40dp"/>
+            <ImageView
+                android:layout_marginTop="13dp"
+                android:layout_marginLeft="12dp"
+                android:layout_width="15dp"
+                android:layout_height="15dp"
+                android:src="@mipmap/x"/>
+
+        </RelativeLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="250dp"
+        android:layout_height="100dp"
+        android:orientation="horizontal"
+        android:gravity="center">
+
+        <ImageView
+            android:src="@mipmap/heart1"
+            android:layout_width="40dp"
+            android:layout_height="40dp"/>
+
+        <TextView
+            android:textColor="@color/hospital_red"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_marginTop="-6dp"
+            android:text="..................."
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+        <ImageView
+            android:src="@mipmap/heart2"
+            android:layout_width="60dp"
+            android:layout_height="60dp"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:gravity="center"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+
+        <ImageView
+            android:id="@+id/stopdialog_swich"
+            android:src="@mipmap/swich"
+            android:layout_width="13dp"
+            android:layout_height="13dp"
+            android:layout_marginRight="5dp"/>
+
+
+        <TextView
+            android:textColor="@color/qmui_config_color_gray_4"
+            android:text="因其他事情冲突,暂时离开"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+    </LinearLayout>
+
+    <com.qmuiteam.qmui.widget.roundwidget.QMUIRoundButton
+        android:id="@+id/stopdialog_stop"
+        app:qmui_backgroundColor="@color/qmui_config_color_gray_7"
+        app:qmui_borderWidth="0dp"
+        app:qmui_radius="10dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginBottom="15dp"
+        android:text="暂停行动"
+        android:paddingTop="5dp"
+        android:textAlignment="center"
+        android:textStyle="bold"
+        android:textSize="15dp"
+        android:textColor="@color/white"
+        android:layout_width="200dp"
+        android:layout_height="30dp"/>
+
+
+</com.qmuiteam.qmui.widget.roundwidget.QMUIRoundLinearLayout>

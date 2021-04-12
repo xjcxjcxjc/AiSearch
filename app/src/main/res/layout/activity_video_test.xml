@@ -1,0 +1,187 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ui.volunteer.practice.video.VideoTestActivity"
+    android:background="@color/white"
+    android:fitsSystemWindows="true">
+
+    <LinearLayout
+        android:layout_marginBottom="10dp"
+        android:orientation="horizontal"
+        android:fitsSystemWindows="true"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <ImageView
+            android:id="@+id/practicetest_backimg"
+            android:layout_marginTop="15dp"
+            android:layout_marginLeft="30dp"
+            android:src="@mipmap/finish4"
+            android:layout_width="20dp"
+            android:layout_height="20dp"/>
+
+
+        <TextView
+            android:id="@+id/practicetest_title"
+            android:layout_marginTop="10dp"
+            android:layout_marginLeft="20dp"
+            android:text="陆地操之蛙泳练习"
+            android:textSize="20dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+
+        <TextView
+            android:layout_weight="1"
+            android:layout_width="1dp"
+            android:layout_height="wrap_content"/>
+
+        <androidx.cardview.widget.CardView
+            android:id="@+id/videotest_submitcard"
+            android:layout_marginRight="15dp"
+            android:layout_marginTop="10dp"
+            app:cardBackgroundColor="@color/title_blue"
+            app:cardCornerRadius="13dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+            <TextView
+                android:layout_marginBottom="3dp"
+                android:layout_marginTop="3dp"
+                android:layout_marginRight="10dp"
+                android:layout_marginLeft="10dp"
+                android:textSize="14dp"
+                android:textColor="@color/white"
+                android:text="提交"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"/>
+
+        </androidx.cardview.widget.CardView>
+
+
+
+    </LinearLayout>
+
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/practice_subject_nubcard"
+        android:layout_marginLeft="150dp"
+        android:layout_marginTop="73dp"
+        app:cardCornerRadius="20dp"
+        app:cardBackgroundColor="@color/title_blue"
+        android:layout_width="20dp"
+        android:layout_height="20dp">
+
+        <TextView
+            android:layout_gravity="center"
+            android:textColor="@color/white"
+            android:text="1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+
+    </androidx.cardview.widget.CardView>
+
+    <TextView
+        android:id="@+id/practice_subject_multiplechoice"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="40dp"
+        android:layout_toRightOf="@id/practice_subject_nubcard"
+        android:text="[多选]"
+        android:visibility="gone"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>
+
+    <TextView
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="70dp"
+        android:layout_toRightOf="@id/practice_subject_multiplechoice"
+        android:text="关于水上求生哪些说法正确（  ）"
+        android:textSize="19dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>
+
+    <RadioGroup
+        android:layout_marginLeft="150dp"
+        android:id="@+id/practice_subject_rg"
+        android:layout_below="@id/practice_subject_nubcard"
+        android:orientation="vertical"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+
+        <RadioButton
+            android:layout_marginTop="21dp"
+            android:button="@null"
+            android:background="@drawable/radiobtn_subject"
+            android:layout_width="15dp"
+            android:layout_height="15dp"/>
+
+        <RadioButton
+            android:layout_marginTop="21dp"
+            android:button="@null"
+            android:background="@drawable/radiobtn_subject"
+            android:layout_width="15dp"
+            android:layout_height="15dp"/>
+        <RadioButton
+            android:layout_marginTop="21dp"
+            android:button="@null"
+            android:background="@drawable/radiobtn_subject"
+            android:layout_width="15dp"
+            android:layout_height="15dp"/>
+
+        <RadioButton
+            android:layout_marginTop="21dp"
+            android:button="@null"
+            android:background="@drawable/radiobtn_subject"
+            android:layout_width="15dp"
+            android:layout_height="15dp"/>
+    </RadioGroup>
+
+    <LinearLayout
+        android:layout_below="@id/practice_subject_nubcard"
+        android:layout_toRightOf="@id/practice_subject_rg"
+        android:layout_marginLeft="15dp"
+        android:orientation="vertical"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:layout_marginTop="12dp"
+            android:text="A.在冷水中为了防止体温降低，应该持续的运动"
+            android:textSize="19dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+        <TextView
+            android:layout_marginTop="12dp"
+            android:text="B.成人在10摄氏度水温中可以生存4小时"
+            android:textSize="19dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+        <TextView
+            android:layout_marginTop="12dp"
+            android:text="C.缺乏淡水资源"
+            android:textSize="19dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+
+        <TextView
+            android:layout_marginTop="12dp"
+            android:text="D.海上缺乏参照物"
+            android:textSize="19dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+    </LinearLayout>
+    <TextView
+        android:layout_above="@id/video_test_barrecycle"
+        android:background="@color/qmui_config_color_gray_9"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"/>
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:layout_centerHorizontal="true"
+        android:layout_alignParentBottom="true"
+        android:id="@+id/video_test_barrecycle"
+        android:layout_width="wrap_content"
+        android:layout_height="30dp"/>
+    
+</RelativeLayout>

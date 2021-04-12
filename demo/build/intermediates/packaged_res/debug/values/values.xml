@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorAccent">#FF4081</color>
+    <color name="colorPrimary">#3F51B5</color>
+    <color name="colorPrimaryDark">#303F9F</color>
+    <dimen name="activity_horizontal_margin">16dp</dimen>
+    <dimen name="activity_vertical_margin">16dp</dimen>
+    <dimen name="fab_margin">16dp</dimen>
+    <string name="app_name">JMessageDemo</string>
+    <string name="getAddress">getAddress: %1$s</string>
+    <string name="getAppKey">getAppKey: %1$s</string>
+    <string name="getAvatarFile">getAvatarFile: %1$s</string>
+    <string name="getBirthday">getBirthday: %1$s</string>
+    <string name="getBlacklist">getBlacklist: %1$s</string>
+    <string name="getGender">getGender: %1$s</string>
+    <string name="getNickname">getNickname: %1$s</string>
+    <string name="getNoteText">getNoteText: %1$s</string>
+    <string name="getNotename">getNotename: %1$s</string>
+    <string name="getRegion">getRegion: %1$s</string>
+    <string name="getSignature">getSignature: %1$s</string>
+    <string name="getStar">getStar: %1$s</string>
+    <string name="getUserID">getUserID: %1$s</string>
+    <string name="getUserName">getUserName: %1$s</string>
+    <style name="MyDialogStyle">
+        <item name="android:windowBackground">@android:color/transparent</item>
+        <item name="android:windowFrame">@null</item>
+        <item name="android:windowNoTitle">true</item>
+        <item name="android:windowIsFloating">true</item>
+        <item name="android:windowIsTranslucent">true</item>
+        <item name="android:windowContentOverlay">@null</item>
+        <item name="android:windowAnimationStyle">@android:style/Animation.Dialog</item>
+        <item name="android:backgroundDimEnabled">true</item>
+    </style>
+    <declare-styleable name="BubbleView">
+        <attr format="dimension" name="arrowWidth"/>
+        <attr format="dimension" name="angle"/>
+        <attr format="dimension" name="arrowHeight"/>
+        <attr format="dimension" name="arrowPosition"/>
+        <attr format="color" name="bubbleColor"/>
+        <attr format="enum" name="arrowLocation">
+            <enum name="left" value="0x00"/>
+            <enum name="right" value="0x01"/>
+            <enum name="top" value="0x02"/>
+            <enum name="bottom" value="0x03"/>
+        </attr>
+    </declare-styleable>
+    <declare-styleable name="IndicatorView">
+        <attr format="color" name="indicatorColor"/>
+        <attr format="color" name="indicatorColorSelected"/>
+        <attr format="integer" name="indicatorWidth"/>
+        <attr format="integer" name="gravity"/>
+    </declare-styleable>
+    <declare-styleable name="StateButton">
+
+        <!--text color-->
+        <attr format="color|reference" name="normalTextColor"/>
+        <attr format="color|reference" name="pressedTextColor"/>
+        <attr format="color|reference" name="unableTextColor"/>
+
+        <!--stroke width and color, dash width, dash gap-->
+        <attr format="dimension|reference" name="strokeDashWidth"/>
+        <attr format="dimension|reference" name="strokeDashGap"/>
+        <attr format="dimension|reference" name="normalStrokeWidth"/>
+        <attr format="dimension|reference" name="pressedStrokeWidth"/>
+        <attr format="dimension|reference" name="unableStrokeWidth"/>
+        <attr format="color|reference" name="normalStrokeColor"/>
+        <attr format="color|reference" name="pressedStrokeColor"/>
+        <attr format="color|reference" name="unableStrokeColor"/>
+
+        <!--background color-->
+        <attr format="color|reference" name="normalBackgroundColor"/>
+        <attr format="color|reference" name="pressedBackgroundColor"/>
+        <attr format="color|reference" name="unableBackgroundColor"/>
+
+        <!--background radius-->
+        <attr format="dimension|reference" name="radius"/>
+        <attr format="boolean|reference" name="round"/>
+
+        <!--animation duration-->
+        <attr format="integer|reference" name="animationDuration"/>
+
+    </declare-styleable>
+</resources>

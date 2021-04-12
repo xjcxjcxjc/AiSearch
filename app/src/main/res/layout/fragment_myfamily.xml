@@ -1,0 +1,290 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <TextView
+        android:background="@color/backgroud_white"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"/>
+
+    <LinearLayout
+        android:layout_marginTop="130dp"
+        android:background="@mipmap/background28"
+        android:layout_width="match_parent"
+        android:layout_height="280dp"/>
+
+    <ImageView
+        android:src="@mipmap/background26"
+        android:scaleType="fitXY"
+        android:layout_width="match_parent"
+        android:layout_height="200dp"/>
+
+    <ImageView
+        android:layout_marginTop="10dp"
+        android:layout_marginRight="15dp"
+        android:layout_alignParentRight="true"
+        android:src="@mipmap/setting2"
+        android:layout_width="20dp"
+        android:layout_height="20dp"/>
+
+    <Button
+        android:id="@+id/mine2_setting"
+        android:background="@null"
+        android:layout_alignParentRight="true"
+        android:layout_width="50dp"
+        android:layout_height="50dp"/>
+
+
+    <com.qmuiteam.qmui.widget.QMUIRadiusImageView
+        android:id="@+id/mine2_headimg"
+        app:qmui_border_width="0dp"
+        app:qmui_corner_radius="40dp"
+        android:scaleType="centerCrop"
+        android:layout_marginTop="25dp"
+        android:layout_marginLeft="15dp"
+        android:layout_alignParentLeft="true"
+        android:src="@mipmap/mine_headimg"
+        android:layout_width="80dp"
+        android:layout_height="80dp"/>
+
+    <TextView
+        android:id="@+id/mine2_name"
+        android:layout_marginTop="33dp"
+        android:layout_marginLeft="15dp"
+        android:layout_toRightOf="@id/mine2_headimg"
+        android:textColor="@color/white"
+        android:textSize="20dp"
+        android:text="太阳"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>
+
+    <TextView
+        android:id="@+id/mine2_describe"
+        android:layout_below="@id/mine2_name"
+        android:layout_marginTop="7dp"
+        android:layout_marginLeft="15dp"
+        android:layout_marginRight="15dp"
+        android:layout_toRightOf="@id/mine2_headimg"
+        android:textColor="@color/white"
+        android:textSize="12dp"
+        android:text="当你快乐时，你要想，这快乐不是永恒的。当你痛苦时，你要想，这痛苦也不是永恒的。"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>
+
+
+    <LinearLayout
+        android:id="@+id/mine2_centerview"
+        android:layout_marginTop="115dp"
+        android:background="@mipmap/background27"
+        android:layout_width="match_parent"
+        android:layout_height="130dp"
+        android:orientation="horizontal">
+
+
+        <RelativeLayout
+            android:id="@+id/mine2_examine"
+            android:layout_marginLeft="25dp"
+            android:layout_marginTop="25dp"
+            android:layout_marginBottom="25dp"
+            android:layout_weight="1"
+            android:layout_width="1dp"
+            android:layout_height="match_parent">
+
+            <ImageView
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="15dp"
+                android:src="@mipmap/mine2_img1"
+                android:layout_width="40dp"
+                android:layout_height="40dp"/>
+
+            <TextView
+                android:layout_alignParentBottom="true"
+                android:layout_centerHorizontal="true"
+                android:text="我的行动"
+                android:textSize="13dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"/>
+
+        </RelativeLayout>
+        <RelativeLayout
+            android:id="@+id/mine2_search"
+            android:layout_marginTop="25dp"
+            android:layout_marginBottom="25dp"
+            android:layout_weight="1"
+            android:layout_width="1dp"
+            android:layout_height="match_parent">
+            <ImageView
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="15dp"
+                android:src="@mipmap/mine2_img4"
+                android:layout_width="40dp"
+                android:layout_height="40dp"/>
+
+            <TextView
+                android:layout_alignParentBottom="true"
+                android:layout_centerHorizontal="true"
+                android:text="寻人启事"
+                android:textSize="13dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"/>
+        </RelativeLayout>
+        <RelativeLayout
+            android:layout_marginTop="25dp"
+            android:layout_marginRight="25dp"
+            android:layout_marginBottom="25dp"
+            android:layout_weight="1"
+            android:layout_width="1dp"
+            android:layout_height="match_parent">
+            <ImageView
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="15dp"
+                android:src="@mipmap/mine2_img3"
+                android:layout_width="40dp"
+                android:layout_height="40dp"/>
+
+            <TextView
+                android:layout_alignParentBottom="true"
+                android:layout_centerHorizontal="true"
+                android:text="写感谢"
+                android:textSize="13dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"/>
+        </RelativeLayout>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_marginTop="-10dp"
+        android:orientation="vertical"
+        android:layout_below="@id/mine2_centerview"
+        android:layout_width="match_parent"
+        android:layout_height="170dp">
+
+
+        <RelativeLayout
+
+            android:id="@+id/mine2_familymsg"
+            android:layout_marginLeft="25dp"
+            android:layout_weight="1"
+            android:layout_width="match_parent"
+            android:layout_height="1dp">
+
+            <ImageView
+                android:layout_centerVertical="true"
+                android:src="@mipmap/mine2_img6"
+                android:layout_width="21dp"
+                android:layout_height="21dp"/>
+
+            <TextView
+
+                android:layout_marginLeft="50dp"
+                android:layout_centerVertical="true"
+                android:text="家属信息"
+                android:textSize="14dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"/>
+
+            <ImageView
+
+                android:layout_marginTop="22dp"
+                android:layout_marginRight="15dp"
+                android:layout_alignParentRight="true"
+                android:src="@mipmap/finish6"
+                android:layout_width="12dp"
+                android:layout_height="12dp"/>
+
+            <Button
+                android:layout_alignParentEnd="true"
+                android:background="@null"
+                android:layout_width="100dp"
+                android:layout_height="match_parent"/>
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/mine2_urgenthelp"
+            android:layout_marginLeft="25dp"
+            android:layout_weight="1"
+            android:layout_width="match_parent"
+            android:layout_height="1dp">
+
+            <ImageView
+
+                android:layout_centerVertical="true"
+                android:src="@mipmap/mine2_img7"
+                android:layout_width="21dp"
+                android:layout_height="21dp"/>
+
+            <TextView
+
+                android:layout_marginLeft="50dp"
+                android:layout_centerVertical="true"
+                android:text="紧急求助"
+                android:textSize="14dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"/>
+
+            <ImageView
+
+                android:layout_marginTop="22dp"
+                android:layout_marginRight="15dp"
+                android:layout_alignParentRight="true"
+                android:src="@mipmap/finish6"
+                android:layout_width="12dp"
+                android:layout_height="12dp"/>
+
+<!--            <Button-->
+
+<!--                android:layout_alignParentEnd="true"-->
+<!--                android:background="@null"-->
+<!--                android:layout_width="100dp"-->
+<!--                android:layout_height="match_parent"/>-->
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_marginLeft="25dp"
+            android:layout_weight="1"
+            android:layout_width="match_parent"
+            android:layout_height="1dp">
+
+            <ImageView
+
+                android:layout_centerVertical="true"
+                android:src="@mipmap/mine2_img8"
+                android:layout_width="21dp"
+                android:layout_height="21dp"/>
+
+            <TextView
+
+                android:layout_marginLeft="50dp"
+                android:layout_centerVertical="true"
+                android:text="推荐保险"
+                android:textSize="14dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"/>
+
+            <ImageView
+
+                android:layout_marginTop="22dp"
+                android:layout_marginRight="15dp"
+                android:layout_alignParentRight="true"
+                android:src="@mipmap/finish6"
+                android:layout_width="12dp"
+                android:layout_height="12dp"/>
+
+            <Button
+                android:layout_alignParentEnd="true"
+                android:background="@null"
+                android:layout_width="100dp"
+                android:layout_height="match_parent"/>
+        </RelativeLayout>
+
+
+
+    </LinearLayout>
+
+</RelativeLayout>

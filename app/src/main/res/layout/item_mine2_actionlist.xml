@@ -1,0 +1,280 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <LinearLayout
+        android:id="@+id/actioncenter_itemview"
+        android:layout_marginLeft="5dp"
+        android:gravity="center"
+        android:orientation="horizontal"
+        android:background="@mipmap/background7"
+        android:layout_width="350dp"
+        android:layout_height="120dp">
+
+        <androidx.cardview.widget.CardView
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="-2dp"
+            app:cardCornerRadius="5dp"
+            android:layout_width="80dp"
+            android:layout_height="90dp">
+
+            <RelativeLayout
+                android:gravity="center"
+                android:layout_width="80dp"
+                android:layout_height="90dp">
+
+                <ImageView
+                    android:id="@+id/actioncenter_headimg"
+                    android:layout_width="80dp"
+                    android:layout_height="90dp"
+                    android:scaleType="centerCrop"
+                    android:src="@mipmap/clipboard"
+                    android:background="@color/black"/>
+
+                <TextView
+                    android:id="@+id/actioncenter_actionnub"
+                    android:background="@color/half_transparent"
+                    android:gravity="center"
+                    android:elevation="10dp"
+                    android:layout_marginTop="-14dp"
+                    android:layout_below="@id/actioncenter_headimg"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="25人在行动"
+                    android:textColor="@color/white"
+                    android:textSize="10dp"/>
+
+            </RelativeLayout>
+        </androidx.cardview.widget.CardView>
+
+        <RelativeLayout
+            android:layout_marginTop="10dp"
+            android:layout_marginLeft="10dp"
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <LinearLayout
+                android:orientation="vertical"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+                <LinearLayout
+                    android:orientation="horizontal"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <TextView
+                        android:id="@+id/actioncenter_actionname"
+                        android:textSize="12dp"
+                        android:textColor="@color/black"
+                        android:text="海曙老人救援行动"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"/>
+
+
+
+                    <TextView
+                        android:id="@+id/actioncenter_actionstatus"
+                        android:textColor="@color/blue2"
+                        android:layout_marginLeft="5dp"
+                        android:textSize="10dp"
+                        android:text="行动中"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"/>
+
+                    <TextView
+                        android:layout_weight="1"
+                        android:layout_width="1dp"
+                        android:layout_height="wrap_content"/>
+
+                    <ImageView
+                        android:id="@+id/actioncenter_emerg1"
+                        android:layout_marginLeft="35dp"
+                        android:layout_marginTop="-4dp"
+                        android:src="@mipmap/flash3"
+                        android:layout_width="8dp"
+                        android:layout_height="wrap_content"/>
+
+                    <ImageView
+                        android:id="@+id/actioncenter_emerg2"
+                        android:layout_marginLeft="2dp"
+                        android:layout_marginTop="-4dp"
+                        android:src="@mipmap/flash3"
+                        android:layout_width="8dp"
+                        android:layout_height="wrap_content"/>
+
+                    <ImageView
+                        android:id="@+id/actioncenter_emerg3"
+                        android:layout_marginLeft="2dp"
+                        android:layout_marginTop="-4dp"
+                        android:src="@mipmap/flash3"
+                        android:layout_width="8dp"
+                        android:layout_height="wrap_content"/>
+
+                    <ImageView
+                        android:id="@+id/actioncenter_emerg4"
+                        android:layout_marginLeft="2dp"
+                        android:layout_marginTop="-4dp"
+                        android:src="@mipmap/flash3"
+                        android:layout_width="8dp"
+                        android:layout_height="wrap_content"/>
+
+                    <ImageView
+                        android:id="@+id/actioncenter_emerg5"
+                        android:layout_marginLeft="2dp"
+                        android:layout_marginTop="-4dp"
+                        android:layout_marginRight="25dp"
+                        android:src="@mipmap/flash3"
+                        android:layout_width="8dp"
+                        android:layout_height="wrap_content"/>
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_marginTop="-5dp"
+                    android:gravity="center"
+                    android:orientation="horizontal"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content">
+
+                    <ImageView
+                        android:src="@mipmap/clock"
+                        android:layout_width="15dp"
+                        android:layout_height="wrap_content"/>
+
+                    <TextView
+                        android:id="@+id/actioncenter_actiontime"
+                        android:layout_marginLeft="5dp"
+                        android:text="2020年12月1日8:00——12月2日8:00"
+                        android:textSize="11dp"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"/>
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_marginTop="-7dp"
+                    android:gravity="center"
+                    android:orientation="horizontal"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content">
+
+                    <ImageView
+                        android:src="@mipmap/map"
+                        android:layout_width="15dp"
+                        android:layout_height="wrap_content"/>
+
+                    <TextView
+                        android:id="@+id/actioncenter_location"
+                        android:layout_marginLeft="5dp"
+                        android:text="宁波市海曙区学院路附近"
+                        android:textSize="11dp"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"/>
+
+                </LinearLayout>
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+                    <com.qmuiteam.qmui.widget.roundwidget.QMUIRoundRelativeLayout
+                        app:qmui_borderWidth="0.5dp"
+                        app:qmui_radius="10dp"
+                        app:qmui_borderColor="@color/blue2"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content">
+
+                        <TextView
+                            android:id="@+id/actioncenter_lable1"
+                            android:layout_marginRight="5dp"
+                            android:layout_marginLeft="5dp"
+                            android:textColor="@color/text_gray1"
+                            android:textSize="9dp"
+                            android:text="城市寻人"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"/>
+
+                    </com.qmuiteam.qmui.widget.roundwidget.QMUIRoundRelativeLayout>
+
+                    <com.qmuiteam.qmui.widget.roundwidget.QMUIRoundRelativeLayout
+                        android:layout_marginLeft="4dp"
+                        app:qmui_borderWidth="0.5dp"
+                        app:qmui_radius="10dp"
+                        app:qmui_borderColor="@color/blue2"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content">
+
+                        <TextView
+                            android:id="@+id/actioncenter_lable2"
+                            android:layout_marginRight="5dp"
+                            android:layout_marginLeft="5dp"
+                            android:textColor="@color/text_gray1"
+                            android:textSize="9dp"
+                            android:text="志愿保险"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"/>
+
+                    </com.qmuiteam.qmui.widget.roundwidget.QMUIRoundRelativeLayout>
+
+                    <com.qmuiteam.qmui.widget.roundwidget.QMUIRoundRelativeLayout
+                        android:layout_marginLeft="4dp"
+                        app:qmui_borderWidth="0.5dp"
+                        app:qmui_radius="10dp"
+                        app:qmui_borderColor="@color/blue2"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content">
+
+
+                        <TextView
+                            android:id="@+id/actioncenter_lable3"
+                            android:layout_marginRight="5dp"
+                            android:layout_marginLeft="5dp"
+                            android:textColor="@color/text_gray1"
+                            android:textSize="9dp"
+                            android:text="低风险"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"/>
+
+                    </com.qmuiteam.qmui.widget.roundwidget.QMUIRoundRelativeLayout>
+                </LinearLayout>
+
+
+            </LinearLayout>
+
+
+            <androidx.cardview.widget.CardView
+
+                android:layout_marginBottom="22dp"
+                android:layout_marginRight="20dp"
+                android:layout_alignParentRight="true"
+                android:layout_alignParentBottom="true"
+                app:cardCornerRadius="10dp"
+                app:cardBackgroundColor="@color/title_red"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+
+                <TextView
+
+                    android:id="@+id/mine2_actionlist_type"
+                    android:layout_marginRight="10dp"
+                    android:layout_marginLeft="10dp"
+                    android:textSize="12dp"
+                    android:textColor="@color/white"
+                    android:text="提交信息"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"/>
+
+
+
+            </androidx.cardview.widget.CardView>
+
+        </RelativeLayout>
+
+
+    </LinearLayout>
+
+</FrameLayout>

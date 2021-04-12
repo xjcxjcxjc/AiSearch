@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ui.family.myfamily.UrgentHelpActivity"
+    android:background="@color/title_red"
+    android:fitsSystemWindows="true">
+
+    <TextView
+        android:background="@color/backgroud_white"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"/>
+
+    <LinearLayout
+        android:id="@+id/top"
+        android:background="@color/title_red"
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="45dp">
+
+        <RelativeLayout
+            android:layout_marginTop="10dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+            <Button
+                android:id="@+id/finish"
+                android:background="@null"
+                android:layout_width="40dp"
+                android:layout_height="wrap_content"/>
+
+
+            <ImageView
+                android:layout_marginTop="5dp"
+                android:layout_marginLeft="12dp"
+                android:src="@mipmap/finish"
+                android:layout_width="18dp"
+                android:layout_height="18dp"/>
+
+        </RelativeLayout>
+
+        <TextView
+            android:layout_weight="1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+
+        <TextView
+            android:layout_marginTop="14dp"
+            android:layout_marginRight="25dp"
+            android:textStyle="bold"
+            android:text="紧急救助"
+            android:textSize="@dimen/title"
+            android:textColor="@color/white"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"/>
+
+        <TextView
+            android:layout_weight="1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+
+
+    </LinearLayout>
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/urgent_recycle"
+        android:background="@color/backgroud_white"
+        android:layout_below="@id/top"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"/>
+
+
+    <androidx.cardview.widget.CardView
+        android:layout_alignParentBottom="true"
+        app:cardCornerRadius="20dp"
+        android:layout_marginTop="1dp"
+        android:layout_marginBottom="12dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="90dp"
+        android:layout_width="match_parent"
+        android:layout_height="30dp">
+
+        <EditText
+
+            android:layout_marginTop="2dp"
+            android:layout_marginLeft="15dp"
+            android:hint="很高兴为您服务，请描述你的问题"
+            android:textSize="12dp"
+            android:background="@null"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"/>
+
+
+    </androidx.cardview.widget.CardView>
+
+    <androidx.cardview.widget.CardView
+
+        app:cardCornerRadius="15dp"
+        app:cardBackgroundColor="#fe9696"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="12dp"
+        android:layout_marginRight="15dp"
+        android:layout_width="65dp"
+        android:layout_height="30dp">
+
+        <TextView
+            android:layout_gravity="center"
+            android:text="发送"
+            android:textColor="@color/white"
+            android:textSize="12dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+
+    </androidx.cardview.widget.CardView>
+</RelativeLayout>

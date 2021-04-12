@@ -1,0 +1,567 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:orientation="vertical"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/title_blue"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <TextView
+        android:background="@color/backgroud_white"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"/>
+
+    <ImageView
+        android:scaleType="centerCrop"
+        android:src="@mipmap/background18"
+        android:layout_width="match_parent"
+        android:layout_height="200dp"/>
+
+    <ImageView
+        android:layout_marginTop="120dp"
+        android:layout_width="match_parent"
+        android:background="#f9f9f9"
+        android:layout_height="200dp"/>
+
+    <ImageView
+        android:layout_marginTop="53dp"
+        android:layout_marginRight="15dp"
+        android:layout_alignParentRight="true"
+        android:background="@mipmap/finish5"
+        android:backgroundTint="#fff"
+        android:layout_width="8dp"
+        android:layout_height="12dp"/>
+
+    <ImageView
+        android:layout_marginTop="10dp"
+        android:layout_marginRight="15dp"
+        android:layout_alignParentRight="true"
+        android:src="@mipmap/setting2"
+        android:layout_width="20dp"
+        android:layout_height="20dp"/>
+
+
+    <Button
+        android:id="@+id/mine_setting"
+        android:background="@null"
+        android:layout_alignParentRight="true"
+        android:layout_width="50dp"
+        android:layout_height="50dp"/>
+
+
+    <com.qmuiteam.qmui.widget.QMUIRadiusImageView
+        android:id="@+id/mine_headimg"
+        app:qmui_border_width="0dp"
+        app:qmui_corner_radius="40dp"
+        android:scaleType="centerCrop"
+        android:layout_marginTop="25dp"
+        android:layout_marginLeft="15dp"
+        android:layout_alignParentLeft="true"
+        android:src="@mipmap/mine_headimg"
+        android:layout_width="80dp"
+        android:layout_height="80dp"/>
+
+    <TextView
+        android:id="@+id/mine_name"
+        android:layout_marginTop="33dp"
+        android:layout_marginLeft="15dp"
+        android:layout_toRightOf="@id/mine_headimg"
+        android:textColor="@color/white"
+        android:textSize="20dp"
+        android:text="蓝鹰"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>
+
+    <!-- 等级 -->
+    <androidx.cardview.widget.CardView
+        android:id="@+id/mine_lvnubcard"
+        android:layout_below="@id/mine_headimg"
+        android:layout_alignParentLeft="true"
+        android:layout_marginLeft="27dp"
+        android:layout_marginTop="-15dp"
+        app:cardCornerRadius="10dp"
+        app:cardBackgroundColor="#f8b21e"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:layout_marginRight="5dp"
+            android:layout_marginLeft="15dp"
+            android:orientation="horizontal"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:id="@+id/mine_lv"
+                android:textColor="@color/white"
+                android:layout_marginRight="5dp"
+                android:text="Lv4"
+                android:textSize="11dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"/>
+            <TextView
+                android:textColor="@color/white"
+                android:text="队员"
+                android:textSize="10dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"/>
+
+        </LinearLayout>
+    </androidx.cardview.widget.CardView>
+
+    <androidx.cardview.widget.CardView
+        android:layout_below="@id/mine_headimg"
+        android:layout_alignParentLeft="true"
+        android:layout_marginLeft="22dp"
+        android:layout_marginTop="-15dp"
+        app:cardCornerRadius="10dp"
+        android:background="@color/white"
+        android:layout_width="15dp"
+        android:layout_height="15dp">
+
+        <ImageView
+            android:layout_gravity="center"
+            android:src="@mipmap/mine_lv"
+            android:layout_width="12dp"
+            android:layout_height="12dp"/>
+
+    </androidx.cardview.widget.CardView>
+
+
+    <!-- 徽章 -->
+    <androidx.cardview.widget.CardView
+        android:id="@+id/mine_badgenubcard"
+        android:layout_below="@id/mine_name"
+        android:layout_toRightOf="@id/mine_headimg"
+        android:layout_marginLeft="8dp"
+        android:layout_marginTop="15dp"
+        app:cardCornerRadius="10dp"
+        app:cardBackgroundColor="@color/white"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:layout_marginBottom="1dp"
+            android:layout_marginTop="1dp"
+            android:layout_marginRight="8dp"
+            android:layout_marginLeft="8dp"
+            android:orientation="horizontal"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+            <ImageView
+                android:layout_marginTop="2dp"
+                android:layout_marginRight="3dp"
+                android:src="@mipmap/mine_flag"
+                android:layout_width="12dp"
+                android:layout_height="12dp"/>
+
+            <TextView
+                android:id="@+id/mine_badgenub"
+                android:textColor="@color/black"
+                android:layout_marginRight="3dp"
+                android:text="18"
+                android:textSize="11dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"/>
+            <TextView
+                android:textColor="@color/black"
+                android:text="徽章"
+                android:textSize="11dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"/>
+
+        </LinearLayout>
+    </androidx.cardview.widget.CardView>
+
+    <!-- 证书 -->
+    <androidx.cardview.widget.CardView
+        android:id="@+id/mine_certificatenubcard"
+        android:layout_below="@id/mine_name"
+        android:layout_toRightOf="@id/mine_badgenubcard"
+        android:layout_marginLeft="8dp"
+        android:layout_marginTop="15dp"
+        app:cardCornerRadius="10dp"
+        app:cardBackgroundColor="@color/white"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:layout_marginBottom="1dp"
+            android:layout_marginTop="1dp"
+            android:layout_marginRight="8dp"
+            android:layout_marginLeft="8dp"
+            android:orientation="horizontal"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+            <ImageView
+                android:layout_marginTop="2dp"
+                android:layout_marginRight="3dp"
+                android:src="@mipmap/mine_book"
+                android:layout_width="12dp"
+                android:layout_height="12dp"/>
+
+            <TextView
+                android:id="@+id/mine_certificatenub"
+                android:textColor="@color/black"
+                android:layout_marginRight="3dp"
+                android:text="3"
+                android:textSize="11dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"/>
+
+            <TextView
+                android:textColor="@color/black"
+                android:text="证书"
+                android:textSize="11dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"/>
+
+        </LinearLayout>
+    </androidx.cardview.widget.CardView>
+    <LinearLayout
+        android:id="@+id/ll_1"
+        android:layout_below="@id/mine_headimg"
+        android:layout_width="match_parent"
+        android:layout_height="150dp"
+        android:orientation="horizontal">
+        <androidx.cardview.widget.CardView
+            android:layout_below="@id/mine_headimg"
+            android:layout_marginLeft="15dp"
+            android:layout_marginTop="25dp"
+            android:layout_marginBottom="5dp"
+            app:cardCornerRadius="10dp"
+            app:cardBackgroundColor="@color/white"
+            android:layout_weight="1"
+            android:layout_width="0dp"
+            android:layout_height="match_parent">
+            <RelativeLayout
+                android:id="@+id/mine_thankwall_morebtn"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <TextView
+                    android:id="@+id/mine_thanktext"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginTop="7dp"
+                    android:text="谢语墙"
+                    android:textSize="17dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"/>
+                <TextView
+                    android:id="@+id/tv_1"
+                    android:layout_below="@id/mine_thanktext"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginTop="7dp"
+                    android:text="感谢语数"
+                    android:textSize="12dp"
+                    android:textColor="#999"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"/>
+
+                <TextView
+                    android:id="@+id/tv_2"
+                    android:layout_below="@id/tv_1"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginTop="7dp"
+                    android:text="13条"
+                    android:textSize="17dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"/>
+
+                <TextView
+                    android:id="@+id/tv_3"
+                    android:layout_below="@id/tv_2"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginTop="7dp"
+                    android:text="本月收到5条"
+                    android:textSize="12dp"
+                    android:textColor="#999"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"/>
+
+                <ImageView
+                    android:layout_marginTop="13dp"
+                    android:layout_marginRight="5dp"
+                    android:layout_alignParentRight="true"
+                    android:src="@mipmap/finish5"
+                    android:layout_width="12dp"
+                    android:layout_height="12dp"/>
+
+
+            </RelativeLayout>
+        </androidx.cardview.widget.CardView>
+        <androidx.cardview.widget.CardView
+            android:layout_below="@id/mine_headimg"
+            android:layout_marginLeft="15dp"
+            android:layout_marginRight="15dp"
+            android:layout_marginTop="25dp"
+            android:layout_marginBottom="5dp"
+            app:cardCornerRadius="10dp"
+            app:cardBackgroundColor="@color/white"
+            android:layout_weight="1"
+            android:layout_width="0dp"
+            android:layout_height="match_parent">
+            <RelativeLayout
+                android:id="@+id/mine_actionbook_morebtn"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <TextView
+                    android:id="@+id/tv_action"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginTop="7dp"
+                    android:text="行动中心"
+                    android:textSize="17dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"/>
+                <TextView
+                    android:id="@+id/tv_4"
+                    android:layout_below="@id/tv_action"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginTop="7dp"
+                    android:text="志愿者时长"
+                    android:textSize="12dp"
+                    android:textColor="#999"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"/>
+
+                <TextView
+                    android:id="@+id/tv_5"
+                    android:layout_below="@id/tv_4"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginTop="7dp"
+                    android:text="146小时"
+                    android:textSize="17dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"/>
+
+                <TextView
+                    android:id="@+id/tv_6"
+                    android:layout_below="@id/tv_5"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginTop="7dp"
+                    android:text="本月行动19小时"
+                    android:textSize="12dp"
+                    android:textColor="#999"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"/>
+
+                <ImageView
+                    android:layout_marginTop="13dp"
+                    android:layout_marginRight="5dp"
+                    android:layout_alignParentRight="true"
+                    android:src="@mipmap/finish5"
+                    android:layout_width="12dp"
+                    android:layout_height="12dp"/>
+
+
+            </RelativeLayout>
+        </androidx.cardview.widget.CardView>
+
+    </LinearLayout>
+
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/mine_card3"
+        android:layout_below="@id/ll_1"
+        android:layout_above="@id/mine_card4"
+        android:layout_marginLeft="15dp"
+        android:layout_marginRight="15dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginBottom="10dp"
+        app:cardCornerRadius="10dp"
+        app:cardBackgroundColor="@color/white"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <TextView
+                android:id="@+id/mine_studyvideo"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="7dp"
+                android:text="课程学习"
+                android:textSize="17dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"/>
+
+            <Button
+                android:id="@+id/mine_studyvideo_morebtn"
+                android:background="@null"
+                android:layout_alignParentRight="true"
+                android:layout_marginTop="5dp"
+                android:layout_width="match_parent"
+                android:layout_height="30dp"/>
+
+
+            <ImageView
+                android:layout_marginTop="13dp"
+                android:layout_marginRight="5dp"
+                android:layout_alignParentRight="true"
+                android:src="@mipmap/finish5"
+                android:layout_width="12dp"
+                android:layout_height="12dp"/>
+
+            <TextView
+                android:layout_marginTop="11dp"
+                android:layout_marginRight="22dp"
+                android:layout_alignParentRight="true"
+                android:textSize="12dp"
+                android:textColor="@color/text_gray1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"/>
+
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/mine_studyvideo_recycle"
+                android:layout_marginTop="35dp"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"/>
+
+        </RelativeLayout>
+    </androidx.cardview.widget.CardView>
+
+
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/mine_card4"
+        android:layout_marginLeft="15dp"
+        android:layout_marginRight="15dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginBottom="10dp"
+        app:cardCornerRadius="10dp"
+        app:cardBackgroundColor="@color/white"
+        android:layout_width="match_parent"
+        android:layout_height="150dp"
+        android:layout_alignParentBottom="true">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <Button
+                android:id="@+id/mine_organization_morebtn"
+                android:background="@null"
+                android:layout_alignParentRight="true"
+                android:layout_marginTop="5dp"
+                android:layout_width="match_parent"
+                android:layout_height="30dp"/>
+
+            <TextView
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="7dp"
+                android:text="组织管理"
+                android:textSize="17dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"/>
+
+            <ImageView
+                android:layout_marginTop="13dp"
+                android:layout_marginRight="5dp"
+                android:layout_alignParentRight="true"
+                android:src="@mipmap/finish5"
+                android:layout_width="12dp"
+                android:layout_height="12dp"/>
+        </RelativeLayout>
+        <LinearLayout
+            android:layout_marginTop="40dp"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="horizontal">
+            <RelativeLayout
+                android:layout_weight="1"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content">
+                <androidx.cardview.widget.CardView
+                    android:id="@+id/cv_1"
+                    android:layout_centerHorizontal="true"
+                    android:layout_width="60dp"
+                    android:layout_height="60dp"
+                    app:cardCornerRadius="30dp"
+                    app:cardBackgroundColor="#65cbf8">
+                    <TextView
+                        android:layout_gravity="center"
+                        android:text="NBZYZXH"
+                        android:textSize="10dp"
+                        android:textColor="#fff"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"/>
+                </androidx.cardview.widget.CardView>
+                <TextView
+                    android:layout_centerHorizontal="true"
+                    android:textSize="12dp"
+                    android:textColor="#999"
+                    android:layout_marginTop="10dp"
+                    android:layout_alignBaseline="@id/cv_1"
+                    android:layout_below="@id/cv_1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="海曙志愿者协会"/>
+            </RelativeLayout>
+            <RelativeLayout
+                android:layout_weight="1"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content">
+                <androidx.cardview.widget.CardView
+                    android:id="@+id/cv_2"
+                    android:layout_centerHorizontal="true"
+                    android:layout_width="60dp"
+                    android:layout_height="60dp"
+                    app:cardCornerRadius="30dp"
+                    app:cardBackgroundColor="#65cbf8">
+                    <TextView
+                        android:layout_gravity="center"
+                        android:text="NBZYZXH"
+                        android:textSize="10dp"
+                        android:textColor="#fff"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"/>
+                </androidx.cardview.widget.CardView>
+                <TextView
+                    android:layout_marginTop="10dp"
+                    android:layout_below="@id/cv_2"
+                    android:layout_centerHorizontal="true"
+                    android:textSize="12dp"
+                    android:textColor="#999"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="海曙志愿者协会"/>
+            </RelativeLayout>
+            <RelativeLayout
+                android:layout_weight="1"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content">
+                <androidx.cardview.widget.CardView
+                    android:id="@+id/cv_3"
+                    android:layout_centerHorizontal="true"
+                    android:layout_width="60dp"
+                    android:layout_height="60dp"
+                    app:cardCornerRadius="30dp"
+                    app:cardBackgroundColor="#65cbf8">
+                    <TextView
+                        android:layout_gravity="center"
+                        android:text="NBZYZXH"
+                        android:textSize="10dp"
+                        android:textColor="#fff"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"/>
+                </androidx.cardview.widget.CardView>
+                <TextView
+                    android:layout_marginTop="10dp"
+                    android:layout_below="@id/cv_3"
+                    android:layout_centerHorizontal="true"
+                    android:textSize="12dp"
+                    android:textColor="#999"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="海曙志愿者协会"/>
+            </RelativeLayout>
+
+        </LinearLayout>
+    </androidx.cardview.widget.CardView>
+
+</RelativeLayout>

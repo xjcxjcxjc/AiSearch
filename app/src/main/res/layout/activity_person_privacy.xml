@@ -1,0 +1,315 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ui.volunteer.mine.SettingActivity"
+    android:background="@color/title_blue"
+    android:fitsSystemWindows="true"
+    android:id="@+id/background">
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:background="@color/white"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:id="@+id/search_top"
+            android:background="@color/title_blue"
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="45dp">
+
+            <RelativeLayout
+                android:layout_marginTop="10dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+
+                <Button
+                    android:id="@+id/actionlist_finish"
+                    android:background="@null"
+                    android:layout_width="40dp"
+                    android:layout_height="wrap_content"/>
+
+
+                <ImageView
+                    android:layout_marginTop="5dp"
+                    android:layout_marginLeft="12dp"
+                    android:src="@mipmap/finish"
+                    android:layout_width="18dp"
+                    android:layout_height="18dp"/>
+
+            </RelativeLayout>
+
+            <TextView
+                android:layout_weight="1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"/>
+
+            <TextView
+                android:layout_marginTop="14dp"
+                android:textStyle="bold"
+                android:text="个人信息"
+                android:textSize="@dimen/title"
+                android:textColor="@color/white"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"/>
+
+            <TextView
+                android:layout_weight="1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"/>
+
+            <ImageView
+                android:id="@+id/mine_privacychange"
+                android:layout_marginTop="5dp"
+                android:layout_marginRight="15dp"
+                android:src="@mipmap/exchange"
+                android:layout_width="22dp"
+                android:layout_height="wrap_content"/>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:background="@color/white"
+            android:layout_width="match_parent"
+            android:layout_height="50dp">
+
+            <TextView
+                android:layout_marginLeft="10dp"
+                android:layout_gravity="center_vertical"
+                android:textSize="@dimen/chatSizeL"
+                android:text="头像"
+                android:layout_weight="1"
+                android:layout_width="1dp"
+                android:layout_height="wrap_content"/>
+
+            <ImageView
+                android:layout_marginRight="5dp"
+                android:layout_gravity="center_vertical"
+                android:src="@mipmap/mine_headimg"
+                android:layout_width="35dp"
+                android:layout_height="35dp"/>
+
+
+            <ImageView
+                android:layout_gravity="center_vertical"
+                android:layout_marginRight="10dp"
+                android:src="@mipmap/finish5"
+                android:layout_width="15dp"
+                android:layout_height="15dp"/>
+
+
+        </LinearLayout>
+
+        <TextView
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:background="#f6f6f6"
+            android:layout_width="match_parent"
+            android:layout_height="1dp"/>
+
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:background="@color/white"
+            android:layout_width="match_parent"
+            android:layout_height="50dp">
+
+            <TextView
+                android:layout_marginLeft="10dp"
+                android:layout_gravity="center_vertical"
+                android:textSize="@dimen/chatSizeL"
+                android:text="实名认证"
+                android:layout_weight="1"
+                android:layout_width="1dp"
+                android:layout_height="wrap_content"/>
+
+
+            <ImageView
+                android:src="@mipmap/prove"
+                android:layout_marginRight="5dp"
+                android:layout_gravity="center_vertical"
+                android:layout_width="50dp"
+                android:layout_height="wrap_content"/>
+
+            <ImageView
+                android:layout_gravity="center_vertical"
+                android:layout_marginRight="10dp"
+                android:src="@mipmap/finish5"
+                android:layout_width="15dp"
+                android:layout_height="15dp"/>
+
+        </LinearLayout>
+
+        <TextView
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:background="#f6f6f6"
+            android:layout_width="match_parent"
+            android:layout_height="1dp"/>
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:background="@color/white"
+            android:layout_width="match_parent"
+            android:layout_height="50dp">
+
+            <TextView
+                android:layout_marginLeft="10dp"
+                android:layout_gravity="center_vertical"
+                android:textSize="@dimen/chatSizeL"
+                android:text="人脸录入"
+                android:layout_weight="1"
+                android:layout_width="1dp"
+                android:layout_height="wrap_content"/>
+
+
+
+            <com.qmuiteam.qmui.widget.roundwidget.QMUIRoundRelativeLayout
+                android:layout_marginRight="5dp"
+                android:layout_gravity="center_vertical"
+                android:layout_width="55dp"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:layout_marginBottom="1dp"
+                    android:textColor="@color/title_blue"
+                    android:textAlignment="center"
+                    android:text="已录入"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"/>
+
+
+            </com.qmuiteam.qmui.widget.roundwidget.QMUIRoundRelativeLayout>
+
+
+            <ImageView
+                android:layout_gravity="center_vertical"
+                android:layout_marginRight="10dp"
+                android:src="@mipmap/finish5"
+                android:layout_width="15dp"
+                android:layout_height="15dp"/>
+
+        </LinearLayout>
+        <TextView
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:background="#f6f6f6"
+            android:layout_width="match_parent"
+            android:layout_height="1dp"/>
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:background="@color/white"
+            android:layout_width="match_parent"
+            android:layout_height="50dp">
+
+            <TextView
+                android:layout_marginLeft="10dp"
+                android:layout_gravity="center_vertical"
+                android:textSize="@dimen/chatSizeL"
+                android:text="手机绑定"
+                android:layout_weight="1"
+                android:layout_width="1dp"
+                android:layout_height="wrap_content"/>
+
+            <TextView
+                android:layout_gravity="center"
+                android:textColor="@color/text_gray1"
+                android:textSize="@dimen/chatSizeL"
+                android:text="130******86"
+                android:layout_marginRight="5dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"/>
+
+            <ImageView
+                android:layout_gravity="center_vertical"
+                android:layout_marginRight="10dp"
+                android:src="@mipmap/finish5"
+                android:layout_width="15dp"
+                android:layout_height="15dp"/>
+
+        </LinearLayout>
+
+        <TextView
+            android:background="#f6f6f6"
+            android:layout_width="match_parent"
+            android:layout_height="7dp"/>
+
+
+        <LinearLayout
+            android:id="@+id/personprivacy_grade"
+            android:orientation="horizontal"
+            android:background="@color/white"
+            android:layout_width="match_parent"
+            android:layout_height="50dp">
+
+            <TextView
+                android:layout_marginLeft="10dp"
+                android:layout_gravity="center_vertical"
+                android:textSize="@dimen/chatSizeL"
+                android:text="等级信息"
+                android:layout_weight="1"
+                android:layout_width="1dp"
+                android:layout_height="wrap_content"/>
+
+
+            <ImageView
+                android:layout_gravity="center_vertical"
+                android:layout_marginRight="10dp"
+                android:src="@mipmap/finish5"
+                android:layout_width="15dp"
+                android:layout_height="15dp"/>
+
+        </LinearLayout>
+
+        <TextView
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:background="#f6f6f6"
+            android:layout_width="match_parent"
+            android:layout_height="1dp"/>
+        <LinearLayout
+            android:id="@+id/personprivacy_organization"
+            android:orientation="horizontal"
+            android:background="@color/white"
+            android:layout_width="match_parent"
+            android:layout_height="50dp">
+
+            <TextView
+                android:layout_marginLeft="10dp"
+                android:layout_gravity="center_vertical"
+                android:textSize="@dimen/chatSizeL"
+                android:text="所在组织"
+                android:layout_weight="1"
+                android:layout_width="1dp"
+                android:layout_height="wrap_content"/>
+
+            <ImageView
+                android:layout_gravity="center_vertical"
+                android:layout_marginRight="10dp"
+                android:src="@mipmap/finish5"
+                android:layout_width="15dp"
+                android:layout_height="15dp"/>
+
+        </LinearLayout>
+
+        <TextView
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:background="#f6f6f6"
+            android:layout_width="match_parent"
+            android:layout_height="1dp"/>
+
+    </LinearLayout>
+
+
+
+
+
+</LinearLayout>

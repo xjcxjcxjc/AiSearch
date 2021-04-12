@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent" android:layout_height="40dp"
+    android:background="#ffffff">
+    
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="2dp"
+        android:background="#f2f2f2"
+        android:id="@+id/view"
+        android:layout_marginTop="5dp"/>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="1001"
+        android:textColor="#666666"
+        android:id="@+id/tv_id"
+        android:layout_marginTop="10dp"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="蓝鹰"
+        android:textColor="#666666"
+        android:id="@+id/tv_name"
+        android:layout_marginLeft="60dp"
+        android:layout_alignTop="@id/tv_id"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="轿车"
+        android:textColor="#666666"
+        android:id="@+id/tv_traffic"
+        android:layout_marginLeft="130dp"
+        android:layout_alignTop="@id/tv_id"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="齐全"
+        android:textColor="#666666"
+        android:id="@+id/tv_equip"
+        android:layout_marginLeft="210dp"
+        android:layout_alignTop="@id/tv_id"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="已签到"
+        android:id="@+id/tv_status"
+        android:textColor="#666666"
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="25dp"
+        android:layout_alignTop="@id/tv_id"/>
+
+
+
+
+</RelativeLayout>

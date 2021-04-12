@@ -1,0 +1,203 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="horizontal"
+    android:layout_width="match_parent"
+    android:layout_height="120dp"
+    android:id="@+id/freshbird_item_view">
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <RelativeLayout
+            android:layout_marginTop="0dp"
+            android:layout_marginLeft="15dp"
+            android:layout_width="180dp"
+            android:layout_height="130dp">
+
+            <ImageView
+                android:src="@mipmap/backgrd3"
+                android:layout_width="180dp"
+                android:layout_height="130dp"/>
+
+            <TextView
+                android:id="@+id/freshbird_item_title2"
+                android:layout_marginTop="38dp"
+                android:layout_marginLeft="10dp"
+                android:textColor="@color/white"
+                android:textSize="15dp"
+                android:text="基础知识"
+                android:textAlignment="center"
+                android:layout_width="120dp"
+                android:layout_height="wrap_content"/>
+
+            <androidx.cardview.widget.CardView
+                android:layout_marginRight="3dp"
+                android:layout_marginBottom="20dp"
+                android:layout_alignParentEnd="true"
+                android:layout_alignParentBottom="true"
+                app:cardCornerRadius="5dp"
+                app:cardBackgroundColor="@color/half_transparent"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:id="@+id/freshbird_item_studynub"
+                    android:layout_marginLeft="5dp"
+                    android:layout_marginRight="5dp"
+                    android:textColor="@color/white"
+                    android:textSize="8dp"
+                    android:text="4321人已学"
+                    android:textAlignment="center"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"/>
+
+
+            </androidx.cardview.widget.CardView>
+
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_marginTop="10dp"
+            android:orientation="vertical"
+            android:layout_marginLeft="15dp"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <TextView
+                android:id="@+id/freshbird_item_title"
+                android:textSize="16dp"
+                android:textColor="@color/black"
+                android:text="基础知识"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"/>
+
+            <ImageView
+                android:id="@+id/freshbird_item_typeimg"
+                android:layout_centerInParent="true"
+                android:src="@mipmap/backgrd1"
+                android:layout_width="80dp"
+                android:layout_height="wrap_content"/>
+
+            <TextView
+                android:id="@+id/freshbird_item_progress"
+                android:layout_marginTop="5dp"
+                android:layout_below="@id/freshbird_item_title"
+                android:layout_marginRight="5dp"
+                android:textColor="@color/title_blue"
+                android:textSize="7dp"
+                android:text="已学100%"
+                android:textAlignment="center"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"/>
+
+            <TextView
+                android:id="@+id/freshbird_item_describe"
+                android:layout_marginTop="5dp"
+                android:layout_below="@id/freshbird_item_progress"
+                android:layout_marginRight="5dp"
+                android:textColor="@color/text_gray1"
+                android:textSize="11dp"
+                android:text="志愿者精神体现着个人对生命价值，社会，人类，和人生观的志愿者精神体现着个人对生命价值，社会，人类，和人生观的"
+                android:maxLines="2"
+                android:ellipsize="end"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"/>
+
+            <TextView
+                android:id="@+id/freshbird_item_title3"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="0dp"
+                android:layout_below="@id/freshbird_item_describe"
+                android:layout_marginRight="5dp"
+                android:textColor="@color/white"
+                android:textSize="9dp"
+                android:text="基础知识培训"
+                android:textAlignment="center"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"/>
+
+            <TextView
+                android:id="@+id/freshbird_item_hard"
+                android:layout_marginTop="10dp"
+                android:layout_below="@id/freshbird_item_title3"
+                android:layout_marginRight="5dp"
+                android:textColor="@color/text_gray1"
+                android:textSize="11dp"
+                android:text="难度系数"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"/>
+
+            <ImageView
+                android:id="@+id/freshbird_item_star1"
+                android:layout_marginTop="10dp"
+                android:layout_toRightOf="@id/freshbird_item_hard"
+                android:layout_below="@id/freshbird_item_title3"
+                android:src="@mipmap/prc_star1"
+                android:layout_width="12dp"
+                android:layout_height="12dp"/>
+
+            <ImageView
+                android:id="@+id/freshbird_item_star2"
+                android:layout_marginLeft="5dp"
+                android:layout_marginTop="10dp"
+                android:layout_toRightOf="@id/freshbird_item_star1"
+                android:layout_below="@id/freshbird_item_title3"
+                android:src="@mipmap/prc_star1"
+                android:layout_width="12dp"
+                android:layout_height="12dp"/>
+
+            <ImageView
+                android:id="@+id/freshbird_item_star3"
+                android:layout_marginLeft="5dp"
+                android:layout_marginTop="10dp"
+                android:layout_toRightOf="@id/freshbird_item_star2"
+                android:layout_below="@id/freshbird_item_title3"
+                android:src="@mipmap/prc_star1"
+                android:layout_width="12dp"
+                android:layout_height="12dp"/>
+
+            <ImageView
+                android:id="@+id/freshbird_item_star4"
+                android:layout_marginLeft="5dp"
+                android:layout_marginTop="10dp"
+                android:layout_toRightOf="@id/freshbird_item_star3"
+                android:layout_below="@id/freshbird_item_title3"
+                android:src="@mipmap/prc_star1"
+                android:layout_width="12dp"
+                android:layout_height="12dp"/>
+
+            <ImageView
+                android:id="@+id/freshbird_item_star5"
+                android:layout_marginLeft="5dp"
+                android:layout_marginTop="10dp"
+                android:layout_toRightOf="@id/freshbird_item_star4"
+                android:layout_below="@id/freshbird_item_title3"
+                android:src="@mipmap/prc_star1"
+                android:layout_width="12dp"
+                android:layout_height="12dp"/>
+
+        </RelativeLayout>
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/freshbird_item_black"
+        android:visibility="invisible"
+        android:background="@color/half_transparent"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="11dp"
+        android:layout_marginRight="5dp"
+        android:layout_marginLeft="15dp"/>
+
+    <ImageView
+        android:id="@+id/freshbird_item_lock"
+        android:visibility="invisible"
+        android:layout_centerInParent="true"
+        android:src="@mipmap/locj"
+        android:layout_width="30dp"
+        android:layout_height="wrap_content"/>
+
+</RelativeLayout>

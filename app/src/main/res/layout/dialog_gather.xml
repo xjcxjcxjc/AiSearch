@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent" android:layout_height="wrap_content"
+    android:background="@drawable/shape_icon_up">
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="30dp"
+        android:background="@drawable/shape_edittext_search2"
+        android:drawableLeft="@mipmap/search"
+        android:hint="搜索地址"
+        android:id="@+id/et_search"
+        android:paddingLeft="60dp"
+        android:drawablePadding="10dp"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="10dp"
+        android:layout_marginRight="110dp"
+        android:layout_marginLeft="20dp" />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="添加集合点"
+        android:textColor="#679cf8"
+        android:textSize="15dp"
+        android:layout_alignTop="@id/et_search"
+        android:layout_alignParentRight="true"
+        android:layout_marginTop="5dp"
+        android:layout_marginRight="20dp"/>
+    <androidx.recyclerview.widget.RecyclerView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/et_search"
+        android:layout_marginTop="20dp"
+        android:id="@+id/rv_gatherLocation"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"/>
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="取消"
+        android:background="#fff"
+        android:layout_alignParentBottom="true"
+        android:id="@+id/btn_cancle"/>
+</RelativeLayout>

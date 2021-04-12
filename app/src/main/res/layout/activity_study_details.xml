@@ -1,0 +1,269 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ui.volunteer.practice.StudyDetailsActivity">
+
+    <RelativeLayout
+        android:id="@+id/rel"
+        android:layout_width="match_parent"
+        android:layout_height="235dp">
+
+        <com.example.aisearch.ui.volunteer.practice.video.AiSearchVideoPlayer
+            android:id="@+id/detail_player"
+            android:layout_width="match_parent"
+            android:layout_height="235dp" />
+
+
+        <LinearLayout
+            android:id="@+id/bar"
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="70dp"
+            android:background="@color/qmui_config_color_transparent">
+
+        </LinearLayout>
+
+    </RelativeLayout>
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:fitsSystemWindows="true"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <ImageView
+            android:id="@+id/studydetail_backimg"
+            android:layout_marginTop="10dp"
+            android:layout_marginLeft="20dp"
+            android:src="@mipmap/finish"
+            android:layout_width="20dp"
+            android:layout_height="20dp"/>
+
+        <TextView
+            android:layout_weight="1"
+            android:layout_width="1dp"
+            android:layout_height="wrap_content"/>
+
+        <ImageView
+            android:id="@+id/studydetail_shareimg"
+            android:layout_marginTop="10dp"
+            android:layout_marginRight="20dp"
+            android:src="@mipmap/share3"
+            android:layout_width="20dp"
+            android:layout_height="20dp"/>
+
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/studydetail_title"
+        android:layout_marginTop="20dp"
+        android:layout_marginLeft="20dp"
+        android:layout_below="@id/rel"
+        android:textColor="@color/black"
+        android:textSize="19dp"
+        android:text="优秀志愿者心得"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>
+
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/studydetail_testcard"
+        android:layout_marginRight="20dp"
+        android:layout_marginTop="27dp"
+        android:layout_below="@id/rel"
+        android:layout_alignParentRight="true"
+        app:cardBackgroundColor="@color/title_blue"
+        app:cardCornerRadius="10dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:id="@+id/studydetail_test"
+            android:text="理论考试"
+            android:textColor="@color/white"
+            android:textSize="10dp"
+            android:layout_marginTop="2dp"
+            android:layout_marginBottom="2dp"
+            android:layout_marginLeft="8dp"
+            android:layout_marginRight="8dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+
+
+
+    </androidx.cardview.widget.CardView>
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/studydetail_signupcard"
+        android:layout_marginRight="10dp"
+        android:layout_marginTop="27dp"
+        android:layout_below="@id/rel"
+        android:layout_toLeftOf="@id/studydetail_testcard"
+        app:cardBackgroundColor="@color/title_blue"
+        app:cardCornerRadius="10dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:id="@+id/studydetail_signup"
+            android:text="实操报名"
+            android:textColor="@color/white"
+            android:textSize="10dp"
+            android:layout_marginTop="2dp"
+            android:layout_marginBottom="2dp"
+            android:layout_marginLeft="8dp"
+            android:layout_marginRight="8dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+
+    </androidx.cardview.widget.CardView>
+
+    <ImageView
+        android:id="@+id/studydetail_apparatusimg"
+        android:layout_marginTop="20dp"
+        android:layout_marginLeft="20dp"
+        android:layout_below="@id/studydetail_title"
+        android:src="@mipmap/apparatus"
+        android:layout_width="15dp"
+        android:layout_height="15dp"/>
+
+    <TextView
+        android:id="@+id/studydetail_apparatustitle"
+        android:layout_marginTop="19dp"
+        android:layout_marginLeft="10dp"
+        android:layout_toRightOf="@id/studydetail_apparatusimg"
+        android:layout_below="@id/studydetail_title"
+        android:text="器械要求"
+        android:textColor="@color/black"
+        android:textSize="13dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>
+
+    <TextView
+        android:id="@+id/studydetail_apparatus"
+        android:layout_marginTop="22dp"
+        android:layout_marginLeft="15dp"
+        android:layout_toRightOf="@id/studydetail_apparatustitle"
+        android:layout_below="@id/studydetail_title"
+        android:text="牛尾绳，救生衣，救生圈,还有"
+        android:maxLines="1"
+        android:ellipsize="end"
+        android:textColor="@color/black"
+        android:textSize="10dp"
+        android:layout_width="110dp"
+        android:layout_height="20dp"/>
+
+    <TextView
+        android:id="@+id/studydetail_watchnub"
+        android:layout_alignParentRight="true"
+        android:layout_marginTop="22dp"
+        android:layout_marginRight="20dp"
+        android:layout_below="@id/studydetail_title"
+        android:text="45人在看"
+        android:textColor="@color/black"
+        android:textSize="10dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>
+
+    <TextView
+        android:id="@+id/studydetail_describe"
+        android:layout_marginTop="20dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:layout_below="@id/studydetail_apparatustitle"
+        android:text="&#12288;&#12288;游泳时容易出现意外情况，包括水中抽筋
+游泳时容易出现意外情况，包括水中抽筋游泳时容易出现意外情况，包括水中抽筋游泳时容易出现意外情况，包括水中抽筋
+游泳时容易出现意外情况，包括水中抽筋抽筋游泳时容易出现意外情况，包括水中抽筋游泳时容易出现意外情况，包括水中抽筋
+游泳时容易出现意外情况，包括水中抽筋抽筋游泳时容易出现意外情况，包括水中抽筋游泳时容易出现意外情况，包括水中抽筋
+游泳时容易出现意外情况，包括水中抽筋"
+        android:maxLines="5"
+        android:textColor="@color/text_gray1"
+        android:textSize="13dp"
+        android:lineHeight="20dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>
+
+    <TextView
+        android:id="@+id/studydetail_departline"
+        android:layout_below="@id/rel"
+        android:layout_marginTop="250dp"
+        android:background="#f3f3f3"
+        android:layout_width="match_parent"
+        android:layout_height="6dp"/>
+
+    <TextView
+        android:id="@+id/studydetail_contenttitle"
+        android:layout_marginTop="20dp"
+        android:layout_marginLeft="20dp"
+        android:layout_below="@id/studydetail_departline"
+        android:textColor="@color/black"
+        android:textSize="19dp"
+        android:text="课程内容"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>
+
+    <ImageView
+        android:id="@+id/studydetail_arrow"
+        android:src="@mipmap/arrow4"
+        android:layout_alignParentRight="true"
+        android:layout_marginTop="30dp"
+        android:layout_marginRight="20dp"
+        android:layout_below="@id/studydetail_departline"
+        android:layout_width="13dp"
+        android:layout_height="13dp"/>
+
+    <TextView
+        android:id="@+id/studydetail_classnub"
+        android:layout_alignParentRight="true"
+        android:layout_toLeftOf="@id/studydetail_classnub"
+        android:layout_below="@id/studydetail_departline"
+        android:layout_marginTop="31dp"
+        android:layout_marginRight="40dp"
+        android:text="7节课"
+        android:textColor="@color/black"
+        android:textSize="10dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/studydetail_recycle"
+        android:layout_marginTop="20dp"
+        android:layout_below="@id/studydetail_contenttitle"
+        android:layout_width="match_parent"
+        android:layout_height="150dp"/>
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/studydetail_study"
+        android:visibility="invisible"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="15dp"
+        app:cardCornerRadius="25dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:cardBackgroundColor="@color/title_blue"
+        android:layout_marginLeft="15dp"
+        android:layout_marginRight="15dp"
+        >
+        <LinearLayout
+            android:gravity="center"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <TextView
+                android:layout_marginTop="5dp"
+                android:layout_marginBottom="5dp"
+                android:text="继续学习"
+                android:textSize="20dp"
+                android:textColor="@color/white"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"/>
+
+        </LinearLayout>
+
+
+
+    </androidx.cardview.widget.CardView>
+</RelativeLayout>

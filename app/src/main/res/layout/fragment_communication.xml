@@ -1,0 +1,162 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/title_blue"
+    android:id="@+id/community_main_backgrd"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="82dp">
+
+        <RelativeLayout
+            android:layout_marginTop="17dp"
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <RadioGroup
+
+                android:id="@+id/rg1"
+                android:layout_marginLeft="35dp"
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <RadioButton
+                    android:layout_marginRight="60dp"
+                    android:textAlignment="viewEnd"
+                    android:layout_weight="1"
+                    android:button="@null"
+                    android:background="@null"
+                    android:id="@+id/community_find"
+                    android:text="发现"
+                    android:textColor="@color/white"
+                    android:textSize="16dp"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"/>
+
+                <RadioButton
+                    android:textAlignment="viewStart"
+                    android:layout_weight="1"
+                    android:button="@null"
+                    android:background="@null"
+                    android:id="@+id/community_samecity"
+                    android:text="同城"
+                    android:textColor="@color/white"
+                    android:textSize="16dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"/>
+            </RadioGroup>
+            <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:layout_weight="1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"/>
+
+                <TextView
+                    android:id="@+id/community_city"
+                    android:layout_marginTop="2dp"
+                    android:layout_marginRight="55dp"
+                    android:text="宁波"
+                    android:textColor="@color/white"
+                    android:textSize="12dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"/>
+
+                <ImageView
+                    android:id="@+id/community_add"
+                    android:layout_marginTop="3dp"
+                    android:layout_marginRight="15dp"
+                    android:src="@mipmap/add"
+                    android:layout_width="17dp"
+                    android:layout_height="17dp"
+                    />
+
+            </LinearLayout>
+        </RelativeLayout>
+
+        <LinearLayout
+            android:layout_marginTop="3dp"
+            android:layout_marginBottom="8dp"
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center">
+
+            <TextView
+
+                android:id="@+id/background1"
+                android:layout_marginLeft="5dp"
+                android:layout_marginRight="60dp"
+                android:textAlignment="viewEnd"
+                android:background="@color/white"
+                android:textColor="@color/white"
+                android:layout_width="30dp"
+                android:layout_height="1.5dp"/>
+
+            <TextView
+
+                android:id="@+id/background2"
+                android:visibility="invisible"
+                android:textAlignment="viewStart"
+                android:background="@color/white"
+                android:textColor="@color/white"
+                android:layout_width="30dp"
+                android:layout_height="1.5dp"/>
+
+        </LinearLayout>
+
+        <com.qmuiteam.qmui.widget.roundwidget.QMUIRoundLinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:qmui_backgroundColor="@color/white"
+            android:layout_marginLeft="25dp"
+            android:layout_marginRight="25dp"
+            app:qmui_radius="15dp">
+
+            <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <ImageView
+                    android:id="@+id/search_top_img"
+                    android:layout_marginTop="5dp"
+                    android:layout_marginLeft="100dp"
+                    android:src="@mipmap/search"
+                    android:layout_width="13dp"
+                    android:layout_height="13dp"/>
+
+
+                <EditText
+                    android:id="@+id/search_top_input"
+                    android:layout_gravity="center"
+                    android:layout_marginLeft="17dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="25dp"
+                    android:hint="找人小妙招"
+                    android:textSize="12dp"
+                    android:background="@null"
+                    />
+            </LinearLayout>
+        </com.qmuiteam.qmui.widget.roundwidget.QMUIRoundLinearLayout>
+
+    </LinearLayout>
+
+    <androidx.viewpager.widget.ViewPager
+        android:id="@+id/community_fragment"
+        android:background="@color/white"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"/>
+
+
+</LinearLayout>

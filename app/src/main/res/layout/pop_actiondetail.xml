@@ -1,0 +1,428 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.qmuiteam.qmui.widget.roundwidget.QMUIRoundRelativeLayout
+
+
+    app:qmui_radiusTopRight="5dp"
+    app:qmui_radiusBottomRight="5dp"
+    app:qmui_borderWidth="0dp"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    app:qmui_backgroundColor="@color/white"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/imgcard"
+
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="10dp"
+        app:cardCornerRadius="5dp"
+        android:layout_width="90dp"
+        android:layout_height="116dp">
+
+        <RelativeLayout
+            android:gravity="center"
+            android:layout_width="90dp"
+            android:layout_height="116dp">
+
+            <ImageView
+                android:id="@+id/details2_headimg"
+                android:layout_width="90dp"
+                android:layout_height="116dp"
+                android:scaleType="centerCrop"
+                android:src="@mipmap/clipboard"
+                android:background="@color/black"/>
+
+            <TextView
+                android:id="@+id/actioncenter_actionnub"
+                android:visibility="invisible"
+                android:background="@color/half_transparent"
+                android:gravity="center"
+                android:layout_marginTop="-20dp"
+                android:layout_below="@id/details2_headimg"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:text="宁波 海曙区"
+                android:textAlignment="center"
+                android:textColor="@color/white"
+                android:textSize="@dimen/pictureSize"/>
+
+
+        </RelativeLayout>
+    </androidx.cardview.widget.CardView>
+
+
+    <TextView
+
+        android:textColor="@color/black"
+        android:layout_marginTop="20dp"
+        android:id="@+id/name"
+        android:layout_marginLeft="10dp"
+        android:layout_toRightOf="@id/imgcard"
+        android:textSize="@dimen/chatSizeL"
+        android:text="梁广军"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>
+
+    <TextView
+        android:textColor="@color/text_color2"
+        android:layout_alignBottom="@id/name"
+        android:id="@+id/sex_age"
+        android:layout_marginLeft="20dp"
+
+        android:layout_marginRight="15dp"
+        android:layout_alignParentRight="true"
+        android:textSize="@dimen/chatSize"
+        android:text="男 / 68岁"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>
+
+    <TextView
+        android:textColor="@color/text_color2"
+        android:layout_marginTop="15dp"
+        android:layout_below="@id/name"
+        android:layout_marginLeft="10dp"
+        android:layout_toRightOf="@id/imgcard"
+        android:textSize="@dimen/chatSize"
+        android:text="身高:"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>
+
+    <TextView
+        android:id="@+id/heigh"
+        android:textColor="@color/text_color2"
+        android:layout_marginTop="15dp"
+        android:layout_below="@id/name"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="15dp"
+        android:layout_alignParentRight="true"
+        android:textSize="@dimen/chatSize"
+        android:text="172cm"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>
+
+    <TextView
+
+        android:textColor="@color/text_color2"
+        android:layout_marginTop="5dp"
+        android:layout_below="@id/heigh"
+        android:layout_marginLeft="10dp"
+        android:layout_toRightOf="@id/imgcard"
+        android:textSize="@dimen/chatSize"
+        android:text="出生日期:"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>
+
+
+
+    <TextView
+
+        android:textColor="@color/text_color2"
+        android:id="@+id/unknown"
+        android:layout_marginTop="5dp"
+        android:layout_below="@id/heigh"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="15dp"
+        android:layout_alignParentRight="true"
+        android:textSize="@dimen/chatSize"
+        android:text="@string/lostperson_birth"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>
+    <TextView
+
+        android:textColor="@color/text_color2"
+        android:layout_marginTop="5dp"
+        android:layout_below="@id/unknown"
+        android:layout_marginLeft="10dp"
+        android:layout_toRightOf="@id/imgcard"
+        android:textSize="@dimen/chatSize"
+        android:text="走失类型:"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>
+
+    <TextView
+
+        android:id="@+id/losttype"
+        android:textColor="@color/text_color2"
+        android:layout_marginTop="5dp"
+        android:layout_below="@id/unknown"
+        android:layout_marginLeft="20dp"
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="15dp"
+        android:textSize="@dimen/chatSize"
+        android:text="老人走失"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>
+
+    <TextView
+
+        android:textColor="@color/text_color2"
+        android:layout_marginTop="15dp"
+        android:layout_below="@id/imgcard"
+        android:layout_alignLeft="@id/imgcard"
+        android:textSize="@dimen/chatSize"
+        android:text="体貌特征:"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>
+
+    <TextView
+        android:id="@+id/features"
+        android:textColor="@color/text_color2"
+        android:layout_marginTop="15dp"
+        android:layout_below="@id/imgcard"
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="15dp"
+        android:textSize="@dimen/chatSize"
+        android:text="秃头 左手有颗痣"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>
+
+    <TextView
+
+        android:textColor="@color/text_color2"
+        android:layout_marginTop="15dp"
+        android:layout_below="@id/features"
+        android:layout_alignLeft="@id/imgcard"
+        android:textSize="@dimen/chatSize"
+        android:text="走失衣着:"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>
+
+    <TextView
+        android:id="@+id/clothers"
+        android:textColor="@color/text_color2"
+        android:layout_marginTop="15dp"
+        android:layout_below="@id/features"
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="15dp"
+        android:textSize="@dimen/chatSize"
+        android:text="红色夹克 黑色牛仔裤"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>
+
+
+
+    <TextView
+
+        android:textColor="@color/text_color2"
+        android:layout_marginTop="15dp"
+        android:layout_below="@id/clothers"
+        android:layout_alignLeft="@id/imgcard"
+        android:textSize="@dimen/chatSize"
+        android:text="走失时间:"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>
+
+    <TextView
+
+        android:id="@+id/losttime"
+        android:textColor="@color/text_color2"
+        android:layout_marginTop="15dp"
+        android:layout_below="@id/clothers"
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="15dp"
+        android:textSize="@dimen/chatSize"
+        android:text="2020年12月20日 12:12"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>
+
+    <TextView
+        android:id="@+id/emergency"
+        android:textColor="@color/text_color2"
+        android:layout_marginTop="15dp"
+        android:layout_below="@id/lostplace"
+        android:layout_alignLeft="@id/imgcard"
+        android:textSize="@dimen/chatSize"
+        android:text="紧急程度:"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>
+
+
+    <LinearLayout
+
+        android:layout_marginTop="15dp"
+        android:layout_below="@id/lostplace"
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="15dp"
+        android:orientation="horizontal"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+
+        <ImageView
+            android:id="@+id/actioncenter_emerg1"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="-4dp"
+            android:src="@mipmap/flash1"
+            android:layout_width="8dp"
+            android:layout_height="wrap_content"/>
+
+        <ImageView
+            android:id="@+id/actioncenter_emerg2"
+            android:layout_marginLeft="2dp"
+            android:layout_marginTop="-4dp"
+            android:src="@mipmap/flash1"
+            android:layout_width="8dp"
+            android:layout_height="wrap_content"/>
+
+        <ImageView
+            android:id="@+id/actioncenter_emerg3"
+            android:layout_marginLeft="2dp"
+            android:layout_marginTop="-4dp"
+            android:src="@mipmap/flash1"
+            android:layout_width="8dp"
+            android:layout_height="wrap_content"/>
+
+        <ImageView
+            android:id="@+id/actioncenter_emerg4"
+            android:layout_marginLeft="2dp"
+            android:layout_marginTop="-4dp"
+            android:src="@mipmap/flash1"
+            android:layout_width="8dp"
+            android:layout_height="wrap_content"/>
+
+        <ImageView
+            android:id="@+id/actioncenter_emerg5"
+            android:layout_marginLeft="2dp"
+            android:layout_marginTop="-4dp"
+            android:src="@mipmap/flash1"
+            android:layout_width="8dp"
+            android:layout_height="wrap_content"/>
+
+
+    </LinearLayout>
+
+    <TextView
+
+        android:id="@+id/search_type"
+        android:textColor="@color/text_color2"
+        android:layout_marginTop="15dp"
+        android:layout_below="@id/emergency"
+        android:layout_alignLeft="@id/imgcard"
+        android:textSize="@dimen/chatSize"
+        android:text="寻人类型:"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>
+
+    <TextView
+
+        android:textColor="@color/text_color2"
+        android:layout_marginTop="15dp"
+        android:layout_below="@id/emergency"
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="15dp"
+        android:textSize="@dimen/chatSize"
+        android:text="城市寻人"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>
+
+
+    <TextView
+
+        android:textColor="@color/text_color2"
+        android:layout_marginTop="15dp"
+        android:layout_below="@id/losttime"
+        android:layout_alignLeft="@id/imgcard"
+        android:textSize="@dimen/chatSize"
+        android:text="走失地点:"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>
+
+    <TextView
+
+        android:id="@+id/lostplace"
+        android:textColor="@color/text_color2"
+        android:layout_marginTop="15dp"
+        android:layout_below="@id/losttime"
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="15dp"
+        android:textSize="@dimen/chatSize"
+        android:text="浙江宁波市海曙区"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>
+
+    <TextView
+
+
+        android:id="@+id/remindtitle"
+        android:textColor="@color/text_color2"
+        android:layout_marginTop="15dp"
+        android:layout_below="@id/search_type"
+        android:layout_alignLeft="@id/imgcard"
+        android:textSize="@dimen/chatSize"
+        android:text="行动提醒:"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>
+
+    <TextView
+
+        android:id="@+id/remind"
+        android:layout_marginBottom="15dp"
+        android:textColor="@color/text_color2"
+        android:layout_marginTop="5dp"
+        android:layout_below="@id/remindtitle"
+        android:layout_alignLeft="@id/imgcard"
+        android:textSize="@dimen/chatSize"
+        android:text="&#12288;&#12288;往来车辆较多，请队员注意自身安全。发现疑似老人第一时间上报。"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>
+
+    <RelativeLayout
+        android:layout_below="@id/remind"
+        android:layout_marginBottom="10dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+        <!-- 参与人员 -->
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="70dp">
+
+
+            <RelativeLayout
+                android:layout_marginLeft="10dp"
+                android:id="@+id/duizhangimg"
+                android:gravity="center"
+                android:layout_width="wrap_content"
+                android:layout_height="90dp">
+
+
+                <LinearLayout
+                    android:layout_below="@id/action_details_leadimg"
+                    android:gravity="center_horizontal"
+                    android:layout_width="50dp"
+                    android:layout_height="wrap_content">
+
+                    <TextView
+                        android:id="@+id/action_details_name"
+                        android:textAlignment="center"
+                        android:text="尖刀"
+                        android:textColor="@color/text_gray1"
+                        android:textSize="10dp"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"/>
+
+                </LinearLayout>
+
+                <ImageView
+                    android:id="@+id/action_details_leadimg"
+                    android:src="@mipmap/leader"
+                    android:layout_width="50dp"
+                    android:layout_height="50dp"/>
+
+            </RelativeLayout>
+
+            <androidx.recyclerview.widget.RecyclerView
+
+                android:id="@+id/recyclerview"
+                android:layout_toRightOf="@id/duizhangimg"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"/>
+
+
+        </RelativeLayout>
+
+    </RelativeLayout>
+
+
+
+</com.qmuiteam.qmui.widget.roundwidget.QMUIRoundRelativeLayout>

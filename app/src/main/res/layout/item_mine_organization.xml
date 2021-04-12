@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="130dp"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/organization_item">
+
+<!--    <androidx.cardview.widget.CardView-->
+<!--        android:id="@+id/organization_itemcard"-->
+<!--        app:cardBackgroundColor="@color/qmui_config_color_transparent"-->
+<!--        android:background="@null"-->
+<!--        android:layout_centerHorizontal="true"-->
+<!--        android:layout_marginTop="20dp"-->
+<!--        app:cardCornerRadius="35dp"-->
+<!--        android:layout_width="70dp"-->
+<!--        android:layout_height="70dp">-->
+
+<!--&lt;!&ndash;        <TextView&ndash;&gt;-->
+<!--&lt;!&ndash;            android:layout_gravity="center"&ndash;&gt;-->
+<!--&lt;!&ndash;            android:text="NBZYZXH"&ndash;&gt;-->
+<!--&lt;!&ndash;            android:textSize="12dp"&ndash;&gt;-->
+<!--&lt;!&ndash;            android:textColor="@color/white"&ndash;&gt;-->
+<!--&lt;!&ndash;            android:layout_width="wrap_content"&ndash;&gt;-->
+<!--&lt;!&ndash;            android:layout_height="wrap_content"/>&ndash;&gt;-->
+
+
+<!--    </androidx.cardview.widget.CardView>-->
+
+    <ImageView
+        android:id="@+id/organization_itemcard"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="20dp"
+        android:scaleType="fitCenter"
+        android:src="@mipmap/mine_img2"
+        android:layout_width="70dp"
+        android:layout_height="70dp"/>
+
+    <TextView
+        android:id="@+id/organization_name"
+        android:layout_marginTop="10dp"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@id/organization_itemcard"
+        android:text="宁波志愿者协会"
+        android:textSize="11dp"
+        android:maxLines="2"
+        android:textAlignment="center"
+        android:textColor="@color/text_gray1"
+        android:layout_width="80dp"
+        android:layout_height="wrap_content"/>
+
+</RelativeLayout>

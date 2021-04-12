@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/title_blue"
+    android:fitsSystemWindows="true"
+    tools:context=".ui.volunteer.mine.OrganizationActivity">
+
+
+    <ImageView
+        android:id="@+id/organization_background1"
+        android:scaleType="fitXY"
+        android:src="@mipmap/background20"
+        android:layout_width="match_parent"
+        android:layout_height="160dp"/>
+
+    <TextView
+        android:layout_below="@id/organization_background1"
+        android:background="@color/backgroud_white"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"/>
+
+
+
+    <LinearLayout
+        android:id="@+id/search_top"
+        android:background="@color/title_blue"
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="45dp">
+
+        <RelativeLayout
+            android:layout_marginTop="10dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+            <Button
+                android:id="@+id/actionlist_finish"
+                android:background="@null"
+                android:layout_width="40dp"
+                android:layout_height="wrap_content"/>
+
+
+            <ImageView
+                android:layout_marginTop="5dp"
+                android:layout_marginLeft="12dp"
+                android:src="@mipmap/finish"
+                android:layout_width="18dp"
+                android:layout_height="18dp"/>
+
+        </RelativeLayout>
+
+        <TextView
+            android:layout_weight="1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+
+        <ImageView
+            android:layout_marginTop="10dp"
+            android:layout_marginRight="15dp"
+            android:src="@mipmap/add2"
+            android:layout_width="18dp"
+            android:layout_height="wrap_content"/>
+
+    </LinearLayout>
+
+    <TextView
+        android:layout_marginLeft="40dp"
+        android:layout_marginTop="60dp"
+        android:textColor="@color/white"
+        android:textSize="21dp"
+        android:text="已加入的组织"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>
+
+    <TextView
+        android:layout_marginLeft="40dp"
+        android:layout_marginTop="90dp"
+        android:textColor="@color/white"
+        android:textSize="40dp"
+        android:textStyle="bold"
+        android:text="5"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>
+
+
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/organization_recycleview"
+        android:layout_marginTop="10dp"
+        android:layout_below="@id/organization_background1"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"/>
+
+
+
+</RelativeLayout>

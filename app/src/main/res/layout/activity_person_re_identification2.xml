@@ -1,0 +1,245 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".ui.volunteer.action.zwactivity.PersonReIdentificationActivity"
+    android:fitsSystemWindows="true"
+    android:background="@color/title_blue">
+
+    <TextView
+        android:background="@color/backgroud_white2"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"/>
+
+    <LinearLayout
+        android:id="@+id/top"
+        android:background="@color/title_blue"
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="45dp">
+
+        <RelativeLayout
+            android:layout_marginTop="10dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+            <Button
+                android:id="@+id/finish"
+                android:background="@null"
+                android:layout_width="40dp"
+                android:layout_height="wrap_content"/>
+
+
+            <ImageView
+                android:layout_marginTop="5dp"
+                android:layout_marginLeft="12dp"
+                android:src="@mipmap/finish"
+                android:layout_width="18dp"
+                android:layout_height="18dp"/>
+
+        </RelativeLayout>
+
+        <TextView
+            android:layout_weight="1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+
+        <TextView
+            android:layout_marginTop="14dp"
+            android:textStyle="bold"
+            android:text="体态识别"
+            android:textSize="16dp"
+            android:textColor="@color/white"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"/>
+
+        <TextView
+            android:layout_weight="1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+
+        <ImageView
+
+            android:visibility="invisible"
+            android:layout_marginTop="5dp"
+            android:layout_marginRight="10dp"
+            android:src="@mipmap/share"
+            android:layout_width="22dp"
+            android:layout_height="wrap_content"/>
+
+    </LinearLayout>
+
+
+<!--    <androidx.cardview.widget.CardView-->
+
+<!--        android:id="@+id/photos_card"-->
+<!--        android:layout_below="@id/top"-->
+<!--        app:cardCornerRadius="5dp"-->
+<!--        android:layout_marginRight="30dp"-->
+<!--        android:layout_marginLeft="30dp"-->
+<!--        android:layout_marginTop="10dp"-->
+<!--        android:layout_width="match_parent"-->
+<!--        android:layout_height="wrap_content">-->
+
+<!--        <RelativeLayout-->
+<!--            android:id="@+id/help_takephoto"-->
+<!--            android:background="@mipmap/photoes"-->
+<!--            android:layout_width="match_parent"-->
+<!--            android:layout_height="220dp">-->
+
+<!--            <ImageView-->
+<!--                android:layout_centerInParent="true"-->
+<!--                android:src="@mipmap/photoes2"-->
+<!--                android:layout_width="40dp"-->
+<!--                android:layout_height="40dp"/>-->
+
+<!--            <ImageView-->
+<!--                android:id="@+id/iv_person"-->
+<!--                android:scaleType="fitCenter"-->
+<!--                android:layout_width="match_parent"-->
+<!--                android:layout_height="match_parent"/>-->
+
+<!--        </RelativeLayout>-->
+<!--    </androidx.cardview.widget.CardView>-->
+
+    <ImageView
+        android:layout_centerInParent="true"
+
+        android:layout_marginTop="100dp"
+        android:layout_alignTop="@id/iv_person"
+        android:src="@mipmap/photoes2"
+        android:layout_width="60dp"
+        android:layout_height="60dp"/>
+
+
+    <ImageView
+        android:id="@+id/iv_person"
+        android:layout_below="@id/top"
+        android:layout_marginRight="30dp"
+        android:layout_marginLeft="30dp"
+        android:layout_marginTop="10dp"
+        android:scaleType="fitXY"
+        android:layout_width="match_parent"
+        android:layout_height="270dp"/>
+
+
+    <LinearLayout
+
+        android:id="@+id/btn_person_re_identif_bodystatu"
+        android:orientation="horizontal"
+        android:layout_below="@id/iv_person"
+        android:layout_marginTop="30dp"
+        android:layout_marginLeft="30dp"
+        android:layout_marginRight="30dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+
+            android:text="身体状态"
+            android:textSize="@dimen/title"
+            android:textColor="@color/text_gray1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+
+
+        <TextView
+
+            android:id="@+id/iv_bodystatu"
+            android:layout_marginLeft="30dp"
+            android:text=""
+            android:textSize="@dimen/title"
+            android:textColor="@color/text_gray1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+
+        android:id="@+id/btn_person_re_identif_faceidentf"
+        android:orientation="horizontal"
+        android:layout_below="@id/btn_person_re_identif_bodystatu"
+        android:layout_marginTop="30dp"
+        android:layout_marginLeft="30dp"
+        android:layout_marginRight="30dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+
+            android:text="脸部相似度"
+            android:textSize="@dimen/title"
+            android:textColor="@color/text_gray1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+
+
+        <TextView
+
+            android:id="@+id/iv_faceidt"
+            android:layout_marginLeft="30dp"
+            android:textSize="@dimen/title"
+            android:textColor="@color/text_gray1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+
+    </LinearLayout>
+    <LinearLayout
+
+        android:orientation="horizontal"
+        android:layout_below="@id/btn_person_re_identif_faceidentf"
+        android:layout_marginTop="30dp"
+        android:layout_marginLeft="30dp"
+        android:layout_marginRight="30dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+
+            android:text="着装相似度"
+            android:textSize="@dimen/title"
+            android:textColor="@color/text_gray1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+
+        <TextView
+
+            android:id="@+id/iv_clothidt"
+            android:layout_marginLeft="30dp"
+            android:textSize="@dimen/title"
+            android:textColor="@color/text_gray1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+
+    </LinearLayout>
+
+
+
+    <com.qmuiteam.qmui.widget.roundwidget.QMUIRoundButton
+        android:id="@+id/btn_identify"
+        app:qmui_borderWidth="0dp"
+        app:qmui_backgroundColor="@color/title_blue"
+        android:layout_margin="30dp"
+        android:layout_alignParentBottom="true"
+        android:text="上传比对"
+        android:textColor="@color/white"
+        android:textSize="@dimen/buttonSize"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"/>
+
+
+    <Button
+        android:id="@+id/button"
+        android:layout_marginTop="2000dp"
+        android:visibility="gone"
+        android:background="@drawable/shape_rect_border"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>
+
+
+
+</RelativeLayout>
+

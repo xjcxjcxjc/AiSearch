@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".ui.volunteer.practice.SearchResultActivity"
+    android:background="@color/title_blue"
+    android:fitsSystemWindows="true">
+
+    <LinearLayout
+        android:id="@+id/search_top"
+        android:layout_marginTop="10dp"
+        android:fitsSystemWindows="true"
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="35dp">
+
+
+        <com.qmuiteam.qmui.widget.roundwidget.QMUIRoundLinearLayout
+            app:qmui_backgroundColor="@color/white"
+            android:layout_weight="1"
+            android:layout_width="1dp"
+            app:qmui_borderWidth="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="7dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            app:qmui_radius="15dp">
+
+            <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <ImageView
+                    android:id="@+id/search_top_img"
+                    android:layout_marginTop="3dp"
+                    android:layout_marginLeft="60dp"
+                    android:layout_marginRight="10dp"
+                    android:src="@mipmap/search_32"
+                    android:layout_width="18dp"
+                    android:layout_height="wrap_content"/>
+
+
+                <EditText
+                    android:layout_gravity="center"
+                    android:id="@+id/search_top_input"
+                    android:layout_marginLeft="17dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="45dp"
+                    android:textCursorDrawable="@drawable/color_cursor"
+                    android:hint="急救"
+                    android:textColor="@color/text_gray1"
+                    android:textSize="12dp"
+                    android:background="@null"
+                    />
+
+            </LinearLayout>
+        </com.qmuiteam.qmui.widget.roundwidget.QMUIRoundLinearLayout>
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+            <Button
+                android:id="@+id/search_top_back"
+                android:background="@null"
+                android:layout_width="40dp"
+                android:layout_height="wrap_content"/>
+
+
+            <TextView
+                android:layout_marginTop="4dp"
+                android:layout_marginLeft="5dp"
+                android:layout_marginRight="10dp"
+                android:textColor="@color/white"
+                android:text="取消"
+                android:textSize="14dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"/>
+
+        </RelativeLayout>
+    </LinearLayout>
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/searchresult_recycleview"
+        android:background="@color/white"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"/>
+
+</LinearLayout>

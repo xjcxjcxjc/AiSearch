@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent" android:layout_height="60dp">
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="中山宾馆"
+        android:id="@+id/tv_name"
+        android:textSize="18dp"/>
+    <TextView
+        android:layout_width="80dp"
+        android:layout_height="25dp"
+        android:text="最佳集合点"
+        android:gravity="center"
+        android:textColor="#679cf8"
+        android:background="@drawable/shape_textview"
+        android:layout_toRightOf="@id/tv_name"
+        android:layout_alignTop="@id/tv_name"
+        android:layout_marginTop="2dp"
+        android:layout_marginLeft="20dp"
+        android:id="@+id/tv_other"/>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="4.1KM|宁波市海曙区中山西路88号"
+        android:layout_below="@id/tv_name"
+        android:layout_marginTop="5dp"
+        android:id="@+id/tv_address"/>
+    
+    <Button
+        android:layout_width="90dp"
+        android:layout_height="30dp"
+        android:text="发送集合点"
+        android:background="@drawable/shape_button_start"
+        android:textColor="#fff"
+        android:layout_alignParentRight="true"
+        android:layout_alignBottom="@id/tv_address"
+        android:layout_marginRight="10dp"
+        android:id="@+id/btn_send"/>
+
+</RelativeLayout>

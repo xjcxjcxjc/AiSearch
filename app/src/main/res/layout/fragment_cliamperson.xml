@@ -1,0 +1,335 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <androidx.cardview.widget.CardView
+
+        android:id="@+id/card_category"
+        android:layout_below="@+id/hand_tools"
+        app:cardCornerRadius="0dp"
+        android:layout_width="match_parent"
+        android:layout_height="40dp">
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <RelativeLayout
+                android:gravity="center"
+                android:layout_weight="1"
+                android:layout_width="0dp"
+                android:layout_height="match_parent">
+
+
+                <TextView
+                    android:textStyle="bold"
+                    android:textColor="@color/text_gray1"
+                    android:textSize="13dp"
+                    android:text="综合排序"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"/>
+            </RelativeLayout>
+            <RelativeLayout
+                android:gravity="center"
+                android:layout_weight="1"
+                android:layout_width="0dp"
+                android:layout_height="match_parent">
+
+                <TextView
+                    android:layout_marginTop="5dp"
+                    android:id="@+id/actionlist_tv2"
+                    android:textColor="@color/text_gray1"
+                    android:textSize="13dp"
+                    android:text="发布时间"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"/>
+
+                <ImageView
+                    android:layout_marginLeft="3dp"
+                    android:layout_toRightOf="@id/actionlist_tv2"
+                    android:src="@mipmap/sort1"
+                    android:layout_width="11dp"
+                    android:layout_height="wrap_content"/>
+
+
+            </RelativeLayout>
+            <RelativeLayout
+                android:gravity="center"
+                android:layout_weight="1"
+                android:layout_width="0dp"
+                android:layout_height="match_parent">
+
+                <TextView
+                    android:layout_marginTop="5dp"
+                    android:id="@+id/actionlist_tv3"
+                    android:textColor="@color/text_gray1"
+                    android:textSize="13dp"
+                    android:text="距离"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"/>
+
+                <ImageView
+                    android:layout_marginLeft="3dp"
+                    android:layout_toRightOf="@id/actionlist_tv3"
+                    android:src="@mipmap/sort1"
+                    android:layout_width="11dp"
+                    android:layout_height="wrap_content"/>
+
+
+            </RelativeLayout>
+            <RelativeLayout
+                android:gravity="center"
+                android:layout_weight="1"
+                android:layout_width="0dp"
+                android:layout_height="match_parent">
+
+                <TextView
+                    android:layout_marginTop="3dp"
+                    android:id="@+id/actionlist_tv4"
+                    android:textColor="@color/text_gray1"
+                    android:textSize="13dp"
+                    android:text="筛选"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"/>
+
+                <ImageView
+                    android:layout_marginLeft="3dp"
+                    android:layout_toRightOf="@id/actionlist_tv4"
+                    android:src="@mipmap/screen"
+                    android:layout_width="11dp"
+                    android:layout_height="wrap_content"/>
+
+
+            </RelativeLayout>
+        </LinearLayout>
+
+
+    </androidx.cardview.widget.CardView>
+
+    <com.example.aisearch.ui.volunteer.action.index.fragments.RecyclerScrollView
+        android:layout_below="@id/card_category"
+        android:id="@+id/my_scrollview"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+
+            <!--            <RelativeLayout-->
+            <!--                android:id="@+id/hand_map"-->
+            <!--                android:layout_marginLeft="15dp"-->
+            <!--                android:layout_marginRight="15dp"-->
+            <!--                android:layout_marginBottom="5dp"-->
+            <!--                android:layout_marginTop="10dp"-->
+            <!--                android:background="@mipmap/background4"-->
+            <!--                android:layout_width="match_parent"-->
+            <!--                android:layout_height="290dp">-->
+
+            <!--                <com.qmuiteam.qmui.widget.roundwidget.QMUIRoundRelativeLayout-->
+            <!--                    android:id="@+id/hand_map_map"-->
+            <!--                    app:qmui_borderWidth="0dp"-->
+            <!--                    app:qmui_radius="10dp"-->
+            <!--                    app:qmui_backgroundColor="@color/text_gray1"-->
+            <!--                    android:layout_width="match_parent"-->
+            <!--                    android:layout_height="match_parent">-->
+
+            <!--                    <com.baidu.mapapi.map.MapView-->
+            <!--                        android:id="@+id/bmapView"-->
+            <!--                        android:layout_width="match_parent"-->
+            <!--                        android:layout_height="match_parent"/>-->
+
+
+            <!--                </com.qmuiteam.qmui.widget.roundwidget.QMUIRoundRelativeLayout>-->
+
+
+            <!--                <LinearLayout-->
+            <!--                    android:background="@mipmap/background30"-->
+            <!--                    android:orientation="horizontal"-->
+            <!--                    android:layout_width="165dp"-->
+            <!--                    android:layout_height="35dp">-->
+
+            <!--                    <ImageView-->
+            <!--                        android:layout_marginTop="3dp"-->
+            <!--                        android:layout_marginLeft="5dp"-->
+            <!--                        android:src="@mipmap/sun"-->
+            <!--                        android:layout_width="15dp"-->
+            <!--                        android:layout_height="wrap_content"/>-->
+
+            <!--                    <TextView-->
+            <!--                        android:id="@+id/hand_map_weather"-->
+            <!--                        android:layout_gravity="center"-->
+            <!--                        android:layout_marginLeft="5dp"-->
+            <!--                        android:textColor="@color/white"-->
+            <!--                        android:textSize="13dp"-->
+            <!--                        android:text="晴"-->
+            <!--                        android:layout_width="wrap_content"-->
+            <!--                        android:layout_height="wrap_content"/>-->
+
+            <!--                    <TextView-->
+            <!--                        android:id="@+id/hand_map_temperature"-->
+            <!--                        android:layout_gravity="center"-->
+            <!--                        android:layout_marginLeft="5dp"-->
+            <!--                        android:textColor="@color/white"-->
+            <!--                        android:textSize="13dp"-->
+            <!--                        android:text="26°"-->
+            <!--                        android:layout_width="wrap_content"-->
+            <!--                        android:layout_height="wrap_content"/>-->
+
+            <!--                    <ImageView-->
+            <!--                        android:layout_marginTop="3dp"-->
+            <!--                        android:layout_marginLeft="5dp"-->
+            <!--                        android:src="@mipmap/plane2"-->
+            <!--                        android:layout_width="15dp"-->
+            <!--                        android:layout_height="wrap_content"/>-->
+            <!--                    <TextView-->
+            <!--                        android:id="@+id/hand_map_wind"-->
+            <!--                        android:layout_gravity="center"-->
+            <!--                        android:layout_marginLeft="5dp"-->
+            <!--                        android:textColor="@color/white"-->
+            <!--                        android:textSize="13dp"-->
+            <!--                        android:text="西南风"-->
+            <!--                        android:layout_width="wrap_content"-->
+            <!--                        android:layout_height="wrap_content"/>-->
+            <!--                    <TextView-->
+            <!--                        android:id="@+id/hand_map_windgrade"-->
+            <!--                        android:layout_gravity="center"-->
+            <!--                        android:layout_marginLeft="5dp"-->
+            <!--                        android:textColor="@color/white"-->
+            <!--                        android:textSize="13dp"-->
+            <!--                        android:text="4级"-->
+            <!--                        android:layout_width="wrap_content"-->
+            <!--                        android:layout_height="wrap_content"/>-->
+
+            <!--                </LinearLayout>-->
+
+            <!--                <LinearLayout-->
+            <!--                    android:orientation="vertical"-->
+            <!--                    android:layout_width="match_parent"-->
+            <!--                    android:layout_height="match_parent">-->
+
+            <!--                    <TextView-->
+            <!--                        android:layout_weight="1"-->
+            <!--                        android:layout_width="wrap_content"-->
+            <!--                        android:layout_height="0dp"/>-->
+
+            <!--                    &lt;!&ndash; 右下角布局 &ndash;&gt;-->
+            <!--                    <LinearLayout-->
+            <!--                        android:layout_marginBottom="5dp"-->
+            <!--                        android:orientation="horizontal"-->
+            <!--                        android:layout_width="match_parent"-->
+            <!--                        android:layout_height="35dp">-->
+            <!--                        <TextView-->
+            <!--                            android:layout_weight="1"-->
+            <!--                            android:layout_width="0dp"-->
+            <!--                            android:layout_height="wrap_content"/>-->
+
+
+            <!--                        <com.qmuiteam.qmui.widget.roundwidget.QMUIRoundLinearLayout-->
+            <!--                            android:gravity="center"-->
+            <!--                            app:qmui_radiusBottomLeft="13dp"-->
+            <!--                            app:qmui_radiusTopLeft="13dp"-->
+            <!--                            app:qmui_backgroundColor="@color/white"-->
+            <!--                            android:orientation="horizontal"-->
+            <!--                            android:layout_width="100dp"-->
+            <!--                            android:layout_height="wrap_content">-->
+
+            <!--                            <androidx.cardview.widget.CardView-->
+            <!--                                app:cardCornerRadius="20dp"-->
+            <!--                                android:layout_width="27dp"-->
+            <!--                                android:layout_height="27dp"-->
+            <!--                                app:cardBackgroundColor="@color/title_red">-->
+
+            <!--                                <ImageView-->
+            <!--                                    android:layout_marginTop="-2dp"-->
+            <!--                                    android:layout_gravity="center"-->
+            <!--                                    android:src="@mipmap/person"-->
+            <!--                                    android:layout_width="16dp"-->
+            <!--                                    android:layout_height="wrap_content"/>-->
+            <!--                            </androidx.cardview.widget.CardView>-->
+
+            <!--                            <TextView-->
+            <!--                                android:id="@+id/hand_map_personnub"-->
+            <!--                                android:layout_marginLeft="3dp"-->
+            <!--                                android:text="5"-->
+            <!--                                android:textSize="13dp"-->
+            <!--                                android:layout_width="0dp"-->
+            <!--                                android:layout_weight="1"-->
+            <!--                                android:layout_height="wrap_content"/>-->
+            <!--                            <TextView-->
+            <!--                                android:text="人走失中"-->
+            <!--                                android:textSize="13dp"-->
+            <!--                                android:layout_width="wrap_content"-->
+            <!--                                android:layout_height="wrap_content"/>-->
+
+            <!--                        </com.qmuiteam.qmui.widget.roundwidget.QMUIRoundLinearLayout>-->
+
+            <!--                    </LinearLayout>-->
+            <!--                    <LinearLayout-->
+            <!--                        android:layout_marginBottom="5dp"-->
+            <!--                        android:orientation="horizontal"-->
+            <!--                        android:layout_width="match_parent"-->
+            <!--                        android:layout_height="35dp">-->
+            <!--                        <TextView-->
+            <!--                            android:layout_weight="1"-->
+            <!--                            android:layout_width="0dp"-->
+            <!--                            android:layout_height="wrap_content"/>-->
+
+
+            <!--                        <com.qmuiteam.qmui.widget.roundwidget.QMUIRoundLinearLayout-->
+
+            <!--                            android:gravity="center"-->
+            <!--                            app:qmui_radiusBottomLeft="13dp"-->
+            <!--                            app:qmui_radiusTopLeft="13dp"-->
+            <!--                            app:qmui_backgroundColor="@color/white"-->
+            <!--                            android:orientation="horizontal"-->
+            <!--                            android:layout_width="100dp"-->
+            <!--                            android:layout_height="wrap_content">-->
+
+            <!--                            <androidx.cardview.widget.CardView-->
+            <!--                                app:cardCornerRadius="20dp"-->
+            <!--                                android:layout_width="27dp"-->
+            <!--                                android:layout_height="27dp"-->
+            <!--                                app:cardBackgroundColor="@color/title_red">-->
+
+            <!--                                <ImageView-->
+            <!--                                    android:layout_gravity="center"-->
+            <!--                                    android:src="@mipmap/flag"-->
+            <!--                                    android:layout_width="16dp"-->
+            <!--                                    android:layout_height="wrap_content"/>-->
+
+            <!--                            </androidx.cardview.widget.CardView>-->
+
+            <!--                            <TextView-->
+            <!--                                android:id="@+id/hand_map_teamnub"-->
+            <!--                                android:layout_marginLeft="3dp"-->
+            <!--                                android:text="5"-->
+            <!--                                android:textSize="13dp"-->
+            <!--                                android:layout_width="0dp"-->
+            <!--                                android:layout_weight="1"-->
+            <!--                                android:layout_height="wrap_content"/>-->
+            <!--                            <TextView-->
+            <!--                                android:text="队行动中"-->
+            <!--                                android:textSize="13dp"-->
+            <!--                                android:layout_width="wrap_content"-->
+            <!--                                android:layout_height="wrap_content"/>-->
+            <!--                        </com.qmuiteam.qmui.widget.roundwidget.QMUIRoundLinearLayout>-->
+
+            <!--                    </LinearLayout>-->
+            <!--                </LinearLayout>-->
+            <!--            </RelativeLayout>-->
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/hand_recycleview"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"/>
+
+        </RelativeLayout>
+
+    </com.example.aisearch.ui.volunteer.action.index.fragments.RecyclerScrollView>
+
+
+</RelativeLayout>

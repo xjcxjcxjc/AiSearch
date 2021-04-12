@@ -1,0 +1,655 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@color/title_blue"
+    android:id="@+id/inaction_parent"
+    android:fitsSystemWindows="true"
+    >
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <LinearLayout
+                android:id="@+id/lle"
+                android:background="@color/title_blue"
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <LinearLayout
+                    android:layout_weight="1"
+                    android:layout_width="0dp"
+                    android:layout_height="42dp"
+                    android:gravity="center">
+
+                    <TextView
+                        android:id="@+id/inaction_title"
+                        android:textColor="@color/white"
+                        android:layout_marginLeft="25dp"
+                        android:textStyle="bold"
+                        android:textSize="18dp"
+                        android:text="海曙老人救援行动"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"/>
+                </LinearLayout>
+
+                <ImageView
+                    android:id="@+id/inaction_stop"
+                    android:layout_marginTop="5dp"
+                    android:layout_marginRight="10dp"
+                    android:src="@mipmap/stop"
+                    android:layout_width="30dp"
+                    android:layout_height="wrap_content"/>
+
+            </LinearLayout>
+            <com.baidu.mapapi.map.MapView
+                android:id="@+id/bmapView"
+                android:layout_below="@id/lle"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"/>
+
+            <androidx.cardview.widget.CardView
+
+                android:layout_below="@id/lle"
+                app:cardCornerRadius="10dp"
+                android:layout_width="match_parent"
+                android:layout_height="35dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginBottom="15dp"
+                android:layout_marginLeft="12dp"
+                android:layout_marginRight="12dp"
+                android:background="@mipmap/etbacj">
+
+                <ImageView
+                    android:layout_marginTop="5dp"
+                    android:layout_marginLeft="12dp"
+                    android:src="@mipmap/search"
+                    android:layout_width="23dp"
+                    android:layout_height="25dp"/>
+
+                <EditText
+                    android:id="@+id/inaction_input"
+                    android:layout_marginLeft="45dp"
+                    android:hint="搜索地址"
+                    android:textColorHint="@color/qmui_config_color_gray_7"
+                    android:textSize="14dp"
+                    android:textColor="@color/qmui_config_color_gray_4"
+                    android:textStyle="bold"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:background="@null"/>
+            </androidx.cardview.widget.CardView>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="0dp"
+                    android:layout_weight="1"/>
+
+                <RelativeLayout
+                    android:id="@+id/personmsg"
+                    android:background="@mipmap/laorenxinxi"
+                    android:layout_marginRight="10dp"
+                    android:layout_marginTop="95dp"
+                    android:layout_width="65dp"
+                    android:layout_height="87dp"
+                    android:orientation="vertical">
+
+
+                    <androidx.cardview.widget.CardView
+                        android:layout_centerHorizontal="true"
+                        android:layout_marginTop="8dp"
+                        app:cardCornerRadius="30dp"
+                        android:layout_width="45dp"
+                        android:layout_height="45dp">
+
+                        <ImageView
+                            android:src="@mipmap/clipboard"
+                            android:scaleType="centerCrop"
+                            android:layout_width="45dp"
+                            android:layout_height="45dp"/>
+
+                    </androidx.cardview.widget.CardView>
+
+
+                    <TextView
+                        android:layout_marginTop="60dp"
+                        android:layout_marginLeft="5dp"
+                        android:layout_marginRight="5dp"
+                        android:background="@color/qmui_config_color_gray_9"
+                        android:layout_width="match_parent"
+                        android:layout_height="1dp"/>
+
+                </RelativeLayout>
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="0dp"
+                    android:layout_weight="1"/>
+
+
+                <RelativeLayout
+                    android:id="@+id/inaction_team"
+                    android:background="@mipmap/teammessage"
+                    android:layout_marginRight="10dp"
+                    android:layout_marginTop="190dp"
+                    android:layout_width="65dp"
+                    android:layout_height="87dp"
+                    android:orientation="vertical">
+
+                    <ImageView
+                        android:id="@+id/image_loc"
+                        android:src="@mipmap/blueegale"
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginRight="10dp"
+                        android:layout_width="60dp"
+                        android:layout_height="60dp"/>
+
+                    <TextView
+                        android:layout_marginTop="60dp"
+                        android:layout_marginLeft="5dp"
+                        android:layout_marginRight="5dp"
+                        android:background="@color/qmui_config_color_gray_9"
+                        android:layout_width="match_parent"
+                        android:layout_height="1dp"/>
+
+                </RelativeLayout>
+            </LinearLayout>
+
+            <!-- 上面工具栏 -->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="395dp"
+                >
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="0dp"
+                    android:layout_weight="1"/>
+
+                <LinearLayout
+                    android:orientation="vertical"
+                    android:layout_marginRight="10dp"
+                    android:layout_width="42dp"
+                    android:layout_height="150dp"
+                    android:background="@mipmap/back1"
+                    android:gravity="center">
+
+                    <RelativeLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content">
+
+                        <Button
+                            android:id="@+id/incation_copbtn"
+                            android:layout_width="37dp"
+                            android:layout_height="46dp"
+                            android:background="@null"/>
+
+                        <ImageView
+                            android:id="@+id/cop"
+                            android:layout_marginLeft="7dp"
+                            android:layout_marginTop="5dp"
+                            android:src="@mipmap/cop1"
+                            android:layout_width="22dp"
+                            android:layout_height="22dp"
+                            />
+                        <TextView
+                            android:id="@+id/coptv"
+                            android:layout_marginLeft="3dp"
+                            android:layout_below="@id/cop"
+                            android:text="派出所"
+                            android:textColor="@color/text_gray1"
+                            android:layout_marginTop="3dp"
+                            android:textSize="10dp"
+                            android:textStyle="bold"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"/>
+                    </RelativeLayout>
+
+                    <TextView
+                        android:layout_width="30dp"
+                        android:layout_height="1dp"
+                        android:background="@color/qmui_config_color_gray_9"
+                        android:layout_marginTop="2dp"
+                        android:layout_marginBottom="5dp" />
+
+                    <RelativeLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content">
+                        <Button
+                            android:id="@+id/incation_hsptbtn"
+                            android:layout_width="37dp"
+                            android:layout_height="43dp"
+                            android:background="@null"/>
+
+                        <ImageView
+                            android:id="@+id/hospital"
+                            android:layout_marginRight="7dp"
+                            android:layout_marginLeft="7dp"
+                            android:src="@mipmap/hospital1"
+                            android:layout_width="22dp"
+                            android:layout_height="22dp"
+                            />
+                        <TextView
+                            android:id="@+id/hospitaltv"
+                            android:layout_below="@id/hospital"
+                            android:layout_marginLeft="8dp"
+                            android:text="医院"
+                            android:textColor="@color/text_gray1"
+                            android:textSize="10dp"
+                            android:textStyle="bold"
+                            android:layout_marginTop="3dp"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"/>/>
+                    </RelativeLayout>
+
+
+                    <TextView
+                        android:layout_width="30dp"
+                        android:layout_height="1dp"
+                        android:background="@color/qmui_config_color_gray_9"
+                        android:layout_marginBottom="5dp" />
+
+                    <RelativeLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content">
+                        <Button
+                            android:id="@+id/incation_shelterbtn"
+                            android:layout_width="37dp"
+                            android:layout_height="46dp"
+                            android:background="@null"/>
+                        <ImageView
+                            android:id="@+id/shelter"
+                            android:layout_marginRight="7dp"
+                            android:layout_marginLeft="7dp"
+                            android:src="@mipmap/house1"
+                            android:layout_width="22dp"
+                            android:layout_height="22dp"
+                            />
+                        <TextView
+                            android:id="@+id/sheltertv"
+                            android:layout_marginLeft="3dp"
+                            android:text="收容所"
+                            android:layout_below="@id/shelter"
+                            android:textColor="@color/text_gray1"
+                            android:textSize="10dp"
+                            android:textStyle="bold"
+                            android:layout_marginTop="3dp"
+                            android:layout_marginBottom="5dp"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"/>
+                    </RelativeLayout>
+                </LinearLayout>
+
+            </LinearLayout>
+            <!-- 下面工具栏 -->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="285dp"
+                >
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="0dp"
+                    android:layout_weight="1"/>
+
+                <LinearLayout
+                    android:orientation="vertical"
+                    android:layout_marginRight="10dp"
+                    android:layout_width="42dp"
+                    android:layout_height="100dp"
+                    android:background="@mipmap/back1"
+                    android:gravity="center">
+
+                    <RelativeLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content">
+
+
+                        <Button
+                            android:id="@+id/incation_msgbtn"
+                            android:layout_width="37dp"
+                            android:layout_height="42dp"
+                            android:background="@null" />
+
+
+                        <ImageView
+                            android:id="@+id/incation_msg"
+                            android:layout_width="22dp"
+                            android:layout_height="22dp"
+                            android:layout_marginLeft="7dp"
+                            android:layout_marginRight="7dp"
+                            android:src="@mipmap/icon_navigation" />
+
+                        <TextView
+                            android:layout_marginLeft="8dp"
+                            android:text="导航"
+                            android:layout_below="@id/incation_msg"
+                            android:textColor="@color/text_gray1"
+                            android:textSize="10dp"
+                            android:textStyle="bold"
+                            android:layout_marginTop="3dp"
+                            android:layout_marginBottom="5dp"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"/>
+
+                    </RelativeLayout>
+                    <TextView
+                        android:layout_width="30dp"
+                        android:layout_height="1dp"
+                        android:background="@color/qmui_config_color_gray_9"
+
+                        />
+
+                    <RelativeLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content">
+
+                        <Button
+                            android:id="@+id/incation_cluebtn"
+                            android:layout_width="37dp"
+                            android:layout_height="46dp"
+                            android:background="@null" />
+
+                        <ImageView
+                            android:id="@+id/incation_clueimg"
+                            android:layout_marginLeft="7dp"
+                            android:layout_marginTop="5dp"
+                            android:src="@mipmap/time"
+                            android:layout_width="22dp"
+                            android:layout_height="22dp"
+                            />
+
+
+
+                        <TextView
+                            android:layout_marginLeft="8dp"
+                            android:layout_below="@id/incation_clueimg"
+                            android:text="线索"
+                            android:textColor="@color/text_gray1"
+                            android:layout_marginTop="3dp"
+                            android:textSize="10dp"
+                            android:textStyle="bold"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"/>
+
+                    </RelativeLayout>
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="550dp"
+                >
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="0dp"
+                    android:layout_weight="1"/>
+
+                <LinearLayout
+                    android:orientation="vertical"
+                    android:layout_marginRight="10dp"
+                    android:layout_width="42dp"
+                    android:layout_height="50dp"
+                    android:background="@mipmap/back1"
+                    android:gravity="center">
+
+                    <RelativeLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content">
+                        <Button
+                            android:id="@+id/incation_reportbtn"
+                            android:layout_width="37dp"
+                            android:layout_height="46dp"
+                            android:background="@null"/>
+
+                        <ImageView
+                            android:id="@+id/incation_report"
+                            android:layout_marginTop="3dp"
+                            android:layout_marginRight="7dp"
+                            android:layout_marginLeft="7dp"
+                            android:src="@mipmap/report"
+                            android:layout_width="22dp"
+                            android:layout_height="22dp"
+                            />
+                        <TextView
+                            android:layout_marginLeft="8dp"
+                            android:text="上报"
+                            android:layout_below="@id/incation_report"
+                            android:textColor="@color/text_gray1"
+                            android:textSize="10dp"
+                            android:textStyle="bold"
+                            android:layout_marginTop="3dp"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"/>
+                    </RelativeLayout>
+                </LinearLayout>
+
+            </LinearLayout>
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/inaction_speak"
+                android:layout_alignParentBottom="true"
+                app:cardCornerRadius="40dp"
+                android:layout_marginBottom="10dp"
+                android:layout_centerHorizontal="true"
+                app:cardBackgroundColor="@color/title_blue"
+                android:layout_width="70dp"
+                android:layout_height="70dp">
+
+                <ImageView
+                    android:layout_gravity="center"
+                    android:src="@mipmap/action_talk"
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"/>
+
+            </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/inaction_faceidentify"
+                android:layout_alignParentBottom="true"
+                app:cardCornerRadius="25dp"
+                android:layout_marginBottom="20dp"
+                android:layout_marginLeft="10dp"
+                android:layout_width="130dp"
+                android:layout_height="50dp"
+                app:cardBackgroundColor="@color/title_blue">
+
+
+
+                <TextView
+                    android:textSize="@dimen/buttonSize"
+                    android:layout_gravity="center"
+                    android:textColor="@color/white"
+                    android:text="人脸识别"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"/>
+
+
+            </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/cv_identify"
+                android:layout_alignParentBottom="true"
+                app:cardCornerRadius="25dp"
+                android:layout_marginBottom="20dp"
+                android:layout_alignParentRight="true"
+                android:layout_marginRight="10dp"
+                android:layout_width="130dp"
+                android:layout_height="50dp"
+                app:cardBackgroundColor="@color/title_blue">
+
+
+
+                <TextView
+                    android:textSize="@dimen/buttonSize"
+                    android:layout_gravity="center"
+                    android:textColor="@color/white"
+                    android:text="体态识别"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"/>
+
+            </androidx.cardview.widget.CardView>
+
+            <!--        <LinearLayout-->
+
+            <!--            android:orientation="horizontal"-->
+            <!--            android:layout_marginBottom="20dp"-->
+            <!--            android:layout_alignParentBottom="true"-->
+            <!--            android:layout_width="match_parent"-->
+            <!--            android:layout_height="wrap_content">-->
+
+            <!--            <androidx.cardview.widget.CardView-->
+            <!--                android:id="@+id/inaction_faceidentify"-->
+            <!--                app:cardCornerRadius="25dp"-->
+            <!--                android:layout_marginLeft="20dp"-->
+            <!--                android:layout_marginRight="20dp"-->
+            <!--                android:layout_weight="1"-->
+            <!--                android:layout_width="1dp"-->
+            <!--                android:layout_height="50dp"-->
+            <!--                app:cardBackgroundColor="@color/title_blue">-->
+
+
+
+            <!--                <TextView-->
+
+            <!--                    android:textSize="@dimen/buttonSize"-->
+            <!--                    android:layout_gravity="center"-->
+            <!--                    android:textColor="@color/white"-->
+            <!--                    android:text="老人识别"-->
+            <!--                    android:layout_width="wrap_content"-->
+            <!--                    android:layout_height="wrap_content"/>-->
+
+
+            <!--            </androidx.cardview.widget.CardView>-->
+
+
+
+            <!--            <androidx.cardview.widget.CardView-->
+            <!--                android:id="@+id/inaction_speak"-->
+            <!--                app:cardCornerRadius="25dp"-->
+            <!--                android:layout_marginBottom="20dp"-->
+            <!--                android:layout_marginRight="20dp"-->
+            <!--                android:layout_marginLeft="20dp"-->
+            <!--                android:layout_weight="1"-->
+            <!--                android:layout_width="1dp"-->
+            <!--                android:layout_height="50dp"-->
+            <!--                app:cardBackgroundColor="@color/title_blue">-->
+
+            <!--                <TextView-->
+            <!--                    android:textSize="@dimen/buttonSize"-->
+            <!--                    android:layout_gravity="center"-->
+            <!--                    android:textColor="@color/white"-->
+            <!--                    android:text="发送语言"-->
+            <!--                    android:layout_width="wrap_content"-->
+            <!--                    android:layout_height="wrap_content"/>-->
+
+            <!--            </androidx.cardview.widget.CardView>-->
+            <!--        </LinearLayout>-->
+
+
+
+            <Button
+                android:visibility="invisible"
+                android:id="@+id/handle"
+                android:background="@color/title_blue"
+                android:text="btn"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"/>
+
+            <RelativeLayout
+                android:id="@+id/rl_audio_bg"
+                android:background="#000"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:alpha="0.5"
+                android:visibility="gone">
+            </RelativeLayout>
+            <TextView
+                android:id="@+id/tv_audio_all"
+                android:visibility="gone"
+                android:text="全员"
+                android:backgroundTint="#333"
+                android:textColor="#FFF"
+                android:clickable="true"
+                android:layout_alignParentBottom="true"
+                android:layout_marginLeft="30dp"
+                android:layout_marginBottom="120dp"
+                android:layout_width="80dp"
+                android:layout_height="80dp"
+                android:gravity="center"
+                android:background="@mipmap/circle"/>
+            <TextView
+                android:id="@+id/tv_audio_teem"
+                android:visibility="gone"
+                android:text="小队"
+                android:backgroundTint="#333"
+                android:textColor="#FFF"
+                android:clickable="true"
+                android:layout_alignParentBottom="true"
+                android:layout_alignParentRight="true"
+                android:layout_marginRight="30dp"
+                android:layout_marginBottom="120dp"
+                android:layout_width="80dp"
+                android:layout_height="80dp"
+                android:gravity="center"
+                android:background="@mipmap/circle"/>
+
+            <TextView
+                android:id="@+id/tv_audio_cancel"
+                android:visibility="gone"
+                android:text="x"
+                android:backgroundTint="#333"
+                android:textColor="#FFF"
+                android:clickable="true"
+                android:textSize="30dp"
+                android:layout_alignParentBottom="true"
+                android:layout_marginRight="30dp"
+                android:layout_centerHorizontal="true"
+                android:layout_marginBottom="150dp"
+                android:layout_width="80dp"
+                android:layout_height="80dp"
+                android:gravity="center"
+                android:background="@mipmap/circle"/>
+
+
+
+        </RelativeLayout>
+
+
+        <ImageView
+
+            android:id="@+id/imggg"
+            android:visibility="gone"
+            android:background="@color/black"
+            android:src="@mipmap/clipboard"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"/>
+    </RelativeLayout>
+
+
+</LinearLayout>

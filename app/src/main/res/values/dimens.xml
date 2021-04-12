@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="dialog_padding_size">12dp</dimen>
+    <dimen name="btn_close_margin_size">6dp</dimen>
+    <dimen name="common_bottom_margin">20dp</dimen>
+    <dimen name="fab_margin">16dp</dimen>
+
+    <dimen name="title">18dp</dimen> <!--标题字体-->
+    <dimen name="tabSize">14dp</dimen> <!--tab字体-->
+    <dimen name="pictureSize">12dp</dimen><!--某些图片内的字-->
+    <dimen name="chatSize">14dp</dimen><!--聊天字体-->
+    <dimen name="chatSizeL">16dp</dimen><!--聊天字体-->
+    <dimen name="chatSizeS">12dp</dimen><!--聊天字体-->
+    <dimen name="headSize">14dp</dimen><!--头像内的字体-->
+    <dimen name="girdSize">14dp</dimen><!--表格填写字体-->
+    <dimen name="buttonSize">16dp</dimen><!--按钮字体-->
+
+
+    <dimen name="activity_horizontal_margin">16dp</dimen>
+    <dimen name="activity_vertical_margin">16dp</dimen>
+
+
+
+
+
+
+</resources>

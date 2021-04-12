@@ -1,0 +1,188 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    android:orientation="vertical"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/title_blue"
+    android:fitsSystemWindows="true"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/itemview">
+
+
+    <LinearLayout
+        android:id="@+id/search_top"
+        android:layout_marginTop="10dp"
+        android:fitsSystemWindows="true"
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="35dp">
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+            <Button
+                android:id="@+id/actionlist_finish"
+                android:background="@null"
+                android:layout_width="40dp"
+                android:layout_height="wrap_content"/>
+
+
+            <ImageView
+                android:layout_marginTop="5dp"
+                android:layout_marginLeft="12dp"
+                android:src="@mipmap/finish"
+                android:layout_width="18dp"
+                android:layout_height="18dp"/>
+
+        </RelativeLayout>
+
+        <com.qmuiteam.qmui.widget.roundwidget.QMUIRoundLinearLayout
+            app:qmui_backgroundColor="@color/white"
+            android:layout_width="match_parent"
+            app:qmui_borderWidth="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="7dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            app:qmui_radius="15dp">
+
+            <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <EditText
+                    android:layout_gravity="center"
+                    android:id="@+id/actionlist_input"
+                    android:layout_marginLeft="17dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="45dp"
+                    android:textCursorDrawable="@drawable/color_cursor"
+                    android:hint="海曙"
+                    android:textColor="@color/text_gray1"
+                    android:textSize="12dp"
+                    android:background="@null" />
+
+            </LinearLayout>
+        </com.qmuiteam.qmui.widget.roundwidget.QMUIRoundLinearLayout>
+
+    </LinearLayout>
+
+    <androidx.cardview.widget.CardView
+        app:cardCornerRadius="0dp"
+        android:layout_width="match_parent"
+        android:layout_height="40dp">
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <RelativeLayout
+                android:gravity="center"
+                android:layout_weight="1"
+                android:layout_width="0dp"
+                android:layout_height="match_parent">
+
+
+                <TextView
+                    android:textStyle="bold"
+                    android:textColor="@color/text_gray1"
+                    android:textSize="@dimen/tabSize"
+                    android:text="综合排序"
+                    android:id="@+id/tv_sort"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"/>
+            </RelativeLayout>
+            <RelativeLayout
+                android:gravity="center"
+                android:layout_weight="1"
+                android:layout_width="0dp"
+                android:layout_height="match_parent">
+
+                <TextView
+                    android:layout_marginTop="5dp"
+                    android:id="@+id/actionlist_tv2"
+                    android:textColor="@color/text_gray1"
+                    android:textSize="@dimen/tabSize"
+                    android:text="发布时间"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"/>
+
+                <ImageView
+                    android:layout_marginLeft="3dp"
+                    android:layout_toRightOf="@id/actionlist_tv2"
+                    android:src="@mipmap/sort1"
+                    android:layout_width="11dp"
+                    android:layout_height="wrap_content"/>
+
+
+            </RelativeLayout>
+            <RelativeLayout
+                android:gravity="center"
+                android:layout_weight="1"
+                android:layout_width="0dp"
+                android:layout_height="match_parent">
+
+                <TextView
+                    android:layout_marginTop="5dp"
+                    android:id="@+id/actionlist_tv3"
+                    android:textColor="@color/text_gray1"
+                    android:textSize="@dimen/tabSize"
+                    android:text="距离"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"/>
+
+                <ImageView
+                    android:layout_marginLeft="3dp"
+                    android:layout_toRightOf="@id/actionlist_tv3"
+                    android:src="@mipmap/sort1"
+                    android:layout_width="11dp"
+                    android:layout_height="wrap_content"/>
+
+
+            </RelativeLayout>
+            <RelativeLayout
+                android:gravity="center"
+                android:layout_weight="1"
+                android:layout_width="0dp"
+                android:layout_height="match_parent">
+
+                <TextView
+                    android:layout_marginTop="3dp"
+                    android:id="@+id/actionlist_tv4"
+                    android:textColor="@color/text_gray1"
+                    android:textSize="@dimen/tabSize"
+                    android:text="筛选"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"/>
+
+                <ImageView
+                    android:layout_marginLeft="3dp"
+                    android:layout_toRightOf="@id/actionlist_tv4"
+                    android:src="@mipmap/screen"
+                    android:layout_width="11dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="1dp"
+                    android:id="@+id/iv_screen"/>
+
+
+            </RelativeLayout>
+        </LinearLayout>
+
+
+    </androidx.cardview.widget.CardView>
+
+    <com.qmuiteam.qmui.widget.pullRefreshLayout.QMUIPullRefreshLayout
+        android:background="@color/backgroud_white"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/actionlist_recycle"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"/>
+    </com.qmuiteam.qmui.widget.pullRefreshLayout.QMUIPullRefreshLayout>
+
+
+</LinearLayout>

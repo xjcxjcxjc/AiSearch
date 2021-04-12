@@ -1,0 +1,165 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="300dp"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:gravity="bottom">
+
+    <!-- 底部抽屉布局 -->
+    <hollowsoft.slidingdrawer.SlidingDrawer
+        android:id="@+id/history_drawer"
+        android:background="@color/qmui_config_color_transparent"
+        android:layout_width="match_parent"
+        android:layout_height="215dp"
+        app:content="@+id/content"
+        app:handle="@+id/handle">
+
+
+        <com.qmuiteam.qmui.widget.roundwidget.QMUIRoundLinearLayout
+            android:orientation="vertical"
+            app:qmui_backgroundColor="@color/backgroud_white"
+            android:id="@id/handle"
+            android:gravity="center"
+            app:qmui_radiusTopLeft="10dp"
+            app:qmui_radiusTopRight="10dp"
+            android:layout_width="match_parent"
+            android:layout_height="60dp">
+
+            <ImageView
+                android:id="@+id/history_arrow"
+                android:src="@mipmap/arrow1"
+                android:layout_width="40dp"
+                android:layout_height="30dp"/>
+
+            <LinearLayout
+                android:layout_marginLeft="13dp"
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <TextView
+                    android:text="蓝天救援队(蓝队5人)"
+                    android:textColor="@color/black"
+                    android:textSize="16dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"/>
+
+                <TextView
+                    android:layout_weight="1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"/>
+
+                <TextView
+                    android:text="行动结果:"
+                    android:textColor="@color/black"
+                    android:textSize="14dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"/>
+
+                <TextView
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="15dp"
+                    android:text="未找到"
+                    android:textColor="@color/black"
+                    android:textSize="14dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"/>
+
+            </LinearLayout>
+
+
+        </com.qmuiteam.qmui.widget.roundwidget.QMUIRoundLinearLayout>
+
+        <!-- content部分的布局 -->
+        <LinearLayout
+            android:id="@+id/content"
+            android:background="@color/backgroud_white"
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+
+            <LinearLayout
+                android:orientation="vertical"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <LinearLayout
+                    android:orientation="horizontal"
+                    android:layout_marginLeft="20dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+                    <TextView
+                        android:textSize="13dp"
+                        android:textColor="@color/text_gray1"
+                        android:text="行动时间:"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"/>
+
+                    <TextView
+                        android:layout_marginLeft="10dp"
+                        android:textSize="12dp"
+                        android:textColor="@color/text_gray1"
+                        android:text="2020.12.21 8:66 - 2020.12.22 7:22"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"/>
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_marginTop="10dp"
+                    android:orientation="horizontal"
+                    android:layout_marginLeft="20dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+                    <TextView
+                        android:textSize="13dp"
+                        android:textColor="@color/text_gray1"
+                        android:text="参与人员:"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"/>
+
+                    <TextView
+                        android:textSize="12dp"
+                        android:textColor="@color/text_gray1"
+                        android:text="蓝鹰 太阳 尖刀 刺客 菠萝"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"/>
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:orientation="vertical"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginRight="15dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+                    <TextView
+                        android:layout_marginTop="10dp"
+                        android:textColor="@color/text_gray1"
+                        android:textSize="13dp"
+                        android:text="行动报告:"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"/>
+
+                    <TextView
+                        android:layout_marginTop="10dp"
+                        android:textColor="@color/text_gray1"
+                        android:textSize="12dp"
+                        android:text="寻找了大约4个小时，并无老人线索"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"/>
+                </LinearLayout>
+
+            </LinearLayout >
+
+
+        </LinearLayout>
+
+
+    </hollowsoft.slidingdrawer.SlidingDrawer>
+
+
+
+</LinearLayout>

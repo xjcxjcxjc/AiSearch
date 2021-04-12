@@ -1,0 +1,603 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ui.volunteer.mine.GradeActivity"
+    android:background="@color/title_blue"
+    android:fitsSystemWindows="true">
+
+
+    <TextView
+        android:background="@color/backgroud1"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"/>
+
+    <LinearLayout
+        android:id="@+id/top"
+        android:background="@color/title_blue"
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="45dp">
+
+        <RelativeLayout
+            android:layout_marginTop="10dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+            <Button
+                android:id="@+id/finish"
+                android:background="@null"
+                android:layout_width="40dp"
+                android:layout_height="wrap_content"/>
+
+
+            <ImageView
+                android:layout_marginTop="5dp"
+                android:layout_marginLeft="12dp"
+                android:src="@mipmap/finish"
+                android:layout_width="18dp"
+                android:layout_height="18dp"/>
+
+        </RelativeLayout>
+
+        <TextView
+            android:layout_weight="1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+
+        <TextView
+            android:layout_marginTop="14dp"
+            android:layout_marginLeft="10dp"
+            android:textStyle="bold"
+            android:text="成长等级"
+            android:textSize="16dp"
+            android:textColor="@color/white"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"/>
+
+        <TextView
+            android:layout_weight="1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+
+        <TextView
+            android:layout_marginTop="7dp"
+            android:layout_marginRight="10dp"
+            android:text="等级说明"
+            android:textSize="12dp"
+            android:textColor="@color/white"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+
+    </LinearLayout>
+
+    <RelativeLayout
+        android:id="@+id/grade_view1"
+        android:layout_marginTop="60dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:background="@mipmap/background22"
+        android:layout_width="match_parent"
+        android:layout_height="200dp">
+
+        <TextView
+            android:layout_marginLeft="25dp"
+            android:layout_marginTop="60dp"
+            android:textSize="20dp"
+            android:textColor="@color/white"
+            android:text="志愿者"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+
+        <TextView
+            android:id="@+id/grade_msg"
+            android:layout_marginLeft="20dp"
+            android:layout_marginBottom="25dp"
+            android:layout_alignParentBottom="true"
+            android:textSize="11dp"
+            android:textColor="@color/white"
+            android:text="还需1238成长值，可升级至level 3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+
+
+        <androidx.cardview.widget.CardView
+            app:cardCornerRadius="7dp"
+            android:layout_marginRight="20dp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginBottom="45dp"
+            android:layout_alignParentBottom="true"
+            app:cardBackgroundColor="@null"
+            android:background="@null"
+            android:layout_width="match_parent"
+            android:layout_height="12dp">
+            <TextView
+                android:background="@color/white"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+            </TextView>
+
+        </androidx.cardview.widget.CardView>
+
+        <androidx.cardview.widget.CardView
+            app:cardCornerRadius="7dp"
+            android:layout_marginRight="100dp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginBottom="45dp"
+            android:layout_alignParentBottom="true"
+            app:cardBackgroundColor="@null"
+            android:background="@null"
+            android:layout_width="match_parent"
+            android:layout_height="12dp">
+
+            <TextView
+                android:background="@drawable/mine_grade"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+            </TextView>
+        </androidx.cardview.widget.CardView>
+
+        <TextView
+            android:id="@+id/grade_nowvalue"
+            android:layout_marginLeft="20dp"
+            android:layout_marginBottom="61dp"
+            android:layout_alignParentBottom="true"
+            android:text="3262"
+            android:textSize="20dp"
+            android:textColor="@color/white"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+
+        <TextView
+            android:layout_toRightOf="@id/grade_nowvalue"
+            android:layout_marginLeft="3dp"
+            android:layout_alignBottom="@id/grade_nowvalue"
+            android:text="/"
+            android:textSize="15dp"
+            android:textColor="@color/white"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+
+        <TextView
+            android:id="@+id/grade_grossvalue"
+            android:layout_marginLeft="12dp"
+            android:layout_toRightOf="@id/grade_nowvalue"
+            android:layout_alignBottom="@id/grade_nowvalue"
+            android:text="4500"
+            android:textSize="15dp"
+            android:textColor="@color/white"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+
+        <TextView
+            android:layout_toRightOf="@id/grade_grossvalue"
+            android:layout_marginLeft="3dp"
+            android:layout_alignBottom="@id/grade_grossvalue"
+            android:text="成长值"
+            android:textSize="15dp"
+            android:textColor="@color/white"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+
+        <ImageView
+            android:id="@+id/grade_badeg"
+            android:layout_marginTop="25dp"
+            android:layout_marginRight="20dp"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentRight="true"
+            android:src="@mipmap/grade_badge"
+            android:layout_width="90dp"
+            android:layout_height="90dp"/>
+
+        <TextView
+            android:textAlignment="center"
+            android:layout_marginBottom="10dp"
+            android:layout_marginLeft="5dp"
+            android:layout_alignLeft="@id/grade_badeg"
+            android:layout_alignBottom="@id/grade_badeg"
+            android:text="Level 2"
+            android:textColor="@color/white"
+            android:textSize="14dp"
+            android:layout_width="80dp"
+            android:layout_height="wrap_content"/>
+
+
+    </RelativeLayout>
+
+    <com.qmuiteam.qmui.widget.roundwidget.QMUIRoundRelativeLayout
+        android:layout_marginTop="75dp"
+        app:qmui_backgroundColor="@color/title_blue"
+        app:qmui_borderWidth="0dp"
+        app:qmui_radiusTopRight="8dp"
+        app:qmui_radiusBottomRight="8dp"
+        android:layout_width="15dp"
+        android:layout_height="168dp"/>
+
+    <com.qmuiteam.qmui.widget.roundwidget.QMUIRoundRelativeLayout
+        android:layout_alignParentRight="true"
+        android:layout_marginTop="75dp"
+        app:qmui_backgroundColor="@color/title_blue"
+        app:qmui_borderWidth="0dp"
+        app:qmui_radiusTopLeft="8dp"
+        app:qmui_radiusBottomLeft="8dp"
+        android:layout_width="15dp"
+        android:layout_height="168dp"/>
+
+    <TextView
+
+        android:id="@+id/grade_powertitle"
+        android:layout_marginLeft="20dp"
+        android:layout_below="@id/grade_view1"
+        android:textSize="17dp"
+        android:textColor="@color/black"
+        android:text="当前已获得权益"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>
+
+    <ImageView
+
+        android:id="@+id/grade_img1"
+        android:layout_marginTop="20dp"
+        android:layout_marginLeft="20dp"
+        android:layout_below="@id/grade_powertitle"
+        android:src="@mipmap/grade_img1"
+        android:layout_width="45dp"
+        android:layout_height="45dp"/>
+
+    <TextView
+
+        android:layout_marginTop="15dp"
+        android:layout_marginLeft="-7dp"
+        android:layout_alignLeft="@id/grade_img1"
+        android:layout_below="@id/grade_img1"
+        android:textColor="@color/black"
+        android:text="免费志愿保险"
+        android:textSize="10dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>
+
+    <ImageView
+
+        android:id="@+id/grade_img2"
+        android:layout_toRightOf="@id/grade_img1"
+        android:layout_marginTop="20dp"
+        android:layout_marginLeft="43dp"
+        android:layout_below="@id/grade_powertitle"
+        android:src="@mipmap/grade_img2"
+        android:layout_width="45dp"
+        android:layout_height="45dp"/>
+
+    <TextView
+
+        android:layout_marginTop="15dp"
+        android:layout_marginLeft="-7dp"
+        android:layout_alignLeft="@id/grade_img2"
+        android:layout_below="@id/grade_img2"
+        android:textColor="@color/black"
+        android:text="解锁训练视频"
+        android:textSize="10dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>
+
+
+    <ImageView
+        android:id="@+id/grade_img3"
+        android:layout_toRightOf="@id/grade_img2"
+        android:layout_marginTop="20dp"
+        android:layout_marginLeft="43dp"
+        android:layout_below="@id/grade_powertitle"
+        android:src="@mipmap/grade_img3"
+        android:layout_width="45dp"
+        android:layout_height="45dp"/>
+
+    <TextView
+
+        android:layout_marginTop="15dp"
+        android:layout_marginLeft="-7dp"
+        android:layout_alignLeft="@id/grade_img3"
+        android:layout_below="@id/grade_img1"
+        android:textColor="@color/black"
+        android:text="带领队员行动"
+        android:textSize="10dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>
+
+    <ImageView
+
+        android:id="@+id/grade_img4"
+        android:layout_toRightOf="@id/grade_img3"
+        android:layout_marginTop="20dp"
+        android:layout_marginLeft="43dp"
+        android:layout_below="@id/grade_powertitle"
+        android:src="@mipmap/grade_img4"
+        android:layout_width="45dp"
+        android:layout_height="45dp"/>
+
+    <TextView
+
+        android:layout_marginTop="15dp"
+        android:layout_marginLeft="-12dp"
+        android:layout_alignLeft="@id/grade_img4"
+        android:layout_below="@id/grade_img1"
+        android:textColor="@color/black"
+        android:text="专业证书注册费"
+        android:textSize="10dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>
+
+
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:background="@mipmap/background23"
+        android:layout_marginTop="50dp"
+        android:layout_below="@id/grade_img1"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <TextView
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="20dp"
+            android:text="任务中心"
+            android:textSize="17dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+
+        <RelativeLayout
+            android:layout_marginTop="5dp"
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_weight="1">
+
+            <TextView
+                android:id="@+id/grade_title1"
+                android:text="参与寻人行动"
+                android:textSize="13dp"
+                android:textColor="@color/black"
+                android:layout_marginLeft="15dp"
+                android:layout_marginTop="5dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"/>
+
+            <TextView
+
+                android:layout_below="@id/grade_title1"
+                android:text="参与一次寻人行动获得50成长值"
+                android:textSize="11dp"
+                android:textColor="@color/text_gray1"
+                android:layout_marginLeft="15dp"
+                android:layout_marginTop="5dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"/>
+
+            <com.qmuiteam.qmui.widget.roundwidget.QMUIRoundLinearLayout
+
+                android:gravity="center"
+                android:layout_marginTop="20dp"
+                android:layout_marginRight="15dp"
+                android:layout_alignParentRight="true"
+                app:qmui_radius="15dp"
+                app:qmui_backgroundColor="@color/title_blue"
+                android:layout_width="65dp"
+                android:layout_height="25dp">
+
+                <TextView
+
+                    android:text="去参与"
+                    android:textColor="@color/white"
+                    android:textSize="14dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"/>
+
+            </com.qmuiteam.qmui.widget.roundwidget.QMUIRoundLinearLayout>
+
+        </RelativeLayout>
+        <RelativeLayout
+            android:layout_marginTop="5dp"
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_weight="1">
+
+            <TextView
+                android:id="@+id/grade_title2"
+                android:text="收能力徽章"
+                android:textSize="13dp"
+                android:textColor="@color/black"
+                android:layout_marginLeft="15dp"
+                android:layout_marginTop="5dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"/>
+
+            <TextView
+
+                android:layout_below="@id/grade_title2"
+                android:text="得到一个能力徽章获得20成长值"
+                android:textSize="11dp"
+                android:textColor="@color/text_gray1"
+                android:layout_marginLeft="15dp"
+                android:layout_marginTop="5dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"/>
+
+            <com.qmuiteam.qmui.widget.roundwidget.QMUIRoundLinearLayout
+
+                android:gravity="center"
+                android:layout_marginTop="20dp"
+                android:layout_marginRight="15dp"
+                android:layout_alignParentRight="true"
+                app:qmui_radius="15dp"
+                app:qmui_backgroundColor="@color/title_blue"
+                android:layout_width="65dp"
+                android:layout_height="25dp">
+
+                <TextView
+
+                    android:text="去收集"
+                    android:textColor="@color/white"
+                    android:textSize="14dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"/>
+
+            </com.qmuiteam.qmui.widget.roundwidget.QMUIRoundLinearLayout>
+
+        </RelativeLayout>
+        <RelativeLayout
+            android:layout_marginTop="5dp"
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_weight="1">
+
+            <TextView
+                android:id="@+id/grade_title3"
+                android:text="参与成功寻回行动"
+                android:textSize="13dp"
+                android:textColor="@color/black"
+                android:layout_marginLeft="15dp"
+                android:layout_marginTop="5dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"/>
+
+            <TextView
+
+                android:layout_below="@id/grade_title3"
+                android:text="参与成功寻回走失人一次获得300成长值"
+                android:textSize="11dp"
+                android:textColor="@color/text_gray1"
+                android:layout_marginLeft="15dp"
+                android:layout_marginTop="5dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"/>
+
+            <com.qmuiteam.qmui.widget.roundwidget.QMUIRoundLinearLayout
+
+                app:qmui_borderWidth="1dp"
+                app:qmui_borderColor="@color/title_blue"
+                android:gravity="center"
+                android:layout_marginTop="20dp"
+                android:layout_marginRight="15dp"
+                android:layout_alignParentRight="true"
+                app:qmui_radius="15dp"
+                app:qmui_backgroundColor="@color/white"
+                android:layout_width="65dp"
+                android:layout_height="25dp">
+
+                <TextView
+                    android:text="可领取"
+                    android:textColor="@color/title_blue"
+                    android:textSize="14dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"/>
+
+            </com.qmuiteam.qmui.widget.roundwidget.QMUIRoundLinearLayout>
+
+        </RelativeLayout>
+        <RelativeLayout
+            android:layout_marginTop="5dp"
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_weight="1">
+
+            <TextView
+                android:id="@+id/grade_title4"
+                android:text="上传游泳求生员证"
+                android:textSize="13dp"
+                android:textColor="@color/black"
+                android:layout_marginLeft="15dp"
+                android:layout_marginTop="5dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"/>
+
+            <TextView
+
+                android:layout_below="@id/grade_title4"
+                android:text="上传游泳求生员证获得200成长值"
+                android:textSize="11dp"
+                android:textColor="@color/text_gray1"
+                android:layout_marginLeft="15dp"
+                android:layout_marginTop="5dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"/>
+
+            <com.qmuiteam.qmui.widget.roundwidget.QMUIRoundLinearLayout
+
+                android:gravity="center"
+                android:layout_marginTop="20dp"
+                android:layout_marginRight="15dp"
+                android:layout_alignParentRight="true"
+                app:qmui_radius="15dp"
+                app:qmui_backgroundColor="@color/title_blue"
+                android:layout_width="65dp"
+                android:layout_height="25dp">
+
+                <TextView
+
+                    android:text="去上传"
+                    android:textColor="@color/white"
+                    android:textSize="14dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"/>
+
+            </com.qmuiteam.qmui.widget.roundwidget.QMUIRoundLinearLayout>
+
+        </RelativeLayout>
+        <RelativeLayout
+            android:layout_marginTop="5dp"
+            android:layout_marginBottom="10dp"
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_weight="1">
+
+            <TextView
+                android:id="@+id/grade_title5"
+                android:text="上传游泳求生员证"
+                android:textSize="13dp"
+                android:textColor="@color/black"
+                android:layout_marginLeft="15dp"
+                android:layout_marginTop="5dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"/>
+
+            <TextView
+
+                android:layout_below="@id/grade_title5"
+                android:text="上传游泳求生员证获得200成长值"
+                android:textSize="11dp"
+                android:textColor="@color/text_gray1"
+                android:layout_marginLeft="15dp"
+                android:layout_marginTop="5dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"/>
+
+            <com.qmuiteam.qmui.widget.roundwidget.QMUIRoundLinearLayout
+
+                android:gravity="center"
+                android:layout_marginTop="20dp"
+                android:layout_marginRight="15dp"
+                android:layout_alignParentRight="true"
+                app:qmui_radius="15dp"
+                app:qmui_backgroundColor="@color/title_blue"
+                android:layout_width="65dp"
+                android:layout_height="25dp">
+
+                <TextView
+
+                    android:text="去上传"
+                    android:textColor="@color/white"
+                    android:textSize="14dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"/>
+
+            </com.qmuiteam.qmui.widget.roundwidget.QMUIRoundLinearLayout>
+
+        </RelativeLayout>
+
+
+
+    </LinearLayout>
+
+
+
+
+</RelativeLayout>

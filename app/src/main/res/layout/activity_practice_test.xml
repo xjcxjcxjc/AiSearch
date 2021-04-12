@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".ui.volunteer.practice.PracticeTestActivity"
+    android:fitsSystemWindows="true"
+    android:background="@color/white">
+
+
+    <LinearLayout
+        android:layout_marginBottom="10dp"
+        android:orientation="horizontal"
+        android:fitsSystemWindows="true"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <ImageView
+            android:id="@+id/practicetest_backimg"
+            android:layout_marginTop="15dp"
+            android:layout_marginLeft="20dp"
+            android:src="@mipmap/finish4"
+            android:layout_width="20dp"
+            android:layout_height="20dp"/>
+
+        <TextView
+            android:layout_weight="1"
+            android:layout_width="1dp"
+            android:layout_height="wrap_content"/>
+
+        <TextView
+            android:id="@+id/practicetest_title"
+            android:layout_marginTop="10dp"
+            android:text="水上求生理论考核"
+            android:textSize="@dimen/title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+
+        <TextView
+            android:layout_weight="1"
+            android:layout_width="1dp"
+            android:layout_height="wrap_content"/>
+
+        <androidx.cardview.widget.CardView
+            android:id="@+id/practicetest_submitcard"
+            android:layout_marginRight="15dp"
+            android:layout_marginTop="10dp"
+            app:cardBackgroundColor="@color/title_blue"
+            app:cardCornerRadius="13dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+            <TextView
+                android:layout_marginBottom="3dp"
+                android:layout_marginTop="3dp"
+                android:layout_marginRight="10dp"
+                android:layout_marginLeft="10dp"
+                android:textSize="14dp"
+                android:textColor="@color/white"
+                android:text="提交"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"/>
+
+        </androidx.cardview.widget.CardView>
+
+    </LinearLayout>
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/practicetest_subjectrecycle"
+        android:layout_weight="1"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"/>
+
+
+    <TextView
+        android:background="@color/qmui_config_color_gray_9"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"/>
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/practicetest_test_progressbar"
+        android:layout_width="match_parent"
+        android:layout_height="30dp"/>
+
+</LinearLayout>

@@ -1,0 +1,122 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fitsSystemWindows="true"
+    >
+
+
+    <RelativeLayout
+        android:visibility="gone"
+        android:id="@+id/title"
+        android:layout_width="match_parent"
+        android:layout_height="80dp">
+
+        <ImageView
+            android:layout_centerVertical="true"
+            android:src="@mipmap/background67"
+            android:scaleType="fitXY"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            />
+
+
+    </RelativeLayout>
+
+
+    <RelativeLayout
+        android:layout_below="@id/title"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@mipmap/arrows_return"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="20dp"
+            android:id="@+id/iv_return"/>
+
+        <RelativeLayout
+            android:id="@+id/et_contentRela"
+            android:layout_below="@id/iv_return"
+            android:layout_width="match_parent"
+            android:layout_height="180dp">
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="80dp"
+                android:background="@null"
+                android:hint="提供一下你的线索..."
+                android:textSize="15dp"
+                android:layout_marginLeft="10dp"
+                android:id="@+id/et_content"/>
+        </RelativeLayout>
+
+
+
+        <ImageView
+
+            android:layout_width="70dp"
+            android:layout_height="70dp"
+            android:src="@mipmap/background39"
+            android:layout_below="@id/et_contentRela"
+            android:layout_marginLeft="10dp"
+            android:id="@+id/iv_add"/>
+
+
+        <Button
+
+            android:id="@+id/submit"
+            android:background="@null"
+            android:layout_width="60dp"
+            android:layout_height="40dp"
+            android:text="提供"
+            android:textSize="@dimen/tabSize"
+            android:layout_alignParentRight="true"
+            android:layout_marginTop="15dp"
+            android:layout_marginRight="10dp"/>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="2dp"
+            android:layout_below="@+id/iv_add"
+            android:background="#f2f2f2"
+            android:layout_marginTop="50dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:id="@+id/view_line2" />
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@mipmap/yuew_publish_location"
+            android:layout_below="@id/view_line2"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="15dp"
+            android:id="@+id/iv_ic_location"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="中山西路"
+            android:layout_below="@id/view_line2"
+            android:layout_marginTop="10dp"
+            android:id="@+id/tv_location"
+            android:textColor="#4a4a4a"
+            android:layout_marginLeft="40dp"/>
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@mipmap/arrows_right"
+            android:layout_below="@id/view_line2"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="10dp"
+            android:layout_marginTop="12dp"
+            android:id="@+id/iv_location_right"/>
+
+
+    </RelativeLayout>
+
+
+</RelativeLayout>

@@ -1,0 +1,133 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@drawable/action_backgroud">
+
+    <LinearLayout
+        android:id="@+id/practice_top"
+        android:layout_marginTop="10dp"
+        android:fitsSystemWindows="true"
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <androidx.cardview.widget.CardView
+            android:layout_width="match_parent"
+            app:qmui_borderColor="@color/black"
+            android:layout_height="30dp"
+            app:cardCornerRadius="20dp"
+            android:layout_marginBottom="20dp"
+            android:layout_marginLeft="80dp"
+            android:layout_marginRight="80dp"
+            android:background="@color/white">
+
+            <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <ImageView
+                    android:id="@+id/practice_top_img"
+                    android:layout_marginLeft="70dp"
+                    android:layout_marginRight="10dp"
+                    android:layout_marginTop="5dp"
+                    android:src="@mipmap/search_32"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"/>
+
+
+                <TextView
+                    android:id="@+id/practice_tosearch"
+                    android:layout_marginTop="5dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="30dp"
+                    android:textCursorDrawable="@drawable/color_cursor"
+                    android:hint="搜索"
+                    android:textSize="14dp"
+                    android:textAlignment="textStart"
+                    android:background="@null"
+                    />
+            </LinearLayout>
+        </androidx.cardview.widget.CardView>
+    </LinearLayout>
+
+
+    <RadioGroup
+        android:id="@+id/pracrice_radiogroup"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center">
+
+            <RadioButton
+                android:background="@null"
+                android:id="@+id/pracrice_radiogroup_fbbtn"
+                android:stateListAnimator="@null"
+                android:text="菜鸟训练营"
+                android:textSize="18dp"
+                android:textColor="@color/white"
+                android:button="@null"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="40dp"
+                android:layout_marginBottom="5dp"/>
+
+
+            <RadioButton
+                android:background="@null"
+                android:id="@+id/pracrice_radiogroup_skill"
+                android:stateListAnimator="@null"
+                android:text="技能提升营"
+                android:textSize="18dp"
+                android:textColor="@color/white"
+                android:button="@null"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="5dp"/>
+
+    </RadioGroup>
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center">
+
+    <TextView
+        android:id="@+id/pracrice_radiogroup_fbbtn_border"
+        android:layout_marginRight="40dp"
+        android:layout_width="60dp"
+        android:layout_height="3dp"
+        android:background="@color/white"/>
+
+    <TextView
+        android:id="@+id/pracrice_radiogroup_skill_border"
+        android:layout_toRightOf="@id/pracrice_radiogroup_fbbtn_border"
+        android:layout_marginLeft="40dp"
+        android:layout_width="60dp"
+        android:layout_height="3dp"
+        android:background="@color/qmui_config_color_transparent"/>
+
+    </RelativeLayout>
+
+    <com.qmuiteam.qmui.widget.roundwidget.QMUIRoundLinearLayout
+        android:layout_marginTop="15dp"
+        app:qmui_radiusTopRight="10dp"
+        app:qmui_radiusTopLeft="10dp"
+        app:qmui_backgroundColor="@color/white"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <androidx.viewpager.widget.ViewPager
+            android:id="@+id/practice_viewpager"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"/>
+
+    </com.qmuiteam.qmui.widget.roundwidget.QMUIRoundLinearLayout>
+
+
+</LinearLayout>

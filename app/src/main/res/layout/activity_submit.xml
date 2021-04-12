@@ -1,0 +1,270 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ui.family.take_a_hand.help.HelpActivity4"
+    android:fitsSystemWindows="false">
+
+
+    <RelativeLayout
+
+        android:id="@+id/submit_topview"
+        android:background="@drawable/action_backgroud2"
+        android:layout_width="match_parent"
+        android:layout_height="260dp">
+
+
+
+        <ImageView
+
+            android:id="@+id/yes"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="60dp"
+            android:src="@mipmap/help_img6"
+            android:layout_width="40dp"
+            android:layout_height="40dp"/>
+
+        <TextView
+
+            android:id="@+id/pass"
+            android:layout_marginTop="5dp"
+            android:layout_below="@id/yes"
+            android:layout_centerHorizontal="true"
+            android:textSize="@dimen/title"
+            android:textColor="@color/white"
+            android:text="信息分析通过"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+
+        <TextView
+
+            android:id="@+id/leve"
+            android:layout_marginTop="5dp"
+            android:layout_below="@id/pass"
+            android:layout_centerHorizontal="true"
+            android:textSize="@dimen/title"
+            android:textColor="@color/white"
+            android:text="一级救援"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+
+
+        <LinearLayout
+
+            android:id="@+id/emergency"
+            android:layout_marginTop="5dp"
+            android:layout_below="@id/leve"
+            android:layout_centerHorizontal="true"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+            <TextView
+
+                android:textColor="@color/white"
+                android:text="紧急程度"
+                android:textSize="@dimen/chatSizeL"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"/>
+
+
+            <LinearLayout
+
+                android:layout_marginTop="5dp"
+                android:orientation="horizontal"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+
+                <ImageView
+                    android:id="@+id/actioncenter_emerg1"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginTop="-4dp"
+                    android:src="@mipmap/flash1"
+                    android:layout_width="10dp"
+                    android:layout_height="wrap_content"/>
+
+                <ImageView
+                    android:id="@+id/actioncenter_emerg2"
+                    android:layout_marginLeft="2dp"
+                    android:layout_marginTop="-4dp"
+                    android:src="@mipmap/flash1"
+                    android:layout_width="10dp"
+                    android:layout_height="wrap_content"/>
+
+                <ImageView
+                    android:id="@+id/actioncenter_emerg3"
+                    android:layout_marginLeft="2dp"
+                    android:layout_marginTop="-4dp"
+                    android:src="@mipmap/flash1"
+                    android:layout_width="10dp"
+                    android:layout_height="wrap_content"/>
+
+                <ImageView
+                    android:id="@+id/actioncenter_emerg4"
+                    android:layout_marginLeft="2dp"
+                    android:layout_marginTop="-4dp"
+                    android:src="@mipmap/flash1"
+                    android:layout_width="10dp"
+                    android:layout_height="wrap_content"/>
+
+                <ImageView
+                    android:id="@+id/actioncenter_emerg5"
+                    android:layout_marginLeft="2dp"
+                    android:layout_marginTop="-4dp"
+                    android:src="@mipmap/flash1"
+                    android:layout_width="10dp"
+                    android:layout_height="wrap_content"/>
+
+
+            </LinearLayout>
+
+
+
+
+        </LinearLayout>
+        <TextView
+
+            android:id="@+id/time"
+            android:layout_marginTop="5dp"
+            android:layout_below="@id/emergency"
+            android:layout_centerHorizontal="true"
+            android:textSize="@dimen/title"
+            android:textColor="@color/white"
+            android:text="预计30分钟后开始行动"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+
+        <TextView
+
+            android:layout_marginTop="5dp"
+            android:layout_below="@id/time"
+            android:layout_centerHorizontal="true"
+            android:textSize="@dimen/title"
+            android:textColor="@color/white"
+            android:text="等待管理员调整行动规划"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+
+    </RelativeLayout>
+
+    <LinearLayout
+        android:id="@+id/top"
+        android:background="@color/qmui_config_color_transparent"
+        android:layout_marginTop="30dp"
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="45dp">
+
+        <RelativeLayout
+            android:layout_marginTop="10dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+            <Button
+                android:id="@+id/finish"
+                android:background="@null"
+                android:layout_width="40dp"
+                android:layout_height="wrap_content"/>
+
+
+            <ImageView
+                android:layout_marginTop="5dp"
+                android:layout_marginLeft="12dp"
+                android:src="@mipmap/finish"
+                android:layout_width="18dp"
+                android:layout_height="18dp"/>
+
+        </RelativeLayout>
+
+        <TextView
+            android:layout_weight="1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+
+        <TextView
+            android:layout_weight="1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+
+        <ImageView
+            android:id="@+id/share"
+            android:layout_marginTop="5dp"
+            android:layout_marginRight="10dp"
+            android:src="@mipmap/share"
+            android:layout_width="22dp"
+            android:layout_height="wrap_content"/>
+
+    </LinearLayout>
+
+
+    <com.baidu.mapapi.map.MapView
+        android:id="@+id/bmapView"
+        android:layout_below="@id/submit_topview"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"/>
+
+
+    <LinearLayout
+
+        android:visibility="invisible"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="20dp"
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <androidx.cardview.widget.CardView
+
+            android:id="@+id/searchnotice"
+            app:cardCornerRadius="25dp"
+            android:layout_weight="1"
+            android:layout_width="1dp"
+            android:layout_height="40dp"
+            app:cardBackgroundColor="@color/title_red"
+            android:layout_marginLeft="15dp"
+            android:layout_marginRight="15dp"
+            >
+
+            <LinearLayout
+                android:gravity="center"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <TextView
+                    android:text="寻人启事"
+                    android:textSize="@dimen/buttonSize"
+                    android:textColor="@color/white"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"/>
+
+            </LinearLayout>
+        </androidx.cardview.widget.CardView>
+        <androidx.cardview.widget.CardView
+            android:id="@+id/success_submit"
+            app:cardCornerRadius="25dp"
+            android:layout_width="1dp"
+            android:layout_weight="1"
+            android:layout_height="40dp"
+            app:cardBackgroundColor="@color/title_red"
+            android:layout_marginLeft="15dp"
+            android:layout_marginRight="15dp"
+            >
+
+            <LinearLayout
+                android:gravity="center"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <TextView
+                    android:id="@+id/success_submittv"
+                    android:text="发起行动"
+                    android:textSize="@dimen/buttonSize"
+                    android:textColor="@color/white"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"/>
+            </LinearLayout>
+        </androidx.cardview.widget.CardView>
+    </LinearLayout>
+
+</RelativeLayout>

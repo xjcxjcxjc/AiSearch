@@ -1,0 +1,206 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:background="@color/title_blue"
+    >
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:id="@+id/index_topbar"
+        android:layout_width="match_parent"
+        android:layout_height="40dp">
+
+        <RelativeLayout
+            android:gravity="center_vertical"
+            android:layout_width="60dp"
+            android:layout_height="match_parent">
+
+            <Button
+                android:id="@+id/index_topbar_locationbtn"
+                android:background="@null"
+                android:layout_width="160dp"
+                android:layout_height="match_parent"/>
+
+            <TextView
+                android:id="@+id/index_topbar_locationtv"
+                android:text="宁波"
+                android:textColor="@color/white"
+                android:textSize="14dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginLeft="10dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"/>
+
+            <ImageView
+                android:layout_marginTop="14dp"
+                android:layout_marginLeft="40dp"
+                android:src="@mipmap/backdown"
+                android:layout_width="10dp"
+                android:layout_height="10dp"/>
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_weight="1"
+            android:layout_width="0dp"
+            android:layout_height="match_parent">
+
+            <com.qmuiteam.qmui.widget.roundwidget.QMUIRoundButton
+                android:id="@+id/index_topbar_searchbtn"
+                app:qmui_radius="15dp"
+                app:qmui_borderWidth="0dp"
+                android:layout_marginTop="5dp"
+                android:layout_marginBottom="5dp"
+                app:qmui_backgroundColor="@color/white"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"/>
+
+            <LinearLayout
+                android:layout_centerHorizontal="true"
+                android:orientation="horizontal"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent">
+
+                <ImageView
+                    android:layout_marginTop="12dp"
+                    android:src="@mipmap/search"
+                    android:layout_height="17dp"
+                    android:layout_width="17dp"/>
+
+                <TextView
+                    android:layout_marginLeft="15dp"
+                    android:layout_marginTop="11dp"
+                    android:textSize="13dp"
+                    android:textColor="@color/text_gray1"
+                    android:text="海曙区老人走失"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"/>
+            </LinearLayout>
+
+            <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <TextView
+                    android:layout_weight="1"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"/>
+
+            </LinearLayout>
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:gravity="center_vertical"
+            android:layout_width="60dp"
+            android:layout_height="match_parent">
+
+            <Button
+                android:id="@+id/index_topbar_talkbtn"
+                android:background="@null"
+                android:layout_width="60dp"
+                android:layout_height="match_parent"/>
+
+            <ImageView
+                android:layout_marginLeft="20dp"
+                android:layout_marginTop="9dp"
+                android:src="@mipmap/talk"
+                android:layout_height="22dp"
+                android:layout_width="22dp"/>
+
+        </RelativeLayout>
+
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:background="@color/white"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <com.qmuiteam.qmui.widget.roundwidget.QMUIRoundRelativeLayout
+            app:qmui_radiusBottomRight="5dp"
+            app:qmui_radiusBottomLeft="5dp"
+            app:qmui_borderWidth="0dp"
+            app:qmui_backgroundColor="@color/white"
+            android:layout_width="match_parent"
+            android:layout_height="40dp">
+
+            <RadioGroup
+                android:id="@+id/index_topbar_rg"
+                android:background="@mipmap/background3"
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <RadioButton
+                    android:id="@+id/index_topbar_rb1"
+                    android:button="@null"
+                    android:background="@null"
+                    android:textAlignment="center"
+                    android:text="行动中心"
+                    android:textSize="16dp"
+                    android:textColor="@color/title_blue"
+                    android:layout_weight="1"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"/>
+
+                <RadioButton
+                    android:id="@+id/index_topbar_rb2"
+                    android:button="@null"
+                    android:background="@null"
+                    android:textAlignment="center"
+                    android:textColor="@color/text_gray1"
+                    android:text="寻人启事"
+                    android:textSize="16dp"
+                    android:layout_weight="1"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"/>
+
+            </RadioGroup>
+
+            <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:gravity="center">
+
+                <TextView
+                    android:id="@+id/index_topbar_rb1bg"
+                    android:layout_marginBottom="-7dp"
+                    android:layout_gravity="bottom"
+                    android:background="@color/title_blue"
+                    android:layout_width="27dp"
+                    android:layout_height="2.5dp"/>
+
+                <TextView
+                    android:layout_width="155dp"
+                    android:layout_height="0dp"/>
+
+                <TextView
+                    android:id="@+id/index_topbar_rb2bg"
+                    android:layout_marginBottom="-7dp"
+                    android:layout_gravity="bottom"
+                    android:background="@color/qmui_config_color_transparent"
+                    android:layout_width="27dp"
+                    android:layout_height="2.5dp"/>
+
+            </LinearLayout>
+
+        </com.qmuiteam.qmui.widget.roundwidget.QMUIRoundRelativeLayout>
+
+    </LinearLayout>
+
+
+    <androidx.viewpager.widget.ViewPager
+        android:id="@+id/index_viewpager"
+        android:background="@color/text_gray1"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"/>
+
+
+</LinearLayout>

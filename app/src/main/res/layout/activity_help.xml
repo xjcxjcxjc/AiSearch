@@ -1,0 +1,903 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ui.family.take_a_hand.help.HelpActivity"
+    android:background="@drawable/action_backgroud2"
+    android:fitsSystemWindows="true">
+
+
+    <LinearLayout
+        android:id="@+id/top"
+        android:background="@color/qmui_config_color_transparent"
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="45dp">
+
+        <RelativeLayout
+            android:layout_marginTop="10dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+            <Button
+                android:id="@+id/finish"
+                android:background="@null"
+                android:layout_width="40dp"
+                android:layout_height="wrap_content"/>
+
+
+            <ImageView
+                android:layout_marginTop="5dp"
+                android:layout_marginLeft="12dp"
+                android:src="@mipmap/finish"
+                android:layout_width="18dp"
+                android:layout_height="18dp"/>
+
+        </RelativeLayout>
+
+        <TextView
+            android:layout_weight="1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+
+        <TextView
+            android:layout_marginRight="20dp"
+            android:layout_marginTop="14dp"
+            android:textStyle="bold"
+            android:text="求助申请"
+            android:textSize="@dimen/title"
+            android:textColor="@color/white"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"/>
+
+        <TextView
+            android:layout_weight="1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+
+    </LinearLayout>
+    <ScrollView
+
+        android:scrollbars="none"
+        android:layout_below="@id/top"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/help_view1card"
+                android:layout_marginTop="20dp"
+                android:layout_marginRight="10dp"
+                android:layout_marginLeft="10dp"
+                app:cardCornerRadius="10dp"
+                android:layout_width="match_parent"
+                android:layout_height="270dp">
+
+                <RelativeLayout
+                    android:id="@+id/help_view1"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                    <TextView
+                        android:layout_marginTop="10dp"
+                        android:layout_marginLeft="15dp"
+                        android:textColor="@color/black"
+                        android:textSize="17dp"
+                        android:text="基本信息"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"/>
+
+                    <RelativeLayout
+                        android:id="@+id/help_takephoto"
+                        android:layout_marginTop="40dp"
+                        android:layout_marginLeft="70dp"
+                        android:background="@mipmap/photoes"
+                        android:layout_width="90dp"
+                        android:layout_height="120dp">
+
+                        <ImageView
+
+                            android:layout_centerInParent="true"
+                            android:src="@mipmap/photoes2"
+                            android:layout_width="40dp"
+                            android:layout_height="40dp"/>
+
+                        <ImageView
+                            android:id="@+id/help_photo"
+                            android:src="@mipmap/background63"
+                            android:scaleType="centerCrop"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"/>
+
+                    </RelativeLayout>
+
+                    <RelativeLayout
+                        android:layout_alignTop="@id/help_takephoto"
+                        android:layout_alignParentRight="true"
+                        android:layout_width="140dp"
+                        android:layout_height="120dp">
+
+                        <ImageView
+                            android:id="@+id/help_person"
+                            android:layout_alignParentBottom="true"
+                            android:layout_centerHorizontal="true"
+                            android:src="@mipmap/personpsd"
+                            android:layout_width="wrap_content"
+                            android:layout_height="110dp"/>
+
+
+                        <ImageView
+                            android:id="@+id/persondialog_hatimg"
+                            android:layout_centerHorizontal="true"
+                            android:layout_width="23dp"
+                            android:layout_height="wrap_content"/>
+
+
+                        <ImageView
+                            android:id="@+id/persondialog_shoesimg"
+                            android:layout_alignLeft="@id/help_person"
+                            android:layout_marginLeft="20dp"
+                            android:layout_alignParentBottom="true"
+                            android:layout_width="16dp"
+                            android:layout_height="wrap_content"/>
+
+
+                        <ImageView
+                            android:id="@+id/persondialog_trousersimg"
+                            android:layout_alignLeft="@id/help_person"
+                            android:layout_marginLeft="19dp"
+                            android:layout_marginTop="63dp"
+                            android:layout_width="17dp"
+                            android:layout_height="wrap_content"/>
+
+
+                        <ImageView
+                            android:id="@+id/persondialog_clothimg"
+                            android:layout_centerHorizontal="true"
+                            android:layout_marginTop="39dp"
+                            android:layout_width="wrap_content"
+                            android:layout_height="30dp"/>
+
+
+                    </RelativeLayout>
+
+<!--                    android:src="@mipmap/clother_hat"-->
+
+
+                    <LinearLayout
+                        android:layout_below="@id/help_takephoto"
+                        android:orientation="vertical"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent">
+
+                        <LinearLayout
+                            android:orientation="horizontal"
+                            android:layout_width="match_parent"
+                            android:layout_height="1dp"
+                            android:layout_weight="1">
+
+                            <TextView
+
+                                android:layout_marginLeft="20dp"
+                                android:gravity="center_vertical"
+                                android:text="*姓名"
+                                android:textSize="13dp"
+                                android:layout_width="1dp"
+                                android:layout_weight="1"
+                                android:layout_height="match_parent"/>
+
+                            <TextView
+
+                                android:layout_marginTop="5dp"
+                                android:layout_marginBottom="5dp"
+                                android:background="@mipmap/background13"
+                                android:layout_width="1dp"
+                                android:layout_height="match_parent"/>
+
+                            <EditText
+
+                                android:text="梁广军"
+                                android:background="@null"
+                                android:gravity="center"
+                                android:textAlignment="viewEnd"
+                                android:layout_marginRight="5dp"
+                                android:textSize="13dp"
+                                android:layout_width="1dp"
+                                android:layout_weight="1"
+                                android:layout_height="match_parent"
+                                tools:ignore="RtlCompat" />
+                            <TextView
+
+                                android:layout_marginTop="5dp"
+                                android:layout_marginBottom="5dp"
+                                android:background="@mipmap/background13"
+                                android:layout_width="1dp"
+                                android:layout_height="match_parent"/>
+                            <TextView
+                                android:layout_marginLeft="20dp"
+                                android:gravity="center_vertical"
+                                android:text="*性别"
+                                android:textSize="13dp"
+                                android:layout_width="1dp"
+                                android:layout_weight="1"
+                                android:layout_height="match_parent"/>
+                            <TextView
+
+                                android:layout_marginTop="5dp"
+                                android:layout_marginBottom="5dp"
+                                android:background="@mipmap/background13"
+                                android:layout_width="1dp"
+                                android:layout_height="match_parent"/>
+                            <RadioGroup
+
+                                android:gravity="center_vertical"
+                                android:orientation="horizontal"
+                                android:layout_width="1dp"
+                                android:layout_weight="1.5"
+                                android:layout_height="match_parent">
+
+                                <TextView
+                                    android:layout_marginLeft="5dp"
+                                    android:textSize="13dp"
+                                    android:text="男"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"/>
+
+                                <RadioButton
+                                    android:checked="true"
+                                    android:layout_marginLeft="7dp"
+                                    android:layout_marginRight="7dp"
+                                    android:button="@null"
+                                    android:background="@drawable/radiobtn_subject2"
+                                    android:layout_width="15dp"
+                                    android:layout_height="15dp"/>
+
+                                <TextView
+                                    android:textSize="13dp"
+                                    android:text="女"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"/>
+
+                                <RadioButton
+                                    android:layout_marginLeft="7dp"
+                                    android:button="@null"
+                                    android:background="@drawable/radiobtn_subject2"
+                                    android:layout_width="15dp"
+                                    android:layout_height="15dp"/>
+
+                            </RadioGroup>
+
+                        </LinearLayout>
+
+                        <TextView
+
+                            android:layout_marginRight="20dp"
+                            android:layout_marginLeft="20dp"
+                            android:background="@mipmap/background12"
+                            android:layout_width="match_parent"
+                            android:layout_height="1dp"/>
+                        <LinearLayout
+                            android:orientation="horizontal"
+                            android:layout_width="match_parent"
+                            android:layout_height="1dp"
+                            android:layout_weight="1">
+
+                            <TextView
+
+                                android:layout_marginLeft="20dp"
+                                android:gravity="center_vertical"
+                                android:text="  身高"
+                                android:textSize="13dp"
+                                android:layout_width="1dp"
+                                android:layout_weight="1"
+                                android:layout_height="match_parent"/>
+
+                            <TextView
+
+                                android:layout_marginTop="5dp"
+                                android:layout_marginBottom="5dp"
+                                android:background="@mipmap/background13"
+                                android:layout_width="1dp"
+                                android:layout_height="match_parent"/>
+
+                            <EditText
+
+                                android:text="170cm"
+                                android:background="@null"
+                                android:gravity="center"
+                                android:textAlignment="viewEnd"
+                                android:layout_marginRight="5dp"
+                                android:textSize="13dp"
+                                android:layout_width="1dp"
+                                android:layout_weight="1"
+                                android:layout_height="match_parent"
+                                tools:ignore="RtlCompat" />
+                            <TextView
+
+                                android:layout_marginTop="5dp"
+                                android:layout_marginBottom="5dp"
+                                android:background="@mipmap/background13"
+                                android:layout_width="1dp"
+                                android:layout_height="match_parent"/>
+
+                            <TextView
+                                android:layout_marginLeft="20dp"
+                                android:gravity="center_vertical"
+                                android:text="  籍贯"
+                                android:textSize="13dp"
+                                android:layout_width="1dp"
+                                android:layout_weight="1"
+                                android:layout_height="match_parent"/>
+                            <TextView
+
+                                android:layout_marginTop="5dp"
+                                android:layout_marginBottom="5dp"
+                                android:background="@mipmap/background13"
+                                android:layout_width="1dp"
+                                android:layout_height="match_parent"/>
+                            <EditText
+
+                                android:text="浙江宁波"
+                                android:background="@null"
+                                android:gravity="center"
+                                android:textAlignment="viewEnd"
+                                android:layout_marginRight="20dp"
+                                android:textSize="13dp"
+                                android:layout_width="1dp"
+                                android:layout_weight="1.2"
+                                android:layout_height="match_parent"
+                                tools:ignore="RtlCompat" />
+                        </LinearLayout>
+                        <TextView
+
+                            android:layout_marginRight="20dp"
+                            android:layout_marginLeft="20dp"
+                            android:background="@mipmap/background12"
+                            android:layout_width="match_parent"
+                            android:layout_height="1dp"/>
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="1dp"
+                            android:layout_weight="1">
+
+                            <TextView
+
+                                android:layout_marginLeft="20dp"
+                                android:gravity="center_vertical"
+                                android:text="身份证"
+                                android:textSize="13dp"
+                                android:layout_width="1dp"
+                                android:layout_weight="1"
+                                android:layout_height="match_parent"/>
+
+                            <TextView
+
+                                android:layout_marginTop="5dp"
+                                android:layout_marginBottom="5dp"
+                                android:background="@mipmap/background13"
+                                android:layout_width="1dp"
+                                android:layout_height="match_parent"/>
+
+                            <EditText
+
+                                android:text="331082195409351233482"
+                                android:paddingRight="20dp"
+                                android:textSize="13dp"
+                                android:textAlignment="viewEnd"
+                                android:background="@null"
+                                android:layout_weight="4"
+                                android:layout_width="1dp"
+                                android:layout_height="match_parent"/>
+
+                        </LinearLayout>
+                    </LinearLayout>
+
+
+
+                </RelativeLayout>
+
+            </androidx.cardview.widget.CardView>
+            <androidx.cardview.widget.CardView
+                android:id="@+id/help_view1card2_1"
+                android:layout_below="@id/help_view1card"
+                android:layout_marginTop="10dp"
+                android:layout_marginRight="10dp"
+                android:layout_marginLeft="10dp"
+                app:cardCornerRadius="10dp"
+                android:layout_width="match_parent"
+                android:layout_height="150dp">
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                    <TextView
+                        android:id="@+id/help_view2"
+                        android:layout_marginTop="10dp"
+                        android:layout_marginLeft="15dp"
+                        android:textColor="@color/black"
+                        android:textSize="17dp"
+                        android:text="走失信息"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"/>
+
+
+                    <LinearLayout
+                        android:layout_below="@id/help_view2"
+                        android:orientation="vertical"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent">
+
+                        <LinearLayout
+                            android:orientation="horizontal"
+                            android:layout_width="match_parent"
+                            android:layout_height="1dp"
+                            android:layout_weight="1">
+
+                            <TextView
+
+                                android:layout_marginLeft="20dp"
+                                android:gravity="center_vertical"
+                                android:text="*走失时间"
+                                android:textSize="13dp"
+                                android:layout_width="1dp"
+                                android:layout_weight="1"
+                                android:layout_height="match_parent"/>
+
+                            <TextView
+
+                                android:layout_marginTop="5dp"
+                                android:layout_marginBottom="5dp"
+                                android:background="@mipmap/background13"
+                                android:layout_width="1dp"
+                                android:layout_height="match_parent"/>
+
+                            <LinearLayout
+
+                                android:orientation="horizontal"
+                                android:layout_weight="3"
+                                android:layout_width="1dp"
+                                android:layout_height="match_parent">
+
+                                <TextView
+
+                                    android:id="@+id/help_time"
+                                    android:textAlignment="viewEnd"
+                                    android:gravity="center_vertical"
+                                    android:text="2020年1月11日10时"
+                                    android:textSize="13dp"
+                                    android:layout_weight="1"
+                                    android:layout_width="1dp"
+                                    android:layout_height="match_parent"
+                                    tools:ignore="RtlCompat" />
+
+                                <ImageView
+
+                                    android:layout_gravity="center_vertical"
+                                    android:layout_marginLeft="10dp"
+                                    android:layout_marginRight="20dp"
+                                    android:src="@mipmap/help_img1"
+                                    android:layout_width="15dp"
+                                    android:layout_height="15dp"/>
+
+
+
+                            </LinearLayout>
+
+                        </LinearLayout>
+
+                        <TextView
+
+                            android:layout_marginRight="20dp"
+                            android:layout_marginLeft="20dp"
+                            android:background="@mipmap/background12"
+                            android:layout_width="match_parent"
+                            android:layout_height="1dp"/>
+
+                        <LinearLayout
+                            android:orientation="horizontal"
+                            android:layout_width="match_parent"
+                            android:layout_height="1dp"
+                            android:layout_weight="1">
+
+                            <TextView
+
+                                android:layout_marginLeft="20dp"
+                                android:gravity="center_vertical"
+                                android:text="*走失地点"
+                                android:textSize="13dp"
+                                android:layout_width="1dp"
+                                android:layout_weight="1"
+                                android:layout_height="match_parent"/>
+
+                            <TextView
+
+                                android:layout_marginTop="5dp"
+                                android:layout_marginBottom="5dp"
+                                android:background="@mipmap/background13"
+                                android:layout_width="1dp"
+                                android:layout_height="match_parent"/>
+
+                            <EditText
+                                android:text="宁波市海曙区"
+                                android:background="@null"
+                                android:textAlignment="viewEnd"
+                                android:gravity="center_vertical"
+                                android:textSize="13dp"
+                                android:layout_width="1dp"
+                                android:layout_weight="2.5"
+                                android:layout_height="match_parent"
+                                tools:ignore="RtlCompat" />
+
+                            <ImageView
+
+                                android:layout_gravity="center_vertical"
+                                android:layout_marginLeft="10dp"
+                                android:layout_marginRight="20dp"
+                                android:src="@mipmap/help_img2"
+                                android:layout_width="15dp"
+                                android:layout_height="15dp"/>
+
+                        </LinearLayout>
+
+                        <TextView
+
+                            android:layout_marginRight="20dp"
+                            android:layout_marginLeft="20dp"
+                            android:background="@mipmap/background12"
+                            android:layout_width="match_parent"
+                            android:layout_height="1dp"/>
+
+
+                        <LinearLayout
+                            android:orientation="horizontal"
+                            android:layout_width="match_parent"
+                            android:layout_height="1dp"
+                            android:layout_weight="1">
+
+                            <TextView
+
+                                android:layout_marginLeft="20dp"
+                                android:gravity="center_vertical"
+                                android:text="*走失类型"
+                                android:textSize="13dp"
+                                android:layout_width="1dp"
+                                android:layout_weight="1"
+                                android:layout_height="match_parent"/>
+
+                            <TextView
+
+                                android:layout_marginTop="5dp"
+                                android:layout_marginBottom="5dp"
+                                android:background="@mipmap/background13"
+                                android:layout_width="1dp"
+                                android:layout_height="match_parent"/>
+
+                            <LinearLayout
+
+                                android:orientation="horizontal"
+                                android:layout_weight="3"
+                                android:layout_width="1dp"
+                                android:layout_height="match_parent">
+
+                                <TextView
+                                    android:id="@+id/help_losttype"
+                                    android:textAlignment="viewEnd"
+                                    android:gravity="center_vertical"
+                                    android:text="老人走失"
+                                    android:textSize="13dp"
+                                    android:layout_weight="1"
+                                    android:layout_width="1dp"
+                                    android:layout_height="match_parent"
+                                    tools:ignore="RtlCompat" />
+
+                                <ImageView
+
+                                    android:layout_gravity="center_vertical"
+                                    android:layout_marginLeft="10dp"
+                                    android:layout_marginRight="20dp"
+                                    android:src="@mipmap/arrow_down3"
+                                    android:layout_width="15dp"
+                                    android:layout_height="15dp"/>
+
+
+
+                            </LinearLayout>
+
+                        </LinearLayout>
+
+                    </LinearLayout>
+
+
+
+                </RelativeLayout>
+
+            </androidx.cardview.widget.CardView>
+            <androidx.cardview.widget.CardView
+                android:id="@+id/help_view1card2"
+                android:layout_below="@id/help_view1card2_1"
+                android:layout_marginTop="10dp"
+                android:layout_marginRight="10dp"
+                android:layout_marginLeft="10dp"
+                app:cardCornerRadius="10dp"
+                android:layout_width="match_parent"
+                android:layout_height="200dp">
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                    <TextView
+                        android:id="@+id/help_view2_2"
+                        android:layout_marginTop="10dp"
+                        android:layout_marginLeft="15dp"
+                        android:textColor="@color/black"
+                        android:textSize="17dp"
+                        android:text="特征信息"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"/>
+
+
+                    <LinearLayout
+                        android:layout_below="@id/help_view2_2"
+                        android:orientation="vertical"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent">
+
+
+                        <LinearLayout
+                            android:orientation="horizontal"
+                            android:layout_width="match_parent"
+                            android:layout_height="1dp"
+                            android:layout_weight="1">
+
+                            <TextView
+
+                                android:layout_marginLeft="20dp"
+                                android:gravity="center_vertical"
+                                android:text="走失衣着"
+                                android:textSize="13dp"
+                                android:layout_width="1dp"
+                                android:layout_weight="1"
+                                android:layout_height="match_parent"/>
+
+                            <TextView
+
+                                android:layout_marginTop="5dp"
+                                android:layout_marginBottom="5dp"
+                                android:background="@mipmap/background13"
+                                android:layout_width="1dp"
+                                android:layout_height="match_parent"/>
+
+                            <EditText
+                                android:background="@null"
+                                android:textAlignment="viewEnd"
+                                android:gravity="center_vertical"
+                                android:textSize="13dp"
+                                android:layout_width="1dp"
+                                android:layout_weight="2.5"
+                                android:layout_height="match_parent"
+                                tools:ignore="RtlCompat" />
+
+                            <ImageView
+
+                                android:layout_gravity="center_vertical"
+                                android:layout_marginLeft="10dp"
+                                android:layout_marginRight="20dp"
+                                android:src="@mipmap/help_img3"
+                                android:layout_width="15dp"
+                                android:layout_height="15dp"/>
+
+                        </LinearLayout>
+                        <TextView
+
+                            android:layout_marginRight="20dp"
+                            android:layout_marginLeft="20dp"
+                            android:background="@mipmap/background12"
+                            android:layout_width="match_parent"
+                            android:layout_height="1dp"/>
+                        <LinearLayout
+                            android:orientation="horizontal"
+                            android:layout_width="match_parent"
+                            android:layout_height="1dp"
+                            android:layout_weight="2">
+
+                            <TextView
+
+                                android:layout_marginLeft="20dp"
+                                android:gravity="center_vertical"
+                                android:text="特征描述"
+                                android:textSize="13dp"
+                                android:layout_width="1dp"
+                                android:layout_weight="1"
+                                android:layout_height="match_parent"/>
+
+                            <TextView
+
+                                android:layout_marginTop="5dp"
+                                android:layout_marginBottom="5dp"
+                                android:background="@mipmap/background13"
+                                android:layout_width="1dp"
+                                android:layout_height="match_parent"/>
+
+                            <RelativeLayout
+
+                                android:layout_weight="3"
+                                android:layout_width="1dp"
+                                android:layout_height="match_parent">
+
+                                <TextView
+
+                                    android:id="@+id/help_feature1"
+                                    android:layout_marginTop="5dp"
+                                    android:layout_marginLeft="10dp"
+                                    android:textSize="13dp"
+                                    android:text="性格"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="27dp"/>
+
+                                <TextView
+
+                                    android:layout_below="@id/help_feature1"
+                                    android:id="@+id/help_feature2"
+                                    android:layout_marginTop="5dp"
+                                    android:layout_marginLeft="10dp"
+                                    android:textSize="13dp"
+                                    android:text="疾病"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="27dp"/>
+
+                                <TextView
+
+                                    android:layout_below="@id/help_feature2"
+                                    android:id="@+id/help_feature3"
+                                    android:layout_marginTop="5dp"
+                                    android:layout_marginLeft="10dp"
+                                    android:textSize="13dp"
+                                    android:text="体貌"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="27dp"/>
+
+
+                                <EditText
+
+                                    android:layout_alignTop="@id/help_feature1"
+                                    android:textSize="13dp"
+                                    android:layout_marginRight="5dp"
+                                    android:layout_alignParentRight="true"
+                                    android:layout_marginLeft="80dp"
+                                    android:background="@null"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"/>
+
+                                <EditText
+
+                                    android:layout_alignTop="@id/help_feature2"
+                                    android:textSize="13dp"
+                                    android:layout_marginRight="5dp"
+                                    android:layout_alignParentRight="true"
+                                    android:layout_marginLeft="80dp"
+                                    android:background="@null"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"/>
+                                <EditText
+
+                                    android:layout_alignTop="@id/help_feature3"
+                                    android:textSize="13dp"
+                                    android:layout_marginRight="5dp"
+                                    android:layout_alignParentRight="true"
+                                    android:layout_marginLeft="80dp"
+                                    android:background="@null"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"/>
+
+
+                            </RelativeLayout>
+
+                        </LinearLayout>
+                        <TextView
+
+                            android:layout_marginRight="20dp"
+                            android:layout_marginLeft="20dp"
+                            android:background="@mipmap/background12"
+                            android:layout_width="match_parent"
+                            android:layout_height="1dp"/>
+
+                        <LinearLayout
+                            android:layout_marginBottom="10dp"
+                            android:layout_width="match_parent"
+                            android:layout_height="20dp" >
+
+                            <TextView
+
+                                android:layout_marginLeft="20dp"
+                                android:gravity="center_vertical"
+                                android:text="我已阅读并同意"
+                                android:textSize="13dp"
+                                android:layout_width="wrap_content"
+                                android:layout_height="match_parent"/>
+
+                            <TextView
+                                android:textColor="@color/title_red"
+                                android:gravity="center_vertical"
+                                android:text="《救援协议》"
+                                android:textSize="13dp"
+                                android:layout_width="wrap_content"
+                                android:layout_height="match_parent"/>
+
+
+                            <TextView
+                                android:layout_weight="1"
+                                android:layout_width="1dp"
+                                android:layout_height="match_parent"/>
+
+                            <ImageView
+
+                                android:id="@+id/check"
+                                android:layout_gravity="center_vertical"
+                                android:layout_marginLeft="10dp"
+                                android:layout_marginRight="20dp"
+                                android:src="@mipmap/help_img5"
+                                android:layout_width="15dp"
+                                android:layout_height="15dp"/>
+                        </LinearLayout>
+                    </LinearLayout>
+
+
+
+                </RelativeLayout>
+
+            </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/help_view1card4"
+                android:layout_below="@id/help_view1card2"
+                android:layout_marginTop="10dp"
+                app:cardCornerRadius="25dp"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                app:cardBackgroundColor="@color/title_red"
+                android:layout_marginLeft="15dp"
+                android:layout_marginRight="15dp"
+                >
+                <LinearLayout
+                    android:gravity="center"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                    <TextView
+                        android:text="下一步"
+                        android:textSize="16dp"
+                        android:textColor="@color/white"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"/>
+
+                </LinearLayout>
+            </androidx.cardview.widget.CardView>
+
+            <TextView
+
+                android:layout_below="@id/help_view1card4"
+                android:layout_width="match_parent"
+                android:layout_height="20dp"/>
+
+        </RelativeLayout>
+
+
+    </ScrollView>
+
+    <Button
+
+        android:id="@+id/btn"
+        android:background="@null"
+        android:layout_marginBottom="20dp"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentBottom="true"
+        android:layout_width="100dp"
+        android:layout_height="100dp"/>
+
+
+</RelativeLayout>

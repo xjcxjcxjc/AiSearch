@@ -1,0 +1,214 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="110dp"
+    android:id="@+id/searchnotice_itemview">
+
+    <LinearLayout
+        android:layout_marginLeft="5dp"
+        android:layout_marginRight="5dp"
+        android:orientation="horizontal"
+        android:background="@mipmap/background7"
+        android:layout_width="match_parent"
+        android:layout_height="120dp">
+
+        <androidx.cardview.widget.CardView
+            android:layout_gravity="center"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="-2dp"
+            app:cardCornerRadius="5dp"
+            android:layout_width="80dp"
+            android:layout_height="90dp"
+            >
+
+            <RelativeLayout
+                android:gravity="center"
+                android:layout_width="80dp"
+                android:layout_height="90dp">
+
+                <ImageView
+                    android:id="@+id/searchnotice_headimg"
+                    android:layout_width="80dp"
+                    android:layout_height="90dp"
+                    android:scaleType="centerCrop"
+                    android:src="@mipmap/clipboard"
+                    android:background="@color/black"/>
+
+                <TextView
+                    android:id="@+id/searchnotice_name"
+                    android:background="@color/half_transparent"
+                    android:gravity="center"
+                    android:elevation="10dp"
+                    android:layout_below="@id/searchnotice_headimg"
+                    android:layout_marginTop="-14dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="1000108"
+                    android:textColor="@color/white"
+                    android:textSize="10dp"/>
+
+            </RelativeLayout>
+        </androidx.cardview.widget.CardView>
+
+        <LinearLayout
+            android:layout_marginTop="15dp"
+            android:layout_marginLeft="10dp"
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="90dp">
+
+            <LinearLayout
+                android:gravity="center"
+                android:orientation="horizontal"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:text="姓名:"
+                    android:textSize="11dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"/>
+
+                <TextView
+                    android:id="@+id/searchnotice_name2"
+                    android:layout_marginLeft="5dp"
+                    android:text="xxx"
+                    android:textSize="11dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"/>
+
+            </LinearLayout>
+            <LinearLayout
+
+                android:layout_marginTop="10dp"
+                android:gravity="center"
+                android:orientation="horizontal"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:text="发现时间:"
+                    android:textSize="11dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"/>
+
+                <TextView
+                    android:id="@+id/searchnotice_losttime"
+                    android:layout_marginLeft="5dp"
+                    android:text="2020年12月1日"
+                    android:textSize="11dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"/>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_marginTop="10dp"
+                android:gravity="center"
+                android:orientation="horizontal"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:text="发现地点:"
+                    android:textSize="11dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"/>
+
+                <TextView
+                    android:id="@+id/searchnotice_location"
+                    android:layout_marginLeft="5dp"
+                    android:text="宁波市海曙区学院路附近"
+                    android:textSize="11dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"/>
+
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:gravity="center"
+                android:layout_marginTop="5dp"
+                android:layout_marginLeft="5dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <com.qmuiteam.qmui.widget.roundwidget.QMUIRoundRelativeLayout
+                    app:qmui_borderWidth="0.5dp"
+                    app:qmui_radius="10dp"
+                    app:qmui_borderColor="@color/blue2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content">
+
+                    <TextView
+                        android:id="@+id/searchnotice_lable1"
+                        android:layout_marginRight="5dp"
+                        android:layout_marginLeft="5dp"
+                        android:textColor="@color/text_gray1"
+                        android:textSize="9dp"
+                        android:text="秃头"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"/>
+
+                </com.qmuiteam.qmui.widget.roundwidget.QMUIRoundRelativeLayout>
+
+                <com.qmuiteam.qmui.widget.roundwidget.QMUIRoundRelativeLayout
+                    android:layout_marginLeft="4dp"
+                    app:qmui_borderWidth="0.5dp"
+                    app:qmui_radius="10dp"
+                    app:qmui_borderColor="@color/blue2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content">
+
+                    <TextView
+                        android:id="@+id/searchnotice_lable2"
+                        android:layout_marginRight="5dp"
+                        android:layout_marginLeft="5dp"
+                        android:textColor="@color/text_gray1"
+                        android:textSize="9dp"
+                        android:text="阿兹海默症"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"/>
+
+                </com.qmuiteam.qmui.widget.roundwidget.QMUIRoundRelativeLayout>
+
+                <com.qmuiteam.qmui.widget.roundwidget.QMUIRoundRelativeLayout
+                    android:layout_marginLeft="4dp"
+                    app:qmui_borderWidth="0.5dp"
+                    app:qmui_radius="10dp"
+                    app:qmui_borderColor="@color/blue2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content">
+
+                    <TextView
+                        android:id="@+id/searchnotice_lable3"
+                        android:visibility="gone"
+                        android:layout_marginRight="5dp"
+                        android:layout_marginLeft="5dp"
+                        android:textColor="@color/text_gray1"
+                        android:textSize="9dp"
+                        android:text="阿兹海默症"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"/>
+
+                </com.qmuiteam.qmui.widget.roundwidget.QMUIRoundRelativeLayout>
+
+
+                <TextView
+                    android:layout_weight="1"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"/>
+
+            </LinearLayout>
+
+
+        </LinearLayout>
+
+
+    </LinearLayout>
+
+
+
+</LinearLayout>

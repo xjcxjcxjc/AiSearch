@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<com.qmuiteam.qmui.widget.roundwidget.QMUIRoundLinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/dialog_layout"
+    android:layout_width="250dp"
+    android:layout_height="250dp"
+    android:gravity="center_horizontal"
+    android:orientation="vertical"
+    app:qmui_radius="10dp"
+    android:layout_marginBottom="10dp"
+    app:qmui_backgroundColor="@color/white">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:layout_weight="1"/>
+
+        <RelativeLayout
+            android:layout_width="40dp"
+            android:layout_height="40dp">
+
+            <Button
+                android:id="@+id/sharedialog_cancel"
+                android:background="@null"
+                android:layout_width="40dp"
+                android:layout_height="40dp"/>
+            <ImageView
+                android:layout_marginTop="13dp"
+                android:layout_marginLeft="12dp"
+                android:layout_width="15dp"
+                android:layout_height="15dp"
+                android:src="@mipmap/x"/>
+        </RelativeLayout>
+    </LinearLayout>
+
+    <TextView
+        android:textSize="17dp"
+        android:text="已暂停行动"
+        android:textStyle="bold"
+        android:textColor="@color/text_gray1"
+        android:textAlignment="center"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+
+    <LinearLayout
+        android:layout_width="250dp"
+        android:layout_height="160dp"
+        android:orientation="horizontal"
+        android:gravity="center">
+        <LinearLayout
+            android:layout_width="110dp"
+            android:layout_height="130dp"
+            android:background="@mipmap/share_back"
+            android:orientation="vertical"
+            android:gravity="center">
+            <ImageView
+                android:id="@+id/sharedialog_share"
+                android:src="@mipmap/share_photoes"
+                android:layout_width="70dp"
+                android:layout_height="70dp"/>
+            <TextView
+                android:text="长按分享至朋友圈"
+                android:layout_marginTop="10dp"
+                android:textColor="@color/text_gray1"
+                android:textSize="11dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                />
+        </LinearLayout>
+
+        <TextView
+            android:layout_width="10dp"
+            android:layout_height="0dp"/>
+
+        <LinearLayout
+            android:layout_width="110dp"
+            android:layout_height="130dp"
+            android:background="@mipmap/share_back"
+            android:orientation="vertical"
+            android:gravity="center">
+            <ImageView
+                android:src="@mipmap/share_photoes"
+                android:layout_width="70dp"
+                android:layout_height="70dp"/>
+            <TextView
+                android:text="长按分享至微博"
+                android:layout_marginTop="10dp"
+                android:textColor="@color/text_gray1"
+                android:textSize="11dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                />
+        </LinearLayout>
+    </LinearLayout>
+
+
+
+</com.qmuiteam.qmui.widget.roundwidget.QMUIRoundLinearLayout>
