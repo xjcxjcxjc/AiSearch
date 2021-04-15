@@ -1,7 +1,7 @@
 package com.example.aisearch.util.datautil;
 
 import com.example.aisearch.bean.volunteer.Video;
-import com.example.aisearch.ui.volunteer.practice.adapter.PracticeIndexAdapter;
+import com.example.aisearch.ui.volunteer.train.adapter.PracticeIndexAdapter;
 
 import java.util.ArrayList;
 import java.util.List;

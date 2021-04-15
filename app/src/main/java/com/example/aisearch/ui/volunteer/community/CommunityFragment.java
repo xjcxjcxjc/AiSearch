@@ -23,7 +23,7 @@ import com.example.aisearch.base.BaseFragment;
 import com.example.aisearch.bean.volunteer.CommunityItems;
 import com.example.aisearch.ui.volunteer.community.fragment.FindFragment;
 import com.example.aisearch.ui.volunteer.community.fragment.SameCityFragment;
-import com.example.aisearch.ui.volunteer.publish.PublishActivity;
+import com.example.aisearch.ui.volunteer.home.publish.PublishActivity;
 import com.example.aisearch.util.UiUtils;
 import com.example.aisearch.util.datautil.DataUtil;
 

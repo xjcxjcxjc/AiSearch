@@ -13,8 +13,8 @@ import androidx.fragment.app.Fragment;
 import androidx.viewpager.widget.ViewPager;
 
 import com.example.aisearch.base.BaseActivity;
-import com.example.aisearch.ui.family.myfamily.MyFamilyFragment;
-import com.example.aisearch.ui.family.take_a_hand.tkahandFragment;
+import com.example.aisearch.ui.family.mine.MyFamilyFragment;
+import com.example.aisearch.ui.family.home.tkahandFragment;
 import com.example.aisearch.ui.volunteer.community.CommunityFragment;
 import com.example.aisearch.util.NotificationHelper;
 import com.qmuiteam.qmui.util.QMUIStatusBarHelper;
@@ -37,7 +37,7 @@ public class MainActivity2 extends BaseActivity implements ViewPager.OnPageChang
 
     MyViewPagerAdapter myViewPagerAdapter;
     List<Fragment> fragments;
-    com.example.aisearch.ui.family.take_a_hand.tkahandFragment tkahandFragment;
+    com.example.aisearch.ui.family.home.tkahandFragment tkahandFragment;
     CommunityFragment communityFragment;
     MyFamilyFragment myFamilyFragment;
 

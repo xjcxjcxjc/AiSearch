@@ -13,7 +13,7 @@
         android:orientation="vertical"
         >
 
-    <com.example.aisearch.ui.volunteer.action.zwactivity.chat.widget.WrapContentHeightViewPager
+    <com.example.aisearch.ui.volunteer.home.zwactivity.chat.widget.WrapContentHeightViewPager
         android:id="@+id/vp_emoji"
          android:layout_width="match_parent"
         android:layout_height="wrap_content"
@@ -22,7 +22,7 @@
 
 
 
-        <com.example.aisearch.ui.volunteer.action.zwactivity.chat.widget.IndicatorView
+        <com.example.aisearch.ui.volunteer.home.zwactivity.chat.widget.IndicatorView
             android:id="@+id/ind_emoji"
             android:layout_width="match_parent"
             android:layout_height="20dp"

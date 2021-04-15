@@ -11,7 +11,7 @@ import com.example.aisearch.bean.ActionListItem;
 import com.example.aisearch.bean.Message.MessageListItem;
 import com.example.aisearch.bean.Person;
 import com.example.aisearch.bean.volunteer.CommunityItems;
-import com.example.aisearch.ui.family.take_a_hand.ClaimPersonDetailsActivity;
+import com.example.aisearch.ui.family.home.ClaimPersonDetailsActivity;
 import com.example.aisearch.util.UiUtils;
 
 import java.io.ByteArrayOutputStream;

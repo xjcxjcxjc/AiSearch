@@ -3,7 +3,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".ui.volunteer.action.zwactivity.ChooseFunctionActivity">
+    tools:context=".ui.volunteer.home.zwactivity.ChooseFunctionActivity">
 
     <LinearLayout
         android:layout_centerInParent="true"

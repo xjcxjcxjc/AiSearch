@@ -25,7 +25,7 @@
         android:layout_marginRight="10dp"
         android:layout_marginTop="10dp">
 
-        <com.example.aisearch.ui.volunteer.action.zwactivity.chat.widget.CircleImageView
+        <com.example.aisearch.ui.volunteer.home.zwactivity.chat.widget.CircleImageView
             android:id="@+id/te"
             android:layout_width="0dp"
             android:layout_height="0dp"

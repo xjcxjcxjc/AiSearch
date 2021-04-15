@@ -5,7 +5,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
-    tools:context=".ui.volunteer.practice.PracticeTestActivity"
+    tools:context=".ui.volunteer.train.PracticeTestActivity"
     android:fitsSystemWindows="true"
     android:background="@color/white">
 

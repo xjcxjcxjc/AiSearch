@@ -4,14 +4,14 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".ui.volunteer.practice.StudyDetailsActivity">
+    tools:context=".ui.volunteer.train.StudyDetailsActivity">
 
     <RelativeLayout
         android:id="@+id/rel"
         android:layout_width="match_parent"
         android:layout_height="235dp">
 
-        <com.example.aisearch.ui.volunteer.practice.video.AiSearchVideoPlayer
+        <com.example.aisearch.ui.volunteer.train.video.AiSearchVideoPlayer
             android:id="@+id/detail_player"
             android:layout_width="match_parent"
             android:layout_height="235dp" />

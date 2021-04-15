@@ -13,7 +13,7 @@ import androidx.recyclerview.widget.RecyclerView;
 
 import com.example.aisearch.R;
 import com.example.aisearch.bean.volunteer.Video;
-import com.example.aisearch.ui.volunteer.practice.StudyDetailsActivity;
+import com.example.aisearch.ui.volunteer.train.StudyDetailsActivity;
 
 import java.util.List;
 

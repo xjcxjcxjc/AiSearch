@@ -4,7 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".ui.message.ReplyActivity"
+    tools:context=".ui.volunteer.home.message.ReplyActivity"
     android:background="@color/title_blue"
     android:fitsSystemWindows="true">
 

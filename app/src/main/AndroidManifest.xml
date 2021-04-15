@@ -25,6 +25,20 @@
     <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
     <uses-permission android:name="android.permission.CHANGE_WIFI_STATE" />
     <uses-permission android:name="android.permission.RECORD_AUDIO" />
+    <uses-permission android:name="android.Manifest.permission.CHANGE_WIFI_STATE" /> <!-- 访问网络，进行地图相关业务数据请求，包括地图数据，路线规划，POI检索等 -->
+    <uses-permission android:name="android.permission.INTERNET" /> <!-- 获取网络状态，根据网络状态切换进行数据请求网络转换 -->
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" /> <!-- 获取允许应用程序更改Wi-Fi连接状态的权限，用于室内步行导航wifi定位,如果不需要室内步行导航功能则该权限无需申请 -->
+    <uses-permission android:name="android.Manifest.permission.CHANGE_WIFI_STATE" /> <!-- 读取外置存储。如果开发者使用了So动态加载功能并且把SO文件放在了外置存储区域，则需要申请该权限，否则不需要 -->
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" /> <!-- 以下两个权限用于Demo中定位功能展示，如果开发者实际不需要百度定位功能，可不申请 -->
+    <!-- 这个权限用于进行网络定位 -->
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" /> <!-- 这个权限用于访问GPS定位 -->
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" /> <!-- 用于AR步行导航，需要使用相机权限，如果不需要AR歩导，则不需申请该权限 -->
+    <uses-permission android:name="android.permission.CAMERA" /> <!-- 用于步骑行导航Demo中振动效果提示，开发者根据自己业务需求决定是否申请 -->
+    <uses-permission android:name="android.permission.VIBRATE" /> <!-- OpenGLES 2.0 -->
+    <uses-feature
+        android:glEsVersion="0x00020000"
+        android:required="true" />
+
     <uses-permission
         android:name="android.permission.MOUNT_UNMOUNT_FILESYSTEMS"
         tools:ignore="ProtectedPermissions" />
@@ -38,56 +52,63 @@
         android:roundIcon="@mipmap/aisearch_logo2"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".ui.volunteer.action.inaction.InActionActivity2">
+
+        <activity android:name=".TestActivity02">
 <!--            <intent-filter>-->
 <!--                <action android:name="android.intent.action.MAIN" />-->
+
 <!--                <category android:name="android.intent.category.LAUNCHER" />-->
 <!--            </intent-filter>-->
         </activity>
-        <activity android:name=".ui.volunteer.action.SubmitActivity" />
-        <activity android:name=".ui.volunteer.action.inaction.WNaviGuideActivity" />
-        <activity android:name=".ui.volunteer.action.inaction.IdentifyActivity" />
-        <activity android:name=".ui.family.take_a_hand.help.HelpActivity2_2" />
-        <activity android:name=".ui.family.take_a_hand.share.ShareActivity3" />
-        <activity android:name=".ui.family.take_a_hand.share.ShareActivity2" />
-        <activity android:name=".ui.family.take_a_hand.share.ShareActivity1" />
-        <activity android:name=".TestChatActivity">
-            <intent-filter>
-                <action android:name="android.intent.action.MAIN" />
 
-                <category android:name="android.intent.category.LAUNCHER" />
-            </intent-filter>
+        <activity android:name=".ui.volunteer.home.inaction.InActionActivity2">
+             <intent-filter>
+             <action android:name="android.intent.action.MAIN" />
+             <category android:name="android.intent.category.LAUNCHER" />
+             </intent-filter>
         </activity>
-        <activity android:name=".ui.volunteer.practice.video.VideoActivity2" />
-        <activity android:name=".ui.volunteer.publish.ScreenActivity" />
-        <activity android:name=".ui.volunteer.publish.PublishActivity" />
-        <activity android:name=".ui.volunteer.publish.MainActivity">
+        <activity android:name=".ui.volunteer.home.SubmitActivity" />
+        <activity android:name=".ui.volunteer.home.inaction.WNaviGuideActivity" />
+        <activity android:name=".ui.volunteer.home.inaction.IdentifyActivity" />
+        <activity android:name=".ui.family.home.help.HelpActivity2_2" />
+        <activity android:name=".ui.family.home.share.ShareActivity3" />
+        <activity android:name=".ui.family.home.share.ShareActivity2" />
+        <activity android:name=".ui.family.home.share.ShareActivity1" />
+        <activity android:name=".TestChatActivity">
+
+        </activity>
+        <activity android:name=".ui.volunteer.train.video.VideoActivity2" />
+        <activity android:name=".ui.volunteer.home.publish.ScreenActivity" />
+        <activity android:name=".ui.volunteer.home.publish.PublishActivity" />
+        <activity android:name=".ui.volunteer.home.publish.MainActivity">
+
             <!-- <intent-filter> -->
             <!-- <action android:name="android.intent.action.MAIN" /> -->
             <!-- <category android:name="android.intent.category.LAUNCHER" /> -->
             <!-- </intent-filter> -->
         </activity>
-        <activity android:name=".ui.family.take_a_hand.ClaimPersonDetailsActivity" />
-        <activity android:name=".ui.family.take_a_hand.ReleaseSearchActivity" />
-        <activity android:name=".ui.family.take_a_hand.ComparisonActivity" />
-        <activity android:name=".ui.family.take_a_hand.MsgActivity" />
-        <activity android:name=".ui.message.ReplyActivity" />
-        <activity android:name=".ui.message.TeamMatesActivity" />
-        <activity android:name=".ui.message.OrgnizationActivity" />
-        <activity android:name=".ui.message.MyActionActivity" />
-        <activity android:name=".ui.message.MessageActivity" />
+        <activity android:name=".ui.family.home.ClaimPersonDetailsActivity" />
+        <activity android:name=".ui.family.home.ReleaseSearchActivity" />
+        <activity android:name=".ui.family.home.ComparisonActivity" />
+        <activity android:name=".ui.family.home.MsgActivity" />
+        <activity android:name=".ui.volunteer.home.message.ReplyActivity" />
+        <activity android:name=".ui.volunteer.home.message.TeamMatesActivity" />
+        <activity android:name=".ui.volunteer.home.message.OrgnizationActivity" />
+        <activity android:name=".ui.volunteer.home.message.MyActionActivity" />
+        <activity android:name=".ui.volunteer.home.message.MessageActivity" />
         <activity android:name=".ui.volunteer.mine.MyActionActivity" />
         <activity android:name=".LodingActivity">
 
             <!-- <intent-filter> -->
             <!-- <action android:name="android.intent.action.MAIN" /> -->
 
+
             <!-- <category android:name="android.intent.category.LAUNCHER" /> -->
             <!-- </intent-filter> -->
         </activity>
-        <activity android:name=".ui.family.take_a_hand.help.HelpActivity" />
+        <activity android:name=".ui.family.home.help.HelpActivity" />
         <activity android:name=".MainActivity2" />
-        <activity android:name=".ui.volunteer.action.beforeaction.BeforeMainActivity">
+        <activity android:name=".ui.volunteer.home.beforeaction.BeforeMainActivity">
 
             <!-- <intent-filter> -->
             <!-- <action android:name="android.intent.action.MAIN" /> -->
@@ -96,7 +117,7 @@
             <!-- <category android:name="android.intent.category.LAUNCHER" /> -->
             <!-- </intent-filter> -->
         </activity>
-        <activity android:name=".ui.volunteer.action.inaction.InActionActivity">
+        <activity android:name=".ui.volunteer.home.inaction.InActionActivity">
 
             <!-- <intent-filter> -->
             <!-- <action android:name="android.intent.action.MAIN" /> -->
@@ -107,13 +128,13 @@
         </activity> <!-- 测试 -->
         <activity android:name=".TestActivity" />
         <activity android:name=".MainActivity" />
-        <activity android:name=".ui.volunteer.action.zwactivity.ZwMainActivity" />
-        <activity android:name=".ui.family.take_a_hand.help.HelpActivity3" />
-        <activity android:name=".ui.family.take_a_hand.help.HelpActivity4" />
-        <activity android:name=".ui.family.take_a_hand.help.HelpActivity2" />
-        <activity android:name=".ui.family.myfamily.Searchctivity" />
-        <activity android:name=".ui.family.myfamily.ActionListActivity" />
-        <activity android:name=".ui.family.myfamily.UrgentHelpActivity" />
+        <activity android:name=".ui.volunteer.home.zwactivity.ZwMainActivity" />
+        <activity android:name=".ui.family.home.help.HelpActivity3" />
+        <activity android:name=".ui.family.home.help.HelpActivity4" />
+        <activity android:name=".ui.family.home.help.HelpActivity2" />
+        <activity android:name=".ui.family.mine.Searchctivity" />
+        <activity android:name=".ui.family.mine.ActionListActivity" />
+        <activity android:name=".ui.family.mine.UrgentHelpActivity" />
         <activity android:name=".ui.volunteer.mine.ThankWallActivity" />
         <activity android:name=".ui.volunteer.mine.CertificateActivity" />
         <activity android:name=".ui.volunteer.mine.BadgeActivity" />
@@ -122,33 +143,33 @@
         <activity android:name=".ui.volunteer.mine.OrganizationActivity" />
         <activity android:name=".ui.volunteer.mine.PersonPrivacyActivity" />
         <activity android:name=".ui.volunteer.mine.SettingActivity" />
-        <activity android:name=".ui.volunteer.practice.video.VideoTestActivity" />
-        <activity android:name=".ui.volunteer.practice.PracticeTestActivity" />
-        <activity android:name=".ui.volunteer.practice.StudyDetailsActivity" />
-        <activity android:name=".ui.volunteer.practice.SearchResultActivity" />
-        <activity android:name=".ui.volunteer.practice.PracticeSearchActivity" />
-        <activity android:name=".ui.volunteer.action.inaction.SOSActivity" />
-        <activity android:name=".ui.volunteer.action.ClueActivity" />
-        <activity android:name=".ui.volunteer.action.LostPersonDetailsActivity" />
-        <activity android:name=".ui.volunteer.action.JoinActivity" /> <!-- 地图模板 -->
-        <activity android:name=".ui.volunteer.action.MapActivity" />
-        <activity android:name=".ui.volunteer.action.index.DetailsActivity" />
-        <activity android:name=".ui.volunteer.action.zwactivity.SearchPeopleByImageActivity" />
-        <activity android:name=".ui.volunteer.action.zwactivity.PersonReIdentificationActivity" />
-        <activity android:name=".ui.volunteer.action.zwactivity.FaceIdentificationActivity" />
-        <activity android:name=".ui.volunteer.action.zwactivity.chat.ChatActivity" />
-        <activity android:name=".ui.volunteer.action.zwactivity.chat.SplashActivity" />
+        <activity android:name=".ui.volunteer.train.video.VideoTestActivity" />
+        <activity android:name=".ui.volunteer.train.PracticeTestActivity" />
+        <activity android:name=".ui.volunteer.train.StudyDetailsActivity" />
+        <activity android:name=".ui.volunteer.train.SearchResultActivity" />
+        <activity android:name=".ui.volunteer.train.PracticeSearchActivity" />
+        <activity android:name=".ui.volunteer.home.inaction.SOSActivity" />
+        <activity android:name=".ui.volunteer.home.ClueActivity" />
+        <activity android:name=".ui.volunteer.home.LostPersonDetailsActivity" />
+        <activity android:name=".ui.volunteer.home.JoinActivity" /> <!-- 地图模板 -->
+        <activity android:name=".ui.volunteer.home.MapActivity" />
+        <activity android:name=".ui.volunteer.home.index.DetailsActivity" />
+        <activity android:name=".ui.volunteer.home.zwactivity.SearchPeopleByImageActivity" />
+        <activity android:name=".ui.volunteer.home.zwactivity.PersonReIdentificationActivity" />
+        <activity android:name=".ui.volunteer.home.zwactivity.FaceIdentificationActivity" />
+        <activity android:name=".ui.volunteer.home.zwactivity.chat.ChatActivity" />
+        <activity android:name=".ui.volunteer.home.zwactivity.chat.SplashActivity" />
         <activity
-            android:name=".ui.volunteer.action.zwactivity.ChooseFunctionActivity"
+            android:name=".ui.volunteer.home.zwactivity.ChooseFunctionActivity"
             android:launchMode="singleTop" />
         <activity
-            android:name=".ui.volunteer.action.zwactivity.ChooseFunctionActivity2"
+            android:name=".ui.volunteer.home.zwactivity.ChooseFunctionActivity2"
             android:launchMode="singleTop" />
         <activity
-            android:name=".ui.volunteer.action.zwactivity.RegisterAndRecognizeActivity"
+            android:name=".ui.volunteer.home.zwactivity.RegisterAndRecognizeActivity"
             android:launchMode="singleTop" />
         <activity
-            android:name=".ui.volunteer.action.zwactivity.RegisterAndRecognizeActivity2"
+            android:name=".ui.volunteer.home.zwactivity.RegisterAndRecognizeActivity2"
             android:launchMode="singleTop" />
 
         <provider
@@ -173,13 +194,13 @@
         <activity
             android:name=".ui.volunteer.community.DetailsActivity"
             android:windowSoftInputMode="adjustResize" />
-        <activity android:name=".ui.volunteer.action.index.ActionListActivity" />
-        <activity android:name=".ui.volunteer.action.index.SearchActivity" />
+        <activity android:name=".ui.volunteer.home.index.ActionListActivity" />
+        <activity android:name=".ui.volunteer.home.index.SearchActivity" />
         <activity
-            android:name=".ui.volunteer.practice.video.VideoActivity"
+            android:name=".ui.volunteer.train.video.VideoActivity"
             android:configChanges="keyboard|keyboardHidden|orientation|screenSize|screenLayout|smallestScreenSize|uiMode"
             android:screenOrientation="portrait" />
-        <activity android:name=".ui.volunteer.action.beforeaction.SignInActivity" />
+        <activity android:name=".ui.volunteer.home.beforeaction.SignInActivity" />
 
         <meta-data
             android:name="com.baidu.lbsapi.API_KEY"

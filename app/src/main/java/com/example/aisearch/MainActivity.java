@@ -11,10 +11,10 @@ import androidx.fragment.app.Fragment;
 import androidx.viewpager.widget.ViewPager;
 
 import com.example.aisearch.base.BaseActivity;
-import com.example.aisearch.ui.volunteer.action.index.ActionFragment;
+import com.example.aisearch.ui.volunteer.home.ActionFragment;
 import com.example.aisearch.ui.volunteer.community.CommunityFragment;
 import com.example.aisearch.ui.volunteer.mine.MineFragment;
-import com.example.aisearch.ui.volunteer.practice.PracticeFragment;
+import com.example.aisearch.ui.volunteer.train.TrainFragment;
 import com.qmuiteam.qmui.util.QMUIStatusBarHelper;
 
 import java.util.ArrayList;
@@ -36,7 +36,7 @@ public class MainActivity extends BaseActivity implements ViewPager.OnPageChange
     List<Fragment> fragments;
     ActionFragment actionFragment;
     CommunityFragment communityFragment;
-    PracticeFragment practiceFragment;
+    TrainFragment practiceFragment;
     MineFragment mineFragment;
 
 
@@ -88,7 +88,7 @@ public class MainActivity extends BaseActivity implements ViewPager.OnPageChange
         fragments=new ArrayList<>();
         actionFragment=new ActionFragment();
         communityFragment =new CommunityFragment();
-        practiceFragment =new PracticeFragment();
+        practiceFragment =new TrainFragment();
         mineFragment =new MineFragment();
 
         fragments.add(actionFragment);

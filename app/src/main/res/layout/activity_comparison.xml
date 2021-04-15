@@ -3,7 +3,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".ui.family.take_a_hand.ComparisonActivity"
+    tools:context=".ui.family.home.ComparisonActivity"
     android:fitsSystemWindows="true"
     android:background="@drawable/action_backgroud2"
     xmlns:app="http://schemas.android.com/apk/res-auto">

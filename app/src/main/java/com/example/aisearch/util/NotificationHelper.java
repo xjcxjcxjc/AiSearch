@@ -14,8 +14,8 @@ import android.os.Build;
 import androidx.core.app.NotificationCompat;
 
 import com.example.aisearch.R;
-import com.example.aisearch.ui.volunteer.action.LostPersonDetailsActivity;
-import com.example.aisearch.ui.volunteer.action.index.DetailsActivity;
+import com.example.aisearch.ui.volunteer.home.LostPersonDetailsActivity;
+import com.example.aisearch.ui.volunteer.home.index.DetailsActivity;
 
 public class NotificationHelper {
     private static final String CHANNEL_ID="channel_id";   //通道渠道id

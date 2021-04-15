@@ -18,7 +18,7 @@ import androidx.annotation.DrawableRes;
 
 import com.bigkoo.pickerview.TimePickerView;
 import com.example.aisearch.R;
-import com.example.aisearch.ui.family.take_a_hand.share.ShareActivity1;
+import com.example.aisearch.ui.family.home.share.ShareActivity1;
 import com.qmuiteam.qmui.util.QMUIDisplayHelper;
 import com.qmuiteam.qmui.widget.dialog.QMUIBottomSheet;
 import com.qmuiteam.qmui.widget.dialog.QMUIDialog;

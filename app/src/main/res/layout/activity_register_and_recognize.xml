@@ -15,7 +15,7 @@
             android:layout_width="match_parent"
             android:layout_height="match_parent" />
 
-        <com.example.aisearch.ui.volunteer.action.zwactivity.face.widget.FaceRectView
+        <com.example.aisearch.ui.volunteer.home.zwactivity.face.widget.FaceRectView
             android:id="@+id/single_camera_face_rect_view"
             android:layout_width="match_parent"
             android:layout_height="match_parent" />

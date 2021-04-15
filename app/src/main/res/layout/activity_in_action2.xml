@@ -4,6 +4,6 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".ui.volunteer.action.inaction.InActionActivity2">
+    tools:context=".ui.volunteer.home.inaction.InActionActivity2">
 
 </androidx.constraintlayout.widget.ConstraintLayout>
