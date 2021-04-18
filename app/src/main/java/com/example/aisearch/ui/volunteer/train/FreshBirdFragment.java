@@ -8,7 +8,7 @@ import androidx.recyclerview.widget.StaggeredGridLayoutManager;
 
 import com.example.aisearch.R;
 import com.example.aisearch.base.BaseFragment;
-import com.example.aisearch.bean.volunteer.Video;
+import com.example.aisearch.bean.util.volunteer.Video;
 import com.example.aisearch.ui.volunteer.train.adapter.PracticeIndexAdapter;
 import com.example.aisearch.util.UiUtils;
 import com.example.aisearch.util.datautil.PracticeDataUtils;

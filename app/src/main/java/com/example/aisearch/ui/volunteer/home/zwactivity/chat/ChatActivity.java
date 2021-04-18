@@ -27,7 +27,7 @@ import androidx.swiperefreshlayout.widget.SwipeRefreshLayout;
 
 import com.chad.library.adapter.base.BaseQuickAdapter;
 import com.example.aisearch.R;
-import com.example.aisearch.bean.User;
+import com.example.aisearch.bean.util.User;
 import com.example.aisearch.ui.volunteer.home.zwactivity.chat.adapter.ChatAdapter;
 import com.example.aisearch.ui.volunteer.home.zwactivity.chat.bean.AudioMsgBody;
 import com.example.aisearch.ui.volunteer.home.zwactivity.chat.bean.FileMsgBody;

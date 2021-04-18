@@ -24,7 +24,6 @@ import com.baidu.mapapi.walknavi.adapter.IWRoutePlanListener;
 import com.baidu.mapapi.walknavi.model.WalkRoutePlanError;
 import com.baidu.mapapi.walknavi.params.WalkNaviLaunchParam;
 import com.baidu.mapapi.walknavi.params.WalkRouteNodeInfo;
-import com.example.aisearch.util.BaiduMapUtils;
 
 public class InActionActivity2 extends InActionActivity {
 
@@ -42,13 +41,18 @@ public class InActionActivity2 extends InActionActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
 //        setContentView(R.layout.activity_in_action2);
-        double center_la= BaiduMapUtils.mylatitude;
-        double center_lg= BaiduMapUtils.mylongtitude;
+
+    }
+
+    @Override
+    public void initRoad() {
+        double center_la= mLastLocationData.latitude;
+        double center_lg= mLastLocationData.longitude;
 
 
         WalkRouteNodeInfo walkStartNode = new WalkRouteNodeInfo();
-        sta= new LatLng(center_la-0.05,center_lg-0.003);
-        end=new LatLng(center_la-0.015762,center_lg+0.055254);
+        sta= new LatLng(center_la,center_lg);
+        end=new LatLng(center_la-0.012762,center_lg+0.020254);
 
         walkStartNode.setLocation(sta);
         WalkRouteNodeInfo walkEndNode = new WalkRouteNodeInfo();
@@ -59,6 +63,12 @@ public class InActionActivity2 extends InActionActivity {
 
     }
 
+    @Override
+    protected void initTeamMates() {
+
+
+
+    }
 
     private void initengine(){
 
@@ -138,8 +148,8 @@ public class InActionActivity2 extends InActionActivity {
                 return;
             }
             if (result.error == SearchResult.ERRORNO.NO_ERROR) {
-                mBaiduMap.clear();
-                Toast.makeText(InActionActivity2.this, "路线规划:搜索完成", Toast.LENGTH_SHORT).show();
+//                mBaiduMap.clear();
+//                Toast.makeText(InActionActivity2.this, "路线规划:搜索完成", Toast.LENGTH_SHORT).show();
                 WalkingRouteOverlay overlay = new WalkingRouteOverlay(mBaiduMap);
                 overlay.setData(result.getRouteLines().get(0));
                 overlay.addToMap();

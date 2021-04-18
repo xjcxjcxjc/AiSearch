@@ -56,8 +56,8 @@ import com.baidu.mapapi.search.poi.PoiIndoorResult;
 import com.baidu.mapapi.search.poi.PoiResult;
 import com.example.aisearch.MyOrientationListener;
 import com.example.aisearch.R;
-import com.example.aisearch.bean.volunteer.SOSBulid;
-import com.example.aisearch.bean.volunteer.TeamMates;
+import com.example.aisearch.bean.util.volunteer.SOSBulid;
+import com.example.aisearch.bean.util.volunteer.TeamMates;
 import com.example.aisearch.ui.volunteer.home.ClueActivity;
 import com.example.aisearch.ui.volunteer.home.index.adapter.TeamMatesAdapter;
 import com.example.aisearch.ui.volunteer.home.zwactivity.ChooseFunctionActivity2;
@@ -112,7 +112,7 @@ public class InActionActivity  extends Activity implements View.OnClickListener 
     //自定义图标
     private LocationClient mLocationClient;
     public MyLocationListener myListener;
-    private LatLng mLastLocationData;
+    protected LatLng mLastLocationData;
     private boolean isFirstin = true;
 
     //定位的地址
@@ -198,7 +198,6 @@ public class InActionActivity  extends Activity implements View.OnClickListener 
                                     marker1.remove();
 
 
-
                                 View v_temp = LayoutInflater.from(context).inflate(R.layout.item_volunteer_marker, null);//加载自定义的布局
                                 ImageView imageView = v_temp.findViewById(R.id.volunteer);
                                 imageView.setImageResource(R.mipmap.volunteer_sun);
@@ -213,11 +212,8 @@ public class InActionActivity  extends Activity implements View.OnClickListener 
                                         mLastLocationData.longitude+0.00608337),null,mBaiduMap);
 
 
-
                                 MapStatusUpdate msu = MapStatusUpdateFactory.zoomTo(15f);
                                 mBaiduMap.setMapStatus(msu);
-
-
                             },
                                     "为了保障您的安全，请前往指定集合点与队友汇合搜寻").show();
                             falg=1;
@@ -520,8 +516,8 @@ public class InActionActivity  extends Activity implements View.OnClickListener 
 //                UiUtils.showMsg(InActionActivity.this,"latitude"+Double.toString(marker.getPosition().latitude-29.881895)+
 //                        "longitude"+Double.toString(marker.getPosition().longitude-121.488723));
 
-                UiUtils.showMsg(InActionActivity.this,"latitude"+Double.toString(mLastLocationData.latitude-marker.getPosition().latitude)+
-                        "longitude"+Double.toString(mLastLocationData.longitude-marker.getPosition().longitude));
+//                UiUtils.showMsg(InActionActivity.this,"latitude"+Double.toString(mLastLocationData.latitude-marker.getPosition().latitude)+
+//                        "longitude"+Double.toString(mLastLocationData.longitude-marker.getPosition().longitude));
 
 //                UiUtils.showMsg(InActionActivity.this,"latitude"+Double.toString(marker.getPosition().latitude)+
 //                        "longitude"+Double.toString(marker.getPosition().longitude));
@@ -555,37 +551,25 @@ public class InActionActivity  extends Activity implements View.OnClickListener 
      */
     private void initBack(){
 
-        MapStatusUpdate msu = MapStatusUpdateFactory.zoomTo(15f);
-        mBaiduMap.setMapStatus(msu);
+//        MapStatusUpdate msu = MapStatusUpdateFactory.zoomTo(15f);
+//        mBaiduMap.setMapStatus(msu);
         for (Marker marker1:teams)
             marker1.remove();
+        initRoad();
+        initTeamMates();
 
+    }
 
-//        View v_temp = LayoutInflater.from(context).inflate(R.layout.item_imgwarp, null);//加载自定义的布局
-//        ImageView imageView = v_temp.findViewById(R.id.item_img);
-//        imageView.setImageResource(R.mipmap.road);
-//        BaiduMapUtils.createMarker(v_temp,new LatLng(mLastLocationData.latitude-0.01,
-//                mLastLocationData.longitude-0.025),null,mBaiduMap);
-
+    protected void initRoad(){
         View v_temp = LayoutInflater.from(context).inflate(R.layout.item_imgwarp, null);//加载自定义的布局
         ImageView imageView = v_temp.findViewById(R.id.item_img);
         imageView.setImageResource(R.mipmap.background62);
         BaiduMapUtils.createMarker(v_temp,new LatLng(mLastLocationData.latitude-0.014014,
                 mLastLocationData.longitude+0.012185),null,mBaiduMap);
 
+    }
 
-
-
-//        List<LatLng> latLngs=Lists.newArrayList(
-//                mLastLocationData,
-//                new LatLng(initmLatitude-0.005008,initmLongtitude-0.0048966),
-//                new LatLng(initmLatitude-0.004959,initmLongtitude+0.0070966),
-//                new LatLng(initmLatitude-0.008719,initmLongtitude+0.00136),
-//                new LatLng(initmLatitude-0.021916,initmLongtitude+0.0126449)
-//        );
-//        InActionUtils.drawRoad(mBaiduMap,latLngs);
-
-
+    protected void initTeamMates(){
 
     }
 

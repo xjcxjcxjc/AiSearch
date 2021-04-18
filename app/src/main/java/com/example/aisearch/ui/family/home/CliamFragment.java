@@ -7,7 +7,7 @@ import androidx.recyclerview.widget.RecyclerView;
 
 import com.example.aisearch.R;
 import com.example.aisearch.base.BaseFragment;
-import com.example.aisearch.bean.Person;
+import com.example.aisearch.bean.util.Person;
 import com.example.aisearch.ui.volunteer.home.index.fragments.FullyLinearLayoutManager;
 import com.example.aisearch.util.datautil.DataUtil;
 

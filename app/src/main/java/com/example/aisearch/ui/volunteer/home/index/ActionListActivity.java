@@ -17,8 +17,8 @@ import androidx.recyclerview.widget.RecyclerView;
 import com.example.aisearch.LodingActivity;
 import com.example.aisearch.R;
 import com.example.aisearch.base.BaseActivity;
-import com.example.aisearch.bean.ActionListItem;
-import com.example.aisearch.bean.Person;
+import com.example.aisearch.bean.util.ActionListItem;
+import com.example.aisearch.bean.util.Person;
 import com.example.aisearch.ui.volunteer.home.index.adapter.ActionCenterAdapter;
 import com.example.aisearch.ui.volunteer.home.index.adapter.SearchNoticeAdapter;
 import com.example.aisearch.util.UiUtils;
@@ -181,7 +181,7 @@ public class ActionListActivity extends BaseActivity implements View.OnClickList
             recyclerView.setAdapter(new SearchNoticeAdapter(this,initData2(),0));
         } else{
             itemview.setBackgroundColor(getResources().getColor(R.color.title_blue));
-            recyclerView.setAdapter(new ActionCenterAdapter(this, DetailsActivity.class,initActionList()));
+            recyclerView.setAdapter(new ActionCenterAdapter(this, ActionDetailsActivity.class,initActionList()));
         }
     }
 

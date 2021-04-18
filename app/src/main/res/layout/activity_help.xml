@@ -108,7 +108,6 @@
 
                         <ImageView
                             android:id="@+id/help_photo"
-                            android:src="@mipmap/background63"
                             android:scaleType="centerCrop"
                             android:layout_width="match_parent"
                             android:layout_height="match_parent"/>
@@ -125,10 +124,10 @@
                             android:id="@+id/help_person"
                             android:layout_alignParentBottom="true"
                             android:layout_centerHorizontal="true"
-                            android:src="@mipmap/personpsd"
+                            android:src="@mipmap/person_img"
                             android:layout_width="wrap_content"
                             android:layout_height="110dp"/>
-
+<!--                        android:src="@mipmap/personpsd"-->
 
                         <ImageView
                             android:id="@+id/persondialog_hatimg"
@@ -200,7 +199,6 @@
 
                             <EditText
 
-                                android:text="梁广军"
                                 android:background="@null"
                                 android:gravity="center"
                                 android:textAlignment="viewEnd"
@@ -306,7 +304,6 @@
 
                             <EditText
 
-                                android:text="170cm"
                                 android:background="@null"
                                 android:gravity="center"
                                 android:textAlignment="viewEnd"
@@ -341,7 +338,6 @@
                                 android:layout_height="match_parent"/>
                             <EditText
 
-                                android:text="浙江宁波"
                                 android:background="@null"
                                 android:gravity="center"
                                 android:textAlignment="viewEnd"
@@ -384,7 +380,6 @@
 
                             <EditText
 
-                                android:text="331082195409351233482"
                                 android:paddingRight="20dp"
                                 android:textSize="13dp"
                                 android:textAlignment="viewEnd"
@@ -468,7 +463,6 @@
                                     android:id="@+id/help_time"
                                     android:textAlignment="viewEnd"
                                     android:gravity="center_vertical"
-                                    android:text="2020年1月11日10时"
                                     android:textSize="13dp"
                                     android:layout_weight="1"
                                     android:layout_width="1dp"
@@ -523,7 +517,6 @@
                                 android:layout_height="match_parent"/>
 
                             <EditText
-                                android:text="宁波市海曙区"
                                 android:background="@null"
                                 android:textAlignment="viewEnd"
                                 android:gravity="center_vertical"

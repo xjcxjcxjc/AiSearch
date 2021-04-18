@@ -8,7 +8,7 @@ import androidx.recyclerview.widget.StaggeredGridLayoutManager;
 
 import com.example.aisearch.R;
 import com.example.aisearch.base.BaseActivity;
-import com.example.aisearch.bean.volunteer.SOSBulid;
+import com.example.aisearch.bean.util.volunteer.SOSBulid;
 import com.example.aisearch.ui.volunteer.home.inaction.SosAdapter.CopAdapter;
 import com.example.aisearch.ui.volunteer.home.inaction.SosAdapter.HsptAdapter;
 import com.example.aisearch.ui.volunteer.home.inaction.SosAdapter.ShelterAdapter;

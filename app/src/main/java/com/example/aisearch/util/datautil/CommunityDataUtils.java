@@ -3,7 +3,7 @@ package com.example.aisearch.util.datautil;
 import android.content.Context;
 
 import com.example.aisearch.R;
-import com.example.aisearch.bean.volunteer.CommunityItems;
+import com.example.aisearch.bean.util.volunteer.CommunityItems;
 import com.example.aisearch.util.UiUtils;
 
 import java.util.ArrayList;

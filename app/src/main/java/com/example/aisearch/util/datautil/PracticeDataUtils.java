@@ -1,6 +1,6 @@
 package com.example.aisearch.util.datautil;
 
-import com.example.aisearch.bean.volunteer.Video;
+import com.example.aisearch.bean.util.volunteer.Video;
 import com.example.aisearch.ui.volunteer.train.adapter.PracticeIndexAdapter;
 
 import java.util.ArrayList;
@@ -30,12 +30,37 @@ public class PracticeDataUtils {
                 "溺水","水上救生设备的使用","水中拖救姿势"
                 ,"上岸的急救方法1","上岸的急救方法2","","","溺水"));
 
+        videos.add(new Video("app的使用", PracticeIndexAdapter.SKILL, "志愿者精神体现着个人对生命，社会，人类，和世界",
+                3, 4231,1,"100","","app的使用",
+                "溺水","水上救生设备的使用","水中拖救姿势"
+                ,"上岸的急救方法1","上岸的急救方法2","","","溺水"));
+        videos.add(new Video("基础知识", PracticeIndexAdapter.SKILL, "志愿者精神体现着个人对生命，社会，人类，和世界",
+                3, 4231,1,"100","","基础知识",
+                "溺水","水上救生设备的使用","水中拖救姿势"
+                ,"上岸的急救方法1","上岸的急救方法2","","","溺水"));
+        videos.add(new Video("行动流程与事项", PracticeIndexAdapter.SKILL, "志愿者精神体现着个人对生命，社会，人类，和世界",
+                3, 4231,1,"100","","行动流程与事项",
+                "溺水","水上救生设备的使用","水中拖救姿势"
+                ,"上岸的急救方法1","上岸的急救方法2","","","溺水"));
+        videos.add(new Video("常见急救知识", PracticeIndexAdapter.SKILL, "志愿者精神体现着个人对生命，社会，人类，和世界",
+                3, 4231,1,"100","","常见急救知识",
+                "溺水","水上救生设备的使用","水中拖救姿势"
+                ,"上岸的急救方法1","上岸的急救方法2","","","溺水"));
+        videos.add(new Video("志愿者的意义", PracticeIndexAdapter.SKILL, "志愿者精神体现着个人对生命，社会，人类，和世界",
+                3, 4231,1,"100","","志愿者的意义",
+                "溺水","水上救生设备的使用","水中拖救姿势"
+                ,"上岸的急救方法1","上岸的急救方法2","","","溺水"));
+
         return videos;
     }
 
 
     public static List getFreshBirdVideos(){
         List videos=new ArrayList();
+        videos.add(new Video("常见注意事项", PracticeIndexAdapter.SKILL, "志愿者精神体现着个人对生命，社会，人类，和世界",
+                3, 4231,1,"100","","常见注意事项培训",
+                "溺水","水上救生设备的使用","水中拖救姿势"
+                ,"上岸的急救方法1","上岸的急救方法2","","","溺水"));
         videos.add(new Video("app的使用", PracticeIndexAdapter.FRESH, "app的有效使用能减轻很多不必要的事件，能让志愿者更加的专注于",
                 2, 4256,1,"100","","",
                 "溺水","水上救生设备的使用","水中拖救姿势"

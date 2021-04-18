@@ -150,7 +150,6 @@
 
                             <EditText
 
-                                android:text="梁广军"
                                 android:background="@null"
                                 android:gravity="center"
                                 android:textAlignment="viewEnd"
@@ -256,7 +255,6 @@
 
                             <EditText
 
-                                android:text="170cm"
                                 android:background="@null"
                                 android:gravity="center"
                                 android:textAlignment="viewEnd"
@@ -291,7 +289,6 @@
                                 android:layout_height="match_parent"/>
                             <EditText
 
-                                android:text="浙江宁波"
                                 android:background="@null"
                                 android:gravity="center"
                                 android:textAlignment="viewEnd"
@@ -334,7 +331,6 @@
 
                             <EditText
 
-                                android:text="331082195409351233482"
                                 android:paddingRight="20dp"
                                 android:textSize="13dp"
                                 android:textAlignment="viewEnd"
@@ -418,7 +414,6 @@
                                     android:id="@+id/help_time"
                                     android:textAlignment="viewEnd"
                                     android:gravity="center_vertical"
-                                    android:text="2020年4月10日10时"
                                     android:textSize="13dp"
                                     android:layout_weight="1"
                                     android:layout_width="1dp"
@@ -474,7 +469,6 @@
 
                             <EditText
 
-                                android:text="浙江省海曙区月湖公园"
                                 android:background="@null"
                                 android:textAlignment="viewEnd"
                                 android:gravity="center_vertical"

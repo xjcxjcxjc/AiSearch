@@ -12,7 +12,7 @@ import androidx.annotation.NonNull;
 import androidx.recyclerview.widget.RecyclerView;
 
 import com.example.aisearch.R;
-import com.example.aisearch.bean.volunteer.Video;
+import com.example.aisearch.bean.util.volunteer.Video;
 import com.example.aisearch.ui.volunteer.train.StudyDetailsActivity;
 
 import java.util.List;
@@ -61,7 +61,6 @@ public class MineVideoAdapter2 extends RecyclerView.Adapter<MineVideoAdapter2.my
         holder.videoitem_last.setText(videos.get(position).getLastTime());
         holder.videoitem_lasttitle.setText(videos.get(position).getLasttitle());
         holder.videoitem_progress.setText("学习至"+videos.get(position).getStudyprogress()+"%");
-
 
 
     }

@@ -8,7 +8,7 @@ import android.widget.RelativeLayout;
 
 import com.example.aisearch.R;
 import com.example.aisearch.base.BaseFragment;
-import com.example.aisearch.bean.family.ActionStatus;
+import com.example.aisearch.bean.util.family.ActionStatus;
 import com.example.aisearch.ui.volunteer.mine.PersonPrivacyActivity;
 import com.example.aisearch.ui.volunteer.mine.SettingActivity;
 import com.qmuiteam.qmui.widget.QMUIRadiusImageView;

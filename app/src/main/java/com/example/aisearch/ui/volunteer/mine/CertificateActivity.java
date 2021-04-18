@@ -8,9 +8,8 @@ import androidx.recyclerview.widget.StaggeredGridLayoutManager;
 
 import com.example.aisearch.R;
 import com.example.aisearch.base.BaseActivity;
-import com.example.aisearch.bean.volunteer.Badge;
-import com.example.aisearch.ui.volunteer.mine.adapter.OrganizationAdapter;
-import com.example.aisearch.util.UiUtils;
+import com.example.aisearch.bean.util.volunteer.Badge;
+import com.example.aisearch.ui.volunteer.mine.adapter.OrganizationAdapter2;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -23,7 +22,7 @@ public class CertificateActivity extends BaseActivity {
     @BindView(R.id.badge_recyclerview)
     RecyclerView badge_recyclerview;
 
-    OrganizationAdapter badgeAdapter;
+    OrganizationAdapter2 badgeAdapter;
     List<Badge> badges;
 
     @BindView(R.id.finish)
@@ -51,10 +50,9 @@ public class CertificateActivity extends BaseActivity {
     }
 
     private void initRecycleView(){
-        badgeAdapter= new OrganizationAdapter(CertificateActivity.this,initData1());
+        badgeAdapter= new OrganizationAdapter2(CertificateActivity.this,initData1());
         badge_recyclerview.setLayoutManager(new StaggeredGridLayoutManager(3,StaggeredGridLayoutManager.VERTICAL));
         badge_recyclerview.setAdapter(badgeAdapter);
-
 
     }
 
@@ -64,10 +62,9 @@ public class CertificateActivity extends BaseActivity {
         else
             badges.clear();
 
-        badges.add(new Badge(UiUtils.resourceToBitmap(CertificateActivity.this,R.mipmap.mine_img1),"xxx证书"));
-        badges.add(new Badge(UiUtils.resourceToBitmap(CertificateActivity.this,R.mipmap.mine_img1),"xxx证书"));
-        badges.add(new Badge(UiUtils.resourceToBitmap(CertificateActivity.this,R.mipmap.mine_img1),"xxx证书"));
-        badges.add(new Badge(UiUtils.resourceToBitmap(CertificateActivity.this,R.mipmap.mine_img1),"xxx证书"));
+        badges.add(new Badge("SWR","救生员证书"));
+        badges.add(new Badge("RTER","红十字会急救证书"));
+        badges.add(new Badge("BSRH","蓝天救援队荣誉证书"));
 
 
 

@@ -8,7 +8,7 @@ import androidx.recyclerview.widget.StaggeredGridLayoutManager;
 
 import com.example.aisearch.R;
 import com.example.aisearch.base.BaseFragment;
-import com.example.aisearch.bean.volunteer.CommunityItems;
+import com.example.aisearch.bean.util.volunteer.CommunityItems;
 import com.example.aisearch.ui.volunteer.community.adpter.CommunityFragmentAdapter;
 
 import java.util.List;

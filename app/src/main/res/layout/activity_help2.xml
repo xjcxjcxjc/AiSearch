@@ -150,7 +150,6 @@
 
                         <EditText
 
-                            android:text="梁少伟"
                             android:background="@null"
                             android:gravity="center"
                             android:textAlignment="viewEnd"
@@ -258,7 +257,6 @@
 
                         <EditText
 
-                            android:text="331082197809351233482"
                             android:paddingRight="20dp"
                             android:textSize="14dp"
                             android:textAlignment="viewEnd"
@@ -302,7 +300,6 @@
                         <EditText
 
                             android:id="@+id/phhonenub"
-                            android:text="13059701153"
                             android:paddingRight="20dp"
                             android:textSize="14dp"
                             android:textAlignment="viewEnd"
@@ -347,7 +344,6 @@
                         <EditText
 
 
-                            android:text="浙江省海曙区"
                             android:paddingRight="20dp"
                             android:textSize="14dp"
                             android:textAlignment="viewEnd"
@@ -390,7 +386,6 @@
 
                         <EditText
 
-                            android:text="ynk478348678"
                             android:paddingRight="20dp"
                             android:textSize="14dp"
                             android:textAlignment="viewEnd"

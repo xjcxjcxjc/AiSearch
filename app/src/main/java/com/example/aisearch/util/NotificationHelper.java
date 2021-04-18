@@ -15,7 +15,7 @@ import androidx.core.app.NotificationCompat;
 
 import com.example.aisearch.R;
 import com.example.aisearch.ui.volunteer.home.LostPersonDetailsActivity;
-import com.example.aisearch.ui.volunteer.home.index.DetailsActivity;
+import com.example.aisearch.ui.volunteer.home.index.ActionDetailsActivity;
 
 public class NotificationHelper {
     private static final String CHANNEL_ID="channel_id";   //通道渠道id
@@ -93,7 +93,7 @@ public class NotificationHelper {
         Notification notification;
 
 //        Intent intent = new Intent(Intent.ACTION_VIEW, Uri.parse("https://www.baidu.com/"));
-        Intent intent = new Intent(context, DetailsActivity.class);
+        Intent intent = new Intent(context, ActionDetailsActivity.class);
         PendingIntent pi = PendingIntent.getActivity(context, 0, intent, 0);
         //获取Notification实例   获取Notification实例有很多方法处理    在此我只展示通用的方法（虽然这种方式是属于api16以上，但是已经可以了，毕竟16以下的Android机很少了，如果非要全面兼容可以用）
         if(Build.VERSION.SDK_INT>=Build.VERSION_CODES.O){

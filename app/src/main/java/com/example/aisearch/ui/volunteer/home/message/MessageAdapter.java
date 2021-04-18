@@ -13,7 +13,7 @@ import androidx.annotation.NonNull;
 import androidx.recyclerview.widget.RecyclerView;
 
 import com.example.aisearch.R;
-import com.example.aisearch.bean.Message.MessageListItem;
+import com.example.aisearch.bean.util.Message.MessageListItem;
 import com.example.aisearch.ui.volunteer.home.zwactivity.chat.ChatActivity;
 
 import java.util.List;

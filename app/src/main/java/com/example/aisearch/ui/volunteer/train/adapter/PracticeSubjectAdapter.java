@@ -12,7 +12,7 @@ import androidx.annotation.NonNull;
 import androidx.recyclerview.widget.RecyclerView;
 
 import com.example.aisearch.R;
-import com.example.aisearch.bean.volunteer.Subject_Single;
+import com.example.aisearch.bean.util.volunteer.Subject_Single;
 import com.example.aisearch.ui.volunteer.train.dialog.PassDialog;
 
 import java.util.List;

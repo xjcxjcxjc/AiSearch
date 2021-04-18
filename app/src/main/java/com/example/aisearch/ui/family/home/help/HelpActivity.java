@@ -17,7 +17,7 @@ import androidx.cardview.widget.CardView;
 
 import com.example.aisearch.R;
 import com.example.aisearch.base.BaseActivity;
-import com.example.aisearch.bean.family.GetConfigReq;
+import com.example.aisearch.bean.util.family.GetConfigReq;
 import com.example.aisearch.ui.family.home.dialog.PersonDialog;
 import com.example.aisearch.ui.volunteer.train.dialog.LockDialog;
 import com.example.aisearch.util.CommonPopWindow;
@@ -86,7 +86,7 @@ public class HelpActivity extends BaseActivity implements View.OnClickListener,C
         initData();
         initListener();
         initDialog();
-        help_photo.setImageResource(R.mipmap.clipboard);
+//        help_photo.setImageResource(R.mipmap.clipboard);
     }
 
 

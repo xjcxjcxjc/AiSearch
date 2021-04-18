@@ -13,7 +13,7 @@ import androidx.cardview.widget.CardView;
 import androidx.recyclerview.widget.RecyclerView;
 
 import com.example.aisearch.R;
-import com.example.aisearch.bean.Message.TeamMate;
+import com.example.aisearch.bean.util.Message.TeamMate;
 import com.example.aisearch.util.UiUtils;
 
 import java.util.List;

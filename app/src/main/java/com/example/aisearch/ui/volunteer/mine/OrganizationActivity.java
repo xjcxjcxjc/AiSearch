@@ -1,6 +1,5 @@
 package com.example.aisearch.ui.volunteer.mine;
 
-import android.graphics.Bitmap;
 import android.view.View;
 import android.widget.Button;
 
@@ -9,9 +8,8 @@ import androidx.recyclerview.widget.StaggeredGridLayoutManager;
 
 import com.example.aisearch.R;
 import com.example.aisearch.base.BaseActivity;
-import com.example.aisearch.bean.volunteer.Badge;
-import com.example.aisearch.ui.volunteer.mine.adapter.OrganizationAdapter;
-import com.example.aisearch.util.UiUtils;
+import com.example.aisearch.bean.util.volunteer.Badge;
+import com.example.aisearch.ui.volunteer.mine.adapter.OrganizationAdapter2;
 import com.qmuiteam.qmui.util.QMUIStatusBarHelper;
 
 import java.util.ArrayList;
@@ -53,23 +51,21 @@ public class OrganizationActivity extends BaseActivity {
 
     private void initRecycle() {
         organization_recycleview.setLayoutManager(new StaggeredGridLayoutManager(3,StaggeredGridLayoutManager.VERTICAL));
-        organization_recycleview.setAdapter(new OrganizationAdapter(OrganizationActivity.this,initData1()));
+        organization_recycleview.setAdapter(new OrganizationAdapter2(OrganizationActivity.this,initData1()));
 
 
     }
 
     private List<Badge> initData1(){
         List<Badge> badges=new ArrayList<>();
-        Bitmap bitmap= UiUtils.resourceToBitmap(OrganizationActivity.this,R.mipmap.mine_img1);
 
-        badges.add(new Badge(bitmap,"宁波市志愿者协会"));
-        badges.add(new Badge(bitmap,"宁波市志愿者协会"));
-        badges.add(new Badge(bitmap,"宁波市志愿者协会"));
-        badges.add(new Badge(bitmap,"宁波市志愿者协会"));
-        badges.add(new Badge(bitmap,"宁波市志愿者协会"));
-        badges.add(new Badge(bitmap,"宁波市志愿者协会"));
-        badges.add(new Badge(bitmap,"宁波市志愿者协会"));
-        badges.add(new Badge(bitmap,"宁波市志愿者协会"));
+        badges.add(new Badge("NBZYZXH","宁波市志愿者协会"));
+        badges.add(new Badge("BSR","蓝天救援队"));
+        badges.add(new Badge("UVA","浙江高校志愿者协会"));
+        badges.add(new Badge("HZZYZXH","杭州市志愿者协会"));
+        badges.add(new Badge("SHZYZXH","上海市志愿者协会"));
+
+
 
         return badges;
     }

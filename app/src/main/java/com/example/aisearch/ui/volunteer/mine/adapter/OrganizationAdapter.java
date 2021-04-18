@@ -11,7 +11,7 @@ import androidx.annotation.NonNull;
 import androidx.recyclerview.widget.RecyclerView;
 
 import com.example.aisearch.R;
-import com.example.aisearch.bean.volunteer.Badge;
+import com.example.aisearch.bean.util.volunteer.Badge;
 
 import java.util.List;
 
@@ -62,7 +62,6 @@ public class OrganizationAdapter extends RecyclerView.Adapter<OrganizationAdapte
         public myHoder(@NonNull View itemView) {
             super(itemView);
             ButterKnife.bind(this, itemView);
-
         }
     }
 

@@ -11,7 +11,7 @@ import androidx.annotation.NonNull;
 import androidx.recyclerview.widget.RecyclerView;
 
 import com.example.aisearch.R;
-import com.example.aisearch.bean.family.ActionStatus;
+import com.example.aisearch.bean.util.family.ActionStatus;
 
 import java.util.List;
 

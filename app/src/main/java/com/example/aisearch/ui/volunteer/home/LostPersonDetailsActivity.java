@@ -13,7 +13,7 @@ import androidx.cardview.widget.CardView;
 import com.example.aisearch.LodingActivity;
 import com.example.aisearch.R;
 import com.example.aisearch.base.BaseActivity;
-import com.example.aisearch.bean.Person;
+import com.example.aisearch.bean.util.Person;
 import com.example.aisearch.ui.volunteer.home.publish.ScreenActivity;
 import com.example.aisearch.util.UiUtils;
 import com.example.aisearch.util.datautil.DataUtil;

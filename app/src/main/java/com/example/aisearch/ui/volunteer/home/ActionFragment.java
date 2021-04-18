@@ -20,7 +20,7 @@ import androidx.viewpager.widget.ViewPager;
 import com.example.aisearch.MyViewPagerAdapter;
 import com.example.aisearch.R;
 import com.example.aisearch.base.BaseFragment;
-import com.example.aisearch.bean.family.GetConfigReq;
+import com.example.aisearch.bean.util.family.GetConfigReq;
 import com.example.aisearch.ui.volunteer.home.index.SearchActivity;
 import com.example.aisearch.ui.volunteer.home.index.fragments.ActionCenterFragment;
 import com.example.aisearch.ui.volunteer.home.index.fragments.SearchNoticeFragment;

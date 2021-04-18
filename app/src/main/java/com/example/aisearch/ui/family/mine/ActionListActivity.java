@@ -12,7 +12,7 @@ import androidx.recyclerview.widget.StaggeredGridLayoutManager;
 
 import com.example.aisearch.R;
 import com.example.aisearch.base.BaseActivity;
-import com.example.aisearch.bean.family.ActionStatus;
+import com.example.aisearch.bean.util.family.ActionStatus;
 
 import java.util.ArrayList;
 import java.util.List;

@@ -7,10 +7,10 @@ import android.graphics.Bitmap;
 import android.graphics.BitmapFactory;
 
 import com.example.aisearch.R;
-import com.example.aisearch.bean.ActionListItem;
-import com.example.aisearch.bean.Message.MessageListItem;
-import com.example.aisearch.bean.Person;
-import com.example.aisearch.bean.volunteer.CommunityItems;
+import com.example.aisearch.bean.util.ActionListItem;
+import com.example.aisearch.bean.util.Message.MessageListItem;
+import com.example.aisearch.bean.util.Person;
+import com.example.aisearch.bean.util.volunteer.CommunityItems;
 import com.example.aisearch.ui.family.home.ClaimPersonDetailsActivity;
 import com.example.aisearch.util.UiUtils;
 

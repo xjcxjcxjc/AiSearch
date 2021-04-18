@@ -14,7 +14,7 @@ import androidx.annotation.NonNull;
 import androidx.recyclerview.widget.RecyclerView;
 
 import com.example.aisearch.R;
-import com.example.aisearch.bean.Person;
+import com.example.aisearch.bean.util.Person;
 import com.example.aisearch.ui.volunteer.home.LostPersonDetailsActivity;
 import com.example.aisearch.ui.volunteer.home.publish.ScreenActivity;
 import com.qmuiteam.qmui.widget.roundwidget.QMUIRoundButton;

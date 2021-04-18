@@ -52,20 +52,28 @@
         android:roundIcon="@mipmap/aisearch_logo2"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-
-        <activity android:name=".TestActivity02">
+        <activity android:name=".ui.LoginActivity">
 <!--            <intent-filter>-->
 <!--                <action android:name="android.intent.action.MAIN" />-->
 
 <!--                <category android:name="android.intent.category.LAUNCHER" />-->
 <!--            </intent-filter>-->
         </activity>
+        <activity android:name=".TestActivity02">
 
+            <!-- <intent-filter> -->
+            <!-- <action android:name="android.intent.action.MAIN" /> -->
+
+
+            <!-- <category android:name="android.intent.category.LAUNCHER" /> -->
+            <!-- </intent-filter> -->
+        </activity>
         <activity android:name=".ui.volunteer.home.inaction.InActionActivity2">
-             <intent-filter>
-             <action android:name="android.intent.action.MAIN" />
-             <category android:name="android.intent.category.LAUNCHER" />
-             </intent-filter>
+
+            <!-- <intent-filter> -->
+            <!-- <action android:name="android.intent.action.MAIN" /> -->
+            <!-- <category android:name="android.intent.category.LAUNCHER" /> -->
+            <!-- </intent-filter> -->
         </activity>
         <activity android:name=".ui.volunteer.home.SubmitActivity" />
         <activity android:name=".ui.volunteer.home.inaction.WNaviGuideActivity" />
@@ -75,13 +83,16 @@
         <activity android:name=".ui.family.home.share.ShareActivity2" />
         <activity android:name=".ui.family.home.share.ShareActivity1" />
         <activity android:name=".TestChatActivity">
+<!--            <intent-filter>-->
+<!--                <action android:name="android.intent.action.MAIN" />-->
 
+<!--                <category android:name="android.intent.category.LAUNCHER" />-->
+<!--            </intent-filter>-->
         </activity>
         <activity android:name=".ui.volunteer.train.video.VideoActivity2" />
         <activity android:name=".ui.volunteer.home.publish.ScreenActivity" />
         <activity android:name=".ui.volunteer.home.publish.PublishActivity" />
         <activity android:name=".ui.volunteer.home.publish.MainActivity">
-
             <!-- <intent-filter> -->
             <!-- <action android:name="android.intent.action.MAIN" /> -->
             <!-- <category android:name="android.intent.category.LAUNCHER" /> -->
@@ -99,12 +110,11 @@
         <activity android:name=".ui.volunteer.mine.MyActionActivity" />
         <activity android:name=".LodingActivity">
 
-            <!-- <intent-filter> -->
-            <!-- <action android:name="android.intent.action.MAIN" /> -->
+<!--             <intent-filter>-->
+<!--             <action android:name="android.intent.action.MAIN" />-->
 
-
-            <!-- <category android:name="android.intent.category.LAUNCHER" /> -->
-            <!-- </intent-filter> -->
+<!--             <category android:name="android.intent.category.LAUNCHER" />-->
+<!--             </intent-filter>-->
         </activity>
         <activity android:name=".ui.family.home.help.HelpActivity" />
         <activity android:name=".MainActivity2" />
@@ -119,12 +129,10 @@
         </activity>
         <activity android:name=".ui.volunteer.home.inaction.InActionActivity">
 
-            <!-- <intent-filter> -->
-            <!-- <action android:name="android.intent.action.MAIN" /> -->
-
-
-            <!-- <category android:name="android.intent.category.LAUNCHER" /> -->
-            <!-- </intent-filter> -->
+             <intent-filter>
+             <action android:name="android.intent.action.MAIN" />
+             <category android:name="android.intent.category.LAUNCHER" />
+             </intent-filter>
         </activity> <!-- 测试 -->
         <activity android:name=".TestActivity" />
         <activity android:name=".MainActivity" />
@@ -153,7 +161,7 @@
         <activity android:name=".ui.volunteer.home.LostPersonDetailsActivity" />
         <activity android:name=".ui.volunteer.home.JoinActivity" /> <!-- 地图模板 -->
         <activity android:name=".ui.volunteer.home.MapActivity" />
-        <activity android:name=".ui.volunteer.home.index.DetailsActivity" />
+        <activity android:name=".ui.volunteer.home.index.ActionDetailsActivity" />
         <activity android:name=".ui.volunteer.home.zwactivity.SearchPeopleByImageActivity" />
         <activity android:name=".ui.volunteer.home.zwactivity.PersonReIdentificationActivity" />
         <activity android:name=".ui.volunteer.home.zwactivity.FaceIdentificationActivity" />

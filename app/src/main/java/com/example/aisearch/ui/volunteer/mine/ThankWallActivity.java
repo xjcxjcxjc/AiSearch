@@ -8,7 +8,7 @@ import androidx.recyclerview.widget.StaggeredGridLayoutManager;
 
 import com.example.aisearch.R;
 import com.example.aisearch.base.BaseActivity;
-import com.example.aisearch.bean.volunteer.ThankMsg;
+import com.example.aisearch.bean.util.volunteer.ThankMsg;
 import com.example.aisearch.ui.volunteer.mine.adapter.MineThankWallAdapter;
 import com.example.aisearch.util.UiUtils;
 import com.google.common.collect.Lists;

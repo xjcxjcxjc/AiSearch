@@ -12,7 +12,7 @@ import androidx.recyclerview.widget.StaggeredGridLayoutManager;
 
 import com.example.aisearch.R;
 import com.example.aisearch.base.BaseFragment;
-import com.example.aisearch.bean.volunteer.TeamMates;
+import com.example.aisearch.bean.util.volunteer.TeamMates;
 import com.example.aisearch.ui.volunteer.home.JoinActivity;
 import com.example.aisearch.ui.volunteer.home.index.adapter.TeamMatesAdapter;
 import com.example.aisearch.ui.volunteer.home.zwactivity.SearchPeopleByImageActivity;

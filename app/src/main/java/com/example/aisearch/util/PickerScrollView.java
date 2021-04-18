@@ -9,7 +9,7 @@ import android.util.AttributeSet;
 import android.view.MotionEvent;
 import android.view.View;
 
-import com.example.aisearch.bean.family.GetConfigReq;
+import com.example.aisearch.bean.util.family.GetConfigReq;
 
 import java.util.ArrayList;
 import java.util.List;

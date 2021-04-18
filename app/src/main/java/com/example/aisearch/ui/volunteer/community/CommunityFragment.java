@@ -20,7 +20,7 @@ import com.example.aisearch.LodingActivity;
 import com.example.aisearch.MyViewPagerAdapter;
 import com.example.aisearch.R;
 import com.example.aisearch.base.BaseFragment;
-import com.example.aisearch.bean.volunteer.CommunityItems;
+import com.example.aisearch.bean.util.volunteer.CommunityItems;
 import com.example.aisearch.ui.volunteer.community.fragment.FindFragment;
 import com.example.aisearch.ui.volunteer.community.fragment.SameCityFragment;
 import com.example.aisearch.ui.volunteer.home.publish.PublishActivity;
@@ -87,8 +87,6 @@ public class CommunityFragment extends BaseFragment implements CompoundButton.On
         rg1.check(R.id.community_find);
         community_find.setOnCheckedChangeListener(this);
 
-
-
     }
 
 
@@ -107,17 +105,18 @@ public class CommunityFragment extends BaseFragment implements CompoundButton.On
     @Override
     public void onActivityResult(int requestCode, int resultCode, @Nullable Intent data) {
         super.onActivityResult(requestCode, resultCode, data);
-        if(7650==requestCode){
+        if(7650==requestCode&&null!=data){
 
             byte[] res = data.getByteArrayExtra("img");
-            Bitmap bitmap= DataUtil.getPicFromBytes(res,null);
+            if (null!=res){
+                Bitmap bitmap= DataUtil.getPicFromBytes(res,null);
+                CommunityItems communityItems =new CommunityItems( UiUtils.resourceToBitmap(getContext(), R.mipmap.orgnization_headimg6),
+                        UiUtils.bitmapFitWidth(UiUtils.getDeviceWidth(getContext())/2, bitmap),
+                        1,  data.getStringExtra("title"),
+                        data.getStringExtra("content"), "495","26" ,"68" );
 
-            CommunityItems communityItems =new CommunityItems( UiUtils.resourceToBitmap(getContext(), R.mipmap.orgnization_headimg6),
-                    UiUtils.bitmapFitWidth(UiUtils.getDeviceWidth(getContext())/2, bitmap),
-                    1,  data.getStringExtra("title"),
-                    data.getStringExtra("content"), "495","26" ,"68" );
-
-            findFragment.addContent(communityItems);
+                findFragment.addContent(communityItems);
+            }
         }
 
     }

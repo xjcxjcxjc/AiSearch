@@ -81,8 +81,10 @@ public class TestChatActivity extends AppCompatActivity {
             user = "654321";
             pwd = "654321";
         }
+
         mProgressDialog = ProgressDialog.show(TestChatActivity.this, "提示：", "正在加载中。。。");
         mProgressDialog.setCanceledOnTouchOutside(true);
+
         JMessageClient.login(user, pwd, new BasicCallback() {
             @Override
             public void gotResult(int responseCode, String LoginDesc) {

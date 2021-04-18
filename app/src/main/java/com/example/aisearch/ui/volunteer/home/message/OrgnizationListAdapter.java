@@ -11,7 +11,7 @@ import androidx.annotation.NonNull;
 import androidx.recyclerview.widget.RecyclerView;
 
 import com.example.aisearch.R;
-import com.example.aisearch.bean.Message.OrgnizationItem;
+import com.example.aisearch.bean.util.Message.OrgnizationItem;
 
 import java.util.List;
 

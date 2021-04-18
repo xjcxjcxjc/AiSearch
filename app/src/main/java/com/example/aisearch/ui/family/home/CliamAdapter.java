@@ -13,7 +13,7 @@ import androidx.annotation.NonNull;
 import androidx.recyclerview.widget.RecyclerView;
 
 import com.example.aisearch.R;
-import com.example.aisearch.bean.Person;
+import com.example.aisearch.bean.util.Person;
 import com.example.aisearch.util.datautil.DataUtil;
 
 import java.util.List;

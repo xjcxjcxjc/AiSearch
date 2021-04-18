@@ -8,7 +8,7 @@ import androidx.recyclerview.widget.StaggeredGridLayoutManager;
 
 import com.example.aisearch.R;
 import com.example.aisearch.base.BaseActivity;
-import com.example.aisearch.bean.Message.MessageListItem;
+import com.example.aisearch.bean.util.Message.MessageListItem;
 import com.example.aisearch.util.datautil.DataUtil;
 
 import java.util.List;

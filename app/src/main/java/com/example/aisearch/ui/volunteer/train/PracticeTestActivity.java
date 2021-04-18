@@ -10,7 +10,7 @@ import androidx.recyclerview.widget.StaggeredGridLayoutManager;
 
 import com.example.aisearch.R;
 import com.example.aisearch.base.BaseActivity;
-import com.example.aisearch.bean.volunteer.Subject_Single;
+import com.example.aisearch.bean.util.volunteer.Subject_Single;
 import com.example.aisearch.ui.volunteer.train.adapter.PracticeSubjectAdapter;
 import com.example.aisearch.ui.volunteer.train.adapter.ProgressBarAdapter;
 import com.google.common.collect.Lists;

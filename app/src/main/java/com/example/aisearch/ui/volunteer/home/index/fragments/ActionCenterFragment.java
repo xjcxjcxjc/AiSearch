@@ -32,9 +32,9 @@ import com.baidu.mapapi.model.LatLng;
 import com.example.aisearch.MyOrientationListener;
 import com.example.aisearch.R;
 import com.example.aisearch.base.myApplication;
-import com.example.aisearch.bean.ActionListItem;
+import com.example.aisearch.bean.util.ActionListItem;
 import com.example.aisearch.ui.volunteer.home.beforeaction.BeforeMainActivity;
-import com.example.aisearch.ui.volunteer.home.index.DetailsActivity;
+import com.example.aisearch.ui.volunteer.home.index.ActionDetailsActivity;
 import com.example.aisearch.ui.volunteer.home.index.adapter.ActionCenterAdapter;
 import com.example.aisearch.util.BaiduMapUtils;
 import com.example.aisearch.util.datautil.DataUtil;
@@ -91,10 +91,10 @@ public class ActionCenterFragment extends Fragment {
 
         floatingActionButton.setVisibility(View.INVISIBLE);
         floatingActionButton.setOnClickListener((v)->{
-
             startActivity(new Intent(getContext(),BeforeMainActivity.class));
-
         });
+
+
 
         return view;
     }
@@ -103,7 +103,7 @@ public class ActionCenterFragment extends Fragment {
 
     private void initRecycleView(View view){
         recyclerView.setLayoutManager(new FullyLinearLayoutManager(getContext()));
-        recyclerView.setAdapter(new ActionCenterAdapter(getContext(), DetailsActivity.class,initActionList()));
+        recyclerView.setAdapter(new ActionCenterAdapter(getContext(), ActionDetailsActivity.class,initActionList()));
     }
 
 

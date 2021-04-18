@@ -13,7 +13,7 @@ import androidx.recyclerview.widget.StaggeredGridLayoutManager;
 
 import com.example.aisearch.R;
 import com.example.aisearch.base.BaseActivity;
-import com.example.aisearch.bean.volunteer.Badge;
+import com.example.aisearch.bean.util.volunteer.Badge;
 import com.example.aisearch.ui.volunteer.mine.adapter.OrganizationAdapter;
 import com.example.aisearch.util.UiUtils;
 import com.qmuiteam.qmui.util.QMUIViewHelper;

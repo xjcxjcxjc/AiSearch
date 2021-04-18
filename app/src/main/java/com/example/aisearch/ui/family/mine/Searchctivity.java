@@ -8,7 +8,7 @@ import androidx.recyclerview.widget.StaggeredGridLayoutManager;
 
 import com.example.aisearch.R;
 import com.example.aisearch.base.BaseActivity;
-import com.example.aisearch.bean.Clue;
+import com.example.aisearch.bean.util.Clue;
 import com.example.aisearch.util.UiUtils;
 import com.google.common.collect.Lists;
 
@@ -53,12 +53,13 @@ public class Searchctivity extends BaseActivity {
     private List initData(){
         List list= Lists.newArrayList(
                 new Clue(UiUtils.resourceToBitmap(Searchctivity.this,R.mipmap.orgnization_headimg2),
-                        "太阳","在学院路有人看到老人往东方向去了","2021.3.21 10:34"),
+                        "太阳","在下沙小区看到疑似老人","2021.3.21 10:34"),
                 new Clue(UiUtils.resourceToBitmap(Searchctivity.this,R.mipmap.orgnization_headimg14),
-                        "阿糖姐","在芦港站附近有人看到相似老人","2021.3.20 16:22"),
+                        "阿糖姐","在和平路附近看到相似着装老人","2021.3.20 16:22"),
                 new Clue(UiUtils.resourceToBitmap(Searchctivity.this,R.mipmap.orgnization_headimg7),
-                        "Ming","在宁波财经学院附近有人看到相似老人","2021.3.20 15:51")
+                        "Ming","在白云路看到相似老人朝东南方向走去","2021.3.20 15:51")
         );
+
 
         return list;
     }

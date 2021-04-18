@@ -14,7 +14,7 @@ import androidx.annotation.NonNull;
 import androidx.recyclerview.widget.RecyclerView;
 
 import com.example.aisearch.R;
-import com.example.aisearch.bean.volunteer.Video;
+import com.example.aisearch.bean.util.volunteer.Video;
 import com.example.aisearch.ui.volunteer.train.StudyDetailsActivity;
 import com.example.aisearch.ui.volunteer.train.dialog.LockDialog;
 

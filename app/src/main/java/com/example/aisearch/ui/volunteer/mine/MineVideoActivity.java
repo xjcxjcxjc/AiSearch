@@ -32,8 +32,10 @@ public class MineVideoActivity extends BaseActivity {
 
     @Override
     protected void init() {
+
         mine_video_recycle.setLayoutManager(new StaggeredGridLayoutManager(1, StaggeredGridLayoutManager.VERTICAL));
         mine_video_recycle.setAdapter(new MineVideoAdapter2(MineVideoActivity.this,initVideos()));
+
     }
 
     @Override
@@ -51,7 +53,7 @@ public class MineVideoActivity extends BaseActivity {
     private List initVideos(){
         List videos=new ArrayList();
         videos.addAll(PracticeDataUtils.getMineVideos());
-        videos.addAll(PracticeDataUtils.getFreshBirdVideos());
+//        videos.addAll(PracticeDataUtils.getFreshBirdVideos());
         return videos;
     }
 

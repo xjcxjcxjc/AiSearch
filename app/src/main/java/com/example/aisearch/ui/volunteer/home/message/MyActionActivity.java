@@ -8,7 +8,7 @@ import androidx.recyclerview.widget.RecyclerView;
 
 import com.example.aisearch.R;
 import com.example.aisearch.base.BaseActivity;
-import com.example.aisearch.bean.ActionListItem;
+import com.example.aisearch.bean.util.ActionListItem;
 import com.example.aisearch.ui.volunteer.home.beforeaction.BeforeMainActivity;
 import com.example.aisearch.ui.volunteer.home.index.adapter.ActionCenterAdapter;
 import com.example.aisearch.util.UiUtils;

@@ -14,7 +14,7 @@ import androidx.fragment.app.FragmentTransaction;
 import com.example.aisearch.LodingActivity;
 import com.example.aisearch.R;
 import com.example.aisearch.base.BaseFragment;
-import com.example.aisearch.bean.volunteer.CommunityItems;
+import com.example.aisearch.bean.util.volunteer.CommunityItems;
 import com.example.aisearch.util.datautil.DataUtil;
 
 import butterknife.BindView;

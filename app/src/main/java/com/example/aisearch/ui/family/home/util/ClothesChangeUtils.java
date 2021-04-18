@@ -12,7 +12,7 @@ import android.widget.PopupWindow;
 import android.widget.TextView;
 
 import com.example.aisearch.R;
-import com.example.aisearch.bean.family.GetConfigReq;
+import com.example.aisearch.bean.util.family.GetConfigReq;
 import com.example.aisearch.ui.family.home.dialog.PersonDialog;
 import com.example.aisearch.util.CommonPopWindow;
 import com.example.aisearch.util.PickerScrollView;

@@ -32,7 +32,7 @@ import com.baidu.mapapi.model.LatLng;
 import com.example.aisearch.MyOrientationListener;
 import com.example.aisearch.R;
 import com.example.aisearch.base.myApplication;
-import com.example.aisearch.bean.Person;
+import com.example.aisearch.bean.util.Person;
 import com.example.aisearch.ui.volunteer.home.inaction.InActionActivity;
 import com.example.aisearch.ui.volunteer.home.index.adapter.SearchNoticeAdapter;
 import com.example.aisearch.util.BaiduMapUtils;

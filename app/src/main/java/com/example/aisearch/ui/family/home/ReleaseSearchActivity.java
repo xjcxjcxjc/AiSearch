@@ -16,7 +16,7 @@ import androidx.cardview.widget.CardView;
 
 import com.example.aisearch.R;
 import com.example.aisearch.base.BaseActivity;
-import com.example.aisearch.bean.family.GetConfigReq;
+import com.example.aisearch.bean.util.family.GetConfigReq;
 import com.example.aisearch.ui.family.home.help.HelpActivity2;
 import com.example.aisearch.util.CommonPopWindow;
 import com.example.aisearch.util.PickerScrollView;
